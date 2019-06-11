@@ -158,22 +158,22 @@ iostream
 vector
 -
 
-/Users/zty/Documents/Courses/Database/minisql/src/shell.cpp
+/Users/zty/Documents/Courses/Database/minisql/src/shell/shell.cpp
 iostream
 -
 fstream
 -
 cassert
 -
-command/Parser.h
+../command/Parser.h
 /Users/zty/Documents/Courses/Database/minisql/src/command/Parser.h
-command/Command.h
+../command/Command.h
 /Users/zty/Documents/Courses/Database/minisql/src/command/Command.h
-command/Result.h
+../command/Result.h
 /Users/zty/Documents/Courses/Database/minisql/src/command/Result.h
-command/Sql.h
+../command/Sql.h
 /Users/zty/Documents/Courses/Database/minisql/src/command/Sql.h
-util/StringUtils.h
+../util/StringUtils.h
 /Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.h
 
 /Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp

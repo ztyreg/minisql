@@ -3,3 +3,8 @@
 /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
 /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/edit_cache.dir
 /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/Minisql.dir
+/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/CMakeFiles/LruReplacerTest.dir
+/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/CMakeFiles/check.dir
+/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
+/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/CMakeFiles/gtest.dir

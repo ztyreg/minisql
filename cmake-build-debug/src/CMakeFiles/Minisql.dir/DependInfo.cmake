@@ -15,7 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zty/Documents/Courses/Database/minisql/src/command/Result.cpp" "/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/Minisql.dir/command/Result.cpp.o"
   "/Users/zty/Documents/Courses/Database/minisql/src/command/Select.cpp" "/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/Minisql.dir/command/Select.cpp.o"
   "/Users/zty/Documents/Courses/Database/minisql/src/command/Sql.cpp" "/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/Minisql.dir/command/Sql.cpp.o"
-  "/Users/zty/Documents/Courses/Database/minisql/src/shell.cpp" "/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/Minisql.dir/shell.cpp.o"
+  "/Users/zty/Documents/Courses/Database/minisql/src/shell/shell.cpp" "/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/Minisql.dir/shell/shell.cpp.o"
   "/Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp" "/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/Minisql.dir/util/StringUtils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

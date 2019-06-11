@@ -10,7 +10,8 @@ cmake_minimum_required(VERSION 3.7)
 set(CMAKE_CXX_STANDARD 14)
 
 # source
-add_subdirectory(./src)
+add_subdirectory(src)
+add_subdirectory(test)
 
 # data
 configure_file(data/miniSQLTest.txt src/miniSQLTest.txt COPYONLY)
@@ -26,22 +27,5 @@ configure_file(data/miniSQLTest/instruction8.txt src/instruction8.txt COPYONLY)
 configure_file(data/miniSQLTest/instruction9.txt src/instruction9.txt COPYONLY)
 configure_file(data/miniSQLTest/student.txt src/student.txt COPYONLY)
 
+include_directories(BEFORE src) # This is needed for gtest.
 
-## tests
-## add the google test subdirectory
-#add_subdirectory(./extern/googletest)
-#
-## include googletest/include dir
-#include_directories(./extern/googletest/include)
-#
-#
-## tests
-## add the google test subdirectory
-#add_subdirectory(./extern/googletest)
-#
-## include googletest/include dir
-#include_directories(./extern/googletest/include)
-#
-#package_add_test(test1 test/test1.cpp src/command/Sql.cpp)
-#
-#target_link_libraries(test1 gtest gtest_main)

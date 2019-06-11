@@ -35,6 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/cmake_install.cmake")
+  include("/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/cmake_install.cmake")
 
 endif()
 

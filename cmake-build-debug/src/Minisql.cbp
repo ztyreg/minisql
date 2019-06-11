@@ -5,7 +5,7 @@
 		<Option title="Minisql"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\data\;CMake Files\data\miniSQLTest\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\data\;CMake Files\data\miniSQLTest\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src"/>
@@ -126,7 +126,7 @@
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Sql.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/shell.cpp">
 			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp">
@@ -176,6 +176,9 @@
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/student.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

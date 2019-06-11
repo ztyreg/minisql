@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Minisql.dir/shell.cpp.o"
+  "CMakeFiles/Minisql.dir/shell/shell.cpp.o"
   "CMakeFiles/Minisql.dir/command/Parser.cpp.o"
   "CMakeFiles/Minisql.dir/command/Result.cpp.o"
   "CMakeFiles/Minisql.dir/command/Sql.cpp.o"

@@ -34,7 +34,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
             ///create table
             auto * createTable = new CreateTable;
             createTable->setTableName(tokens[2]);
-            if (tokens[3] != "(") throw "Syntax error!";
+            if (tokens[3] != "(") throw runtime_error("Syntax error!");
 
             int pos = 4;
             string columnName;
@@ -45,16 +45,16 @@ unique_ptr<Command> Parser::parse(string sqlString)
             // column end with comma: continue
             // column end with parentheses: end
             while (true) {
-                if (tokens[pos] == ")" || tokens[pos] == ",") throw "Syntax error!";
+                if (tokens[pos] == ")" || tokens[pos] == ",") throw runtime_error("Syntax error!");
                 else if (tokens[pos] == "primary") {
-                    if (onlyOnePrimaryKey) throw "Syntax error: multiple primary key";
+                    if (onlyOnePrimaryKey) throw runtime_error("Syntax error: multiple primary key");
                     if (tokens[pos+1] == "key" || tokens[pos+2] == "(" ||
                             tokens[pos+4] == ")" ) {
                         createTable->addPrimaryKey(tokens[pos+3]);
                         pos += 5;
                         onlyOnePrimaryKey = true;
                     } else {
-                        throw "Syntax error: primary key error";
+                        throw runtime_error("Syntax error: primary key error");
                     }
 
                 } else {
@@ -62,14 +62,14 @@ unique_ptr<Command> Parser::parse(string sqlString)
                     dataType = tokens[pos++]; //type check is performed in addColumn
 
                     if (dataType == "char") {
-                        if (tokens[pos++] != "(") throw "Syntax error!";
+                        if (tokens[pos++] != "(") throw runtime_error("Syntax error!");
                         charLength = stoi(tokens[pos++]);
-                        if (tokens[pos++] != ")") throw "Syntax error!";
+                        if (tokens[pos++] != ")") throw runtime_error("Syntax error!");
 
                     } else if (dataType == "int" || dataType == "float") {
                         charLength = -1;
                     } else {
-                        throw "Syntax error: unsupported type";
+                        throw runtime_error("Syntax error: unsupported type");
                     }
 
                     isUnique = tokens[pos] == "unique";
@@ -80,7 +80,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
                 }
 
                 if (tokens[pos] == ")") break;
-                else if (tokens[pos++] != ",") throw "Syntax error!";
+                else if (tokens[pos++] != ",") throw runtime_error("Syntax error!");
             }
             cout << *createTable << endl;
             return unique_ptr<Command>(createTable);
@@ -88,7 +88,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
         } else if (tokens[0] == "drop" && tokens[1] == "table") {
             ///drop table
             auto * dropTable = new DropTable;
-            if (tokens.size() != 3) throw "Syntax error!";
+            if (tokens.size() != 3) throw runtime_error("Syntax error!");
 
             dropTable->setTableName(tokens[2]);
 
@@ -99,17 +99,17 @@ unique_ptr<Command> Parser::parse(string sqlString)
             ///create index
             auto * createIndex = new CreateIndex;
             if (tokens[5] != "(" || tokens[tokens.size() - 1] != ")")
-                throw "Syntax error!";
+                throw runtime_error("Syntax error!");
             createIndex->setIndexName(tokens[2]);
             createIndex->setTableName(tokens[4]);
 
             int pos = 6;
             while (true) {
-                if (tokens[pos] == ")" || tokens[pos] == ",") throw "Syntax error!";
+                if (tokens[pos] == ")" || tokens[pos] == ",") throw runtime_error("Syntax error!");
                 createIndex->addColumn(tokens[pos++]);
 
                 if (tokens[pos] == ")") break;
-                else if (tokens[pos++] != ",") throw "Syntax error!";
+                else if (tokens[pos++] != ",") throw runtime_error("Syntax error!");
             }
 
             cout << *createIndex << endl;
@@ -118,7 +118,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
         } else if (tokens[0] == "drop" && tokens[1] == "index") {
             ///drop index
             auto * dropIndex = new DropIndex;
-            if (tokens.size() != 3) throw "Syntax error!";
+            if (tokens.size() != 3) throw runtime_error("Syntax error!");
 
             dropIndex->setIndexName(tokens[2]);
 
@@ -129,13 +129,13 @@ unique_ptr<Command> Parser::parse(string sqlString)
             ///insert
             auto * insert = new Insert;
             if (tokens[4] != "(" || tokens[tokens.size() - 1] != ")")
-                throw "Syntax error!";
+                throw runtime_error("Syntax error!");
 
             insert->setTableName(tokens[2]);
 
             int pos = 5;
             while (true) {
-                if (tokens[pos] == ")" || tokens[pos] == ",") throw "Syntax error!";
+                if (tokens[pos] == ")" || tokens[pos] == ",") throw runtime_error("Syntax error!");
 
                 string field;
                 string type;
@@ -158,7 +158,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
                 insert->addValue(type, field);
 
                 if (tokens[pos] == ")") break;
-                else if (tokens[pos++] != ",") throw "Syntax error!";
+                else if (tokens[pos++] != ",") throw runtime_error("Syntax error!");
             }
 
             cout << *insert << endl;
@@ -174,7 +174,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
                 cout << *del << endl;
                 return unique_ptr<Command>(del);
             }
-            if (tokens[3] != "where") throw "Syntax error!";
+            if (tokens[3] != "where") throw runtime_error("Syntax error!");
 
             tokens.erase(tokens.begin(), tokens.begin() + 4);
             del->setWheres(parseWhere(tokens));
@@ -196,13 +196,13 @@ unique_ptr<Command> Parser::parse(string sqlString)
             }
             select->setSelectAll(selectAll);
 
-            if (tokens[0] != "from") throw "Syntax error!";
+            if (tokens[0] != "from") throw runtime_error("Syntax error!");
             select->setTableName(tokens[1]);
             tokens.erase(tokens.begin(), tokens.begin() + 2);
 
             //(where) clause begins here
             if (!tokens.empty()) {
-                if (tokens[0] != "where") throw "Syntax error!";
+                if (tokens[0] != "where") throw runtime_error("Syntax error!");
                 else {
                     tokens.erase(tokens.begin());
                     select->setWheres(parseWhere(tokens));
@@ -263,11 +263,11 @@ vector <whereClause> Parser::parseWhere(vector<string> tokens)
 
             wheres.push_back(where);
             if (pos == tokens.size()) break;
-            if (tokens[pos++] != "and") throw "Syntax error!";
+            if (tokens[pos++] != "and") throw runtime_error("Syntax error!");
 
         }
     } catch(...) {
-        throw "Syntax error!";
+        throw runtime_error("Syntax error!");
     }
 
     return wheres;
@@ -296,7 +296,7 @@ vector<string> Parser::getCommaSeparatedFields(vector<string>& tokens)
 
         tokens.erase(tokens.begin(), tokens.begin() + eraseCount);
     } catch(...) {
-        throw "Syntax error!";
+        throw runtime_error("Syntax error!");
     }
     return fields;
 }
