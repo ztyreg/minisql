@@ -4,8 +4,8 @@
 
 #include "BufferPoolManager.h"
 
-BufferPoolManager::BufferPoolManager(int poolSize, DiskManager *diskManager) : poolSize(poolSize),
-                                                                                     diskManager(diskManager)
+BufferPoolManager::BufferPoolManager(int poolSize, DiskManager *diskManager)
+: poolSize(poolSize), diskManager(diskManager)
 {
 
 }
@@ -28,9 +28,21 @@ Page *BufferPoolManager::newPage(page_id_t &pageId)
         }
 
     }
+
+    return nullptr;
 }
 
 bool BufferPoolManager::deletePage(page_id_t pageId)
 {
+    return false;
+}
+
+Page *BufferPoolManager::fetchPage(page_id_t pageId)
+{
     return nullptr;
+}
+
+bool BufferPoolManager::flushPage(page_id_t pageId)
+{
+    return false;
 }

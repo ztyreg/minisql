@@ -7,6 +7,7 @@
 
 #include <ostream>
 #include "Command.h"
+#include "../shell/DbInterface.h"
 
 class Select : public Command
 {
@@ -39,7 +40,7 @@ public:
 
     friend ostream &operator<<(ostream &os, const Select &select);
 
-    Result execute() override;
+    Result execute(DbInterface &db) override;
 
 };
 

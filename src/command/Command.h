@@ -9,6 +9,7 @@
 #include <vector>
 #include <iostream>
 #include "Result.h"
+#include "../shell/DbInterface.h"
 
 using namespace std;
 
@@ -27,7 +28,7 @@ private:
 public:
     Command();
 
-    virtual Result execute() = 0;
+    virtual Result execute(DbInterface &db) = 0;
 
     virtual ~Command();
 
@@ -38,7 +39,7 @@ public:
 class Unknown : public Command
 {
 public:
-    Result execute() override;
+    Result execute(DbInterface &db) override;
 
 };
 

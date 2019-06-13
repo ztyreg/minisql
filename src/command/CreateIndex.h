@@ -32,7 +32,7 @@ public:
 
     vector <string> getColumns();
 
-    Result execute() override;
+    Result execute(DbInterface &db) override;
 
     friend ostream &operator<<(ostream &os, const CreateIndex &createIndex);
 

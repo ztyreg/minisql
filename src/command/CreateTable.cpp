@@ -3,6 +3,8 @@
 //
 
 #include "CreateTable.h"
+#include "../catalog/TableMeta.h"
+#include "../table/TableHeap.h"
 
 const string &CreateTable::getTableName() const
 {
@@ -64,10 +66,26 @@ void CreateTable::addPrimaryKey(string column)
 
 }
 
-Result CreateTable::execute()
+Result CreateTable::execute(DbInterface &db)
 {
     cout << "\texecuting create table ... " << endl;
     Result result;
+
+
+    // store table metadata
+    auto* tableMeta = new TableMeta();
+    // TODO: store metadata
+
+    if (tableMeta->tableExists(tableName)) {
+        return result;// TODO
+    }
+
+
+    db.writeData(tableName, "test");
+
+
+
+    delete tableMeta;
 
     return result;
 

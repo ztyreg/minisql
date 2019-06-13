@@ -14,7 +14,7 @@ void DropTable::setTableName(const string &tableName)
     DropTable::tableName = tableName;
 }
 
-Result DropTable::execute()
+Result DropTable::execute(DbInterface &db)
 {
     cout << "\texecuting drop table ... " << endl;
     Result result;

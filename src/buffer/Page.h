@@ -5,8 +5,7 @@
 #ifndef MINISQL_PAGE_H
 #define MINISQL_PAGE_H
 
-#include "BufferPoolManager.h"
-#include "../common/config.h"
+#include "../common/Config.h"
 
 class Page {
     friend class BufferPoolManager;

@@ -7,6 +7,7 @@
 
 #include <ostream>
 #include "Command.h"
+#include "../shell/DbInterface.h"
 
 class DropIndex : public Command
 {
@@ -24,7 +25,7 @@ public:
 
     friend ostream &operator<<(ostream &os, const DropIndex &dropIndex);
 
-    Result execute() override;
+    Result execute(DbInterface &db) override;
 
 };
 

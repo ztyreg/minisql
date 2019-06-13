@@ -7,6 +7,7 @@
 
 #include <ostream>
 #include "Command.h"
+#include "../shell/DbInterface.h"
 
 class Delete : public Command
 {
@@ -34,7 +35,7 @@ public:
 
     friend ostream &operator<<(ostream &os, const Delete &aDelete);
 
-    Result execute() override;
+    Result execute(DbInterface &db) override;
 
 
 };

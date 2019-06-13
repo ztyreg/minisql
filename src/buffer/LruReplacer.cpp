@@ -3,6 +3,7 @@
 //
 
 #include "LruReplacer.h"
+#include "Page.h"
 
 template<class T>
 LruReplacer<T>::LruReplacer()
@@ -74,3 +75,11 @@ const vector<pair<T, int>> &LruReplacer<T>::getTracker() const
 {
     return tracker;
 }
+
+// specialization
+template
+class LruReplacer<int>;
+
+template
+class LruReplacer<Page *>;
+

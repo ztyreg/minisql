@@ -5,8 +5,14 @@
 #ifndef MINISQL_TABLEMETA_H
 #define MINISQL_TABLEMETA_H
 
+#include <string>
+
+using namespace std;
 
 class TableMeta {
+
+public:
+    bool tableExists(string name);
 
 };
 

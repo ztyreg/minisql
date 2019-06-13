@@ -3,3 +3,8 @@
 //
 
 #include "TableMeta.h"
+
+bool TableMeta::tableExists(string name)
+{
+    return false;
+}

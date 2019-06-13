@@ -43,7 +43,7 @@ vector<string> CreateIndex::getColumns(void)
     return columns;
 }
 
-Result CreateIndex::execute()
+Result CreateIndex::execute(DbInterface &db)
 {
     cout << "\texecuting create index ... " << endl;
     Result result;

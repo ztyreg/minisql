@@ -28,7 +28,7 @@ ostream &operator<<(ostream &os, const DropIndex &dropIndex)
     return os;
 }
 
-Result DropIndex::execute()
+Result DropIndex::execute(DbInterface &db)
 {
     cout << "\texecuting drop index ... " << endl;
     Result result;

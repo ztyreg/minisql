@@ -6,8 +6,10 @@
 #include "../command/Result.h"
 #include "../command/Sql.h"
 #include "../util/StringUtils.h"
+#include "DbInterface.h"
 
 using namespace std;
+
 
 /**
  * print prompt and get SQL
@@ -48,6 +50,9 @@ int main(int argc, char* argv[])
     unique_ptr<Command> command;
     cout << "Welcome to minisql shell." << endl;
 
+    DbInterface db;
+    db.init("dbfile");
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wmissing-noreturn"
     while (true) {
@@ -71,7 +76,7 @@ int main(int argc, char* argv[])
                     //parse
                     command = parser.parse(fileSql.getSql());
                     //execute
-                    Result result = command->execute();
+                    Result result = command->execute(db);
                     command.reset(nullptr);
                 }
             }
@@ -79,7 +84,7 @@ int main(int argc, char* argv[])
             //parse
             command = parser.parse(sql.getSql());
             //execute
-            Result result = command->execute();
+            Result result = command->execute(db);
             command.reset(nullptr);
         }
 

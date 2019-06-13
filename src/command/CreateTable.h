@@ -9,6 +9,7 @@
 #include <vector>
 #include <iostream>
 #include "Command.h"
+#include "../shell/DbInterface.h"
 
 class CreateTable : public Command
 {
@@ -37,7 +38,7 @@ public:
 
     void addPrimaryKey(string column);
 
-    Result execute() override;
+    Result execute(DbInterface &db) override;
 
     friend ostream &operator<<(ostream &os, const CreateTable &table);
 

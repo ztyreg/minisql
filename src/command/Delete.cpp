@@ -22,7 +22,7 @@ void Delete::setTableName(const string &tableName)
     Delete::tableName = tableName;
 }
 
-Result Delete::execute()
+Result Delete::execute(DbInterface &db)
 {
     cout << "\texecuting delete ..." << endl;
     Result result;

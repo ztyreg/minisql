@@ -32,7 +32,7 @@ void Select::setSelectAll(bool selectAll)
     Select::selectAll = selectAll;
 }
 
-Result Select::execute()
+Result Select::execute(DbInterface &db)
 {
     cout << "\texecuting select ..." << endl;
     return Result();

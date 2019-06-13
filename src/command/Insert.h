@@ -7,6 +7,7 @@
 
 #include <ostream>
 #include "Command.h"
+#include "../shell/DbInterface.h"
 
 class Insert : public Command
 {
@@ -34,7 +35,7 @@ public:
 
     friend ostream &operator<<(ostream &os, const Insert &insert);
 
-    Result execute() override;
+    Result execute(DbInterface &db) override;
 
 };
 

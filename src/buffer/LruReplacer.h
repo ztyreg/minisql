@@ -5,9 +5,9 @@
 #ifndef MINISQL_LRUREPLACER_H
 #define MINISQL_LRUREPLACER_H
 
-using namespace std;
-
 #include <vector>
+
+using namespace std;
 
 template <class T>
 class LruReplacer {
@@ -32,8 +32,5 @@ public:
 
 };
 
-
-template
-class LruReplacer<int>;
 
 #endif //MINISQL_LRUREPLACER_H

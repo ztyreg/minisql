@@ -13,6 +13,7 @@
 using namespace std;
 
 class BufferPoolManager {
+    friend class Page;
 private:
     int poolSize;
     Page *pages;

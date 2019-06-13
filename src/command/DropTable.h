@@ -8,6 +8,7 @@
 #include <string>
 #include <ostream>
 #include "Command.h"
+#include "../shell/DbInterface.h"
 
 using namespace std;
 
@@ -22,7 +23,7 @@ public:
 
     void setTableName(const string &tableName);
 
-    Result execute() override;
+    Result execute(DbInterface &db) override;
 
     friend ostream &operator<<(ostream &os, const DropTable &table);
 

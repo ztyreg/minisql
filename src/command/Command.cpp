@@ -10,7 +10,7 @@
 
 #include "Command.h"
 
-Result Unknown::execute()
+Result Unknown::execute(DbInterface &db)
 {
     Result result;
 

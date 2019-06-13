@@ -7,10 +7,10 @@
 
 #include <string>
 #include <fstream>
+#include "../common/Config.h"
 
 using namespace std;
 
-typedef uint32_t page_id_t;
 
 class DiskManager {
 private:
@@ -31,6 +31,7 @@ public:
 
 
     int getFileSize(const std::string &file_name);
+
 };
 
 

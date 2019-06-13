@@ -38,7 +38,7 @@ void Insert::addValue(string type, string field)
 
 }
 
-Result Insert::execute()
+Result Insert::execute(DbInterface &db)
 {
     cout << "\texecuting insert ..." << endl;
     Result result;

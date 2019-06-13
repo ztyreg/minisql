@@ -4,7 +4,7 @@
 
 #include <sys/stat.h>
 #include "DiskManager.h"
-#include "../common/config.h"
+#include "../common/Config.h"
 
 DiskManager::DiskManager(const string &dbName) : dbName(dbName), nextPageId(0)
 {
@@ -68,3 +68,4 @@ page_id_t DiskManager::allocatePage()
 {
     return nextPageId++;
 }
+
