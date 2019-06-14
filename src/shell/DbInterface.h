@@ -8,6 +8,7 @@
 #include "../table/TableHeap.h"
 #include "../table/Tuple.h"
 #include "../disk/DiskManager.h"
+#include "../buffer/DbMetaPage.h"
 #include "../buffer/BufferPoolManager.h"
 #include <map>
 
@@ -19,6 +20,7 @@ private:
     BufferPoolManager *bufferPoolManager;
     map<string, int> tableStart;
     map<string, int> tableEnd;
+    DbMetaPage *dbMetaPage;
     void readMeta();
 
 public:
@@ -30,7 +32,6 @@ public:
 
     void writeMeta(string tableName, string data);
 
-    void writeData(string tableName, Tuple &tuple);
 };
 
 

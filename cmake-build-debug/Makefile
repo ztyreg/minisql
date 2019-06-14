@@ -137,6 +137,19 @@ LruReplacerTest/fast:
 .PHONY : LruReplacerTest/fast
 
 #=============================================================================
+# Target rules for targets named BufferPoolManagerTest
+
+# Build rule for target.
+BufferPoolManagerTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BufferPoolManagerTest
+.PHONY : BufferPoolManagerTest
+
+# fast build rule for target.
+BufferPoolManagerTest/fast:
+	$(MAKE) -f test/CMakeFiles/BufferPoolManagerTest.dir/build.make test/CMakeFiles/BufferPoolManagerTest.dir/build
+.PHONY : BufferPoolManagerTest/fast
+
+#=============================================================================
 # Target rules for targets named check
 
 # Build rule for target.
@@ -172,6 +185,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... Minisql"
 	@echo "... LruReplacerTest"
+	@echo "... BufferPoolManagerTest"
 	@echo "... check"
 	@echo "... gtest"
 .PHONY : help

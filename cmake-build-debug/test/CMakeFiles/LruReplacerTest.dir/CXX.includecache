@@ -137,9 +137,19 @@ vector
 /Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp
 LruReplacer.h
 /Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.h
+Page.h
+/Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.h
 
 /Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.h
 vector
+-
+
+/Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.h
+../common/Config.h
+/Users/zty/Documents/Courses/Database/minisql/src/common/Config.h
+
+/Users/zty/Documents/Courses/Database/minisql/src/common/Config.h
+cstdint
 -
 
 /Users/zty/Documents/Courses/Database/minisql/test/buffer/LruReplacerTest.cpp

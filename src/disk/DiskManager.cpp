@@ -7,7 +7,7 @@
 #include "DiskManager.h"
 #include "../common/Config.h"
 
-DiskManager::DiskManager(const string &dbName) : dbName(dbName), nextPageId(0)
+DiskManager::DiskManager(const string& dbName) : dbName(dbName), nextPageId(0)
 {
     dbIo.open(dbName, ios::binary | ios::in | ios::app | ios::out);
     // not exists
@@ -17,7 +17,7 @@ DiskManager::DiskManager(const string &dbName) : dbName(dbName), nextPageId(0)
         dbIo.open(dbName, ios::binary | ios::trunc | ios::out);
         dbIo.close();
         // reopen
-        dbIo.open(dbName, ios::binary | ios::in | ios::out);
+        dbIo.open(dbName, ios::binary | ios::in | ios::app | ios::out);
     }
 }
 
@@ -28,11 +28,32 @@ DiskManager::~DiskManager()
 
 void DiskManager::writePage(page_id_t pageId, const char *pageData)
 {
+    dbIo.close();
+    dbIo.open(dbName, ios::binary | ios::in | ios::app | ios::out);
+
     int offset = pageId * PAGE_SIZE;
     dbIo.seekp(offset);
     dbIo.write(pageData, PAGE_SIZE);
     // I/O error
     if (dbIo.bad()) {
+        cerr << "I/O error while writing" << endl;
+        return;
+    }
+    dbIo.flush();
+
+}
+
+void DiskManager::replacePage(page_id_t pageId, const char *pageData)
+{
+    dbIo.close();
+    dbIo.open(dbName, ios::binary | ios::in | ios::trunc | ios::out);
+
+    int offset = pageId * PAGE_SIZE;
+    dbIo.seekp(offset);
+    dbIo.write(pageData, PAGE_SIZE);
+    // I/O error
+    if (dbIo.bad()) {
+        cerr << "I/O error while writing" << endl;
         return;
     }
     dbIo.flush();

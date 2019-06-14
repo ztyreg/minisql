@@ -73,13 +73,13 @@ Result CreateTable::execute(DbInterface &db)
 
 
     // store table metadata
-    auto* tableMeta = new TableMeta();
+//    auto* tableMeta = new TableMeta();
     // TODO: store metadata
     // page 0 is used to store metadata
 
-    if (tableMeta->tableExists(tableName)) {
-        return result;// TODO
-    }
+//    if (tableMeta->tableExists(tableName)) {
+//        return result;// TODO
+//    }
 
 
     // store DDL as metadata
@@ -87,7 +87,7 @@ Result CreateTable::execute(DbInterface &db)
 
 
 
-    delete tableMeta;
+//    delete tableMeta;
 
     return result;
 

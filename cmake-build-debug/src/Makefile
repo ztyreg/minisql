@@ -125,6 +125,249 @@ Minisql/fast:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/build
 .PHONY : Minisql/fast
 
+buffer/Buffer.o: buffer/Buffer.cpp.o
+
+.PHONY : buffer/Buffer.o
+
+# target to build an object file
+buffer/Buffer.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.o
+.PHONY : buffer/Buffer.cpp.o
+
+buffer/Buffer.i: buffer/Buffer.cpp.i
+
+.PHONY : buffer/Buffer.i
+
+# target to preprocess a source file
+buffer/Buffer.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.i
+.PHONY : buffer/Buffer.cpp.i
+
+buffer/Buffer.s: buffer/Buffer.cpp.s
+
+.PHONY : buffer/Buffer.s
+
+# target to generate assembly for a file
+buffer/Buffer.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.s
+.PHONY : buffer/Buffer.cpp.s
+
+buffer/BufferPoolManager.o: buffer/BufferPoolManager.cpp.o
+
+.PHONY : buffer/BufferPoolManager.o
+
+# target to build an object file
+buffer/BufferPoolManager.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.o
+.PHONY : buffer/BufferPoolManager.cpp.o
+
+buffer/BufferPoolManager.i: buffer/BufferPoolManager.cpp.i
+
+.PHONY : buffer/BufferPoolManager.i
+
+# target to preprocess a source file
+buffer/BufferPoolManager.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.i
+.PHONY : buffer/BufferPoolManager.cpp.i
+
+buffer/BufferPoolManager.s: buffer/BufferPoolManager.cpp.s
+
+.PHONY : buffer/BufferPoolManager.s
+
+# target to generate assembly for a file
+buffer/BufferPoolManager.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.s
+.PHONY : buffer/BufferPoolManager.cpp.s
+
+buffer/DbMetaPage.o: buffer/DbMetaPage.cpp.o
+
+.PHONY : buffer/DbMetaPage.o
+
+# target to build an object file
+buffer/DbMetaPage.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.o
+.PHONY : buffer/DbMetaPage.cpp.o
+
+buffer/DbMetaPage.i: buffer/DbMetaPage.cpp.i
+
+.PHONY : buffer/DbMetaPage.i
+
+# target to preprocess a source file
+buffer/DbMetaPage.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.i
+.PHONY : buffer/DbMetaPage.cpp.i
+
+buffer/DbMetaPage.s: buffer/DbMetaPage.cpp.s
+
+.PHONY : buffer/DbMetaPage.s
+
+# target to generate assembly for a file
+buffer/DbMetaPage.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.s
+.PHONY : buffer/DbMetaPage.cpp.s
+
+buffer/LruReplacer.o: buffer/LruReplacer.cpp.o
+
+.PHONY : buffer/LruReplacer.o
+
+# target to build an object file
+buffer/LruReplacer.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.o
+.PHONY : buffer/LruReplacer.cpp.o
+
+buffer/LruReplacer.i: buffer/LruReplacer.cpp.i
+
+.PHONY : buffer/LruReplacer.i
+
+# target to preprocess a source file
+buffer/LruReplacer.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.i
+.PHONY : buffer/LruReplacer.cpp.i
+
+buffer/LruReplacer.s: buffer/LruReplacer.cpp.s
+
+.PHONY : buffer/LruReplacer.s
+
+# target to generate assembly for a file
+buffer/LruReplacer.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.s
+.PHONY : buffer/LruReplacer.cpp.s
+
+buffer/Page.o: buffer/Page.cpp.o
+
+.PHONY : buffer/Page.o
+
+# target to build an object file
+buffer/Page.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/Page.cpp.o
+.PHONY : buffer/Page.cpp.o
+
+buffer/Page.i: buffer/Page.cpp.i
+
+.PHONY : buffer/Page.i
+
+# target to preprocess a source file
+buffer/Page.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/Page.cpp.i
+.PHONY : buffer/Page.cpp.i
+
+buffer/Page.s: buffer/Page.cpp.s
+
+.PHONY : buffer/Page.s
+
+# target to generate assembly for a file
+buffer/Page.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/Page.cpp.s
+.PHONY : buffer/Page.cpp.s
+
+buffer/TableMetaPage.o: buffer/TableMetaPage.cpp.o
+
+.PHONY : buffer/TableMetaPage.o
+
+# target to build an object file
+buffer/TableMetaPage.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.o
+.PHONY : buffer/TableMetaPage.cpp.o
+
+buffer/TableMetaPage.i: buffer/TableMetaPage.cpp.i
+
+.PHONY : buffer/TableMetaPage.i
+
+# target to preprocess a source file
+buffer/TableMetaPage.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.i
+.PHONY : buffer/TableMetaPage.cpp.i
+
+buffer/TableMetaPage.s: buffer/TableMetaPage.cpp.s
+
+.PHONY : buffer/TableMetaPage.s
+
+# target to generate assembly for a file
+buffer/TableMetaPage.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.s
+.PHONY : buffer/TableMetaPage.cpp.s
+
+buffer/TablePage.o: buffer/TablePage.cpp.o
+
+.PHONY : buffer/TablePage.o
+
+# target to build an object file
+buffer/TablePage.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.o
+.PHONY : buffer/TablePage.cpp.o
+
+buffer/TablePage.i: buffer/TablePage.cpp.i
+
+.PHONY : buffer/TablePage.i
+
+# target to preprocess a source file
+buffer/TablePage.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.i
+.PHONY : buffer/TablePage.cpp.i
+
+buffer/TablePage.s: buffer/TablePage.cpp.s
+
+.PHONY : buffer/TablePage.s
+
+# target to generate assembly for a file
+buffer/TablePage.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.s
+.PHONY : buffer/TablePage.cpp.s
+
+catalog/IndexMeta.o: catalog/IndexMeta.cpp.o
+
+.PHONY : catalog/IndexMeta.o
+
+# target to build an object file
+catalog/IndexMeta.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/IndexMeta.cpp.o
+.PHONY : catalog/IndexMeta.cpp.o
+
+catalog/IndexMeta.i: catalog/IndexMeta.cpp.i
+
+.PHONY : catalog/IndexMeta.i
+
+# target to preprocess a source file
+catalog/IndexMeta.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/IndexMeta.cpp.i
+.PHONY : catalog/IndexMeta.cpp.i
+
+catalog/IndexMeta.s: catalog/IndexMeta.cpp.s
+
+.PHONY : catalog/IndexMeta.s
+
+# target to generate assembly for a file
+catalog/IndexMeta.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/IndexMeta.cpp.s
+.PHONY : catalog/IndexMeta.cpp.s
+
+catalog/TableMeta.o: catalog/TableMeta.cpp.o
+
+.PHONY : catalog/TableMeta.o
+
+# target to build an object file
+catalog/TableMeta.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/TableMeta.cpp.o
+.PHONY : catalog/TableMeta.cpp.o
+
+catalog/TableMeta.i: catalog/TableMeta.cpp.i
+
+.PHONY : catalog/TableMeta.i
+
+# target to preprocess a source file
+catalog/TableMeta.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/TableMeta.cpp.i
+.PHONY : catalog/TableMeta.cpp.i
+
+catalog/TableMeta.s: catalog/TableMeta.cpp.s
+
+.PHONY : catalog/TableMeta.s
+
+# target to generate assembly for a file
+catalog/TableMeta.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/TableMeta.cpp.s
+.PHONY : catalog/TableMeta.cpp.s
+
 command/Command.o: command/Command.cpp.o
 
 .PHONY : command/Command.o
@@ -422,32 +665,167 @@ command/Sql.cpp.s:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/command/Sql.cpp.s
 .PHONY : command/Sql.cpp.s
 
-shell/shell.o: shell/shell.cpp.o
+concurrency/Transaction.o: concurrency/Transaction.cpp.o
 
-.PHONY : shell/shell.o
+.PHONY : concurrency/Transaction.o
 
 # target to build an object file
-shell/shell.cpp.o:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/shell.cpp.o
-.PHONY : shell/shell.cpp.o
+concurrency/Transaction.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o
+.PHONY : concurrency/Transaction.cpp.o
 
-shell/shell.i: shell/shell.cpp.i
+concurrency/Transaction.i: concurrency/Transaction.cpp.i
 
-.PHONY : shell/shell.i
+.PHONY : concurrency/Transaction.i
 
 # target to preprocess a source file
-shell/shell.cpp.i:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/shell.cpp.i
-.PHONY : shell/shell.cpp.i
+concurrency/Transaction.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.i
+.PHONY : concurrency/Transaction.cpp.i
 
-shell/shell.s: shell/shell.cpp.s
+concurrency/Transaction.s: concurrency/Transaction.cpp.s
 
-.PHONY : shell/shell.s
+.PHONY : concurrency/Transaction.s
 
 # target to generate assembly for a file
-shell/shell.cpp.s:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/shell.cpp.s
-.PHONY : shell/shell.cpp.s
+concurrency/Transaction.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.s
+.PHONY : concurrency/Transaction.cpp.s
+
+disk/DiskManager.o: disk/DiskManager.cpp.o
+
+.PHONY : disk/DiskManager.o
+
+# target to build an object file
+disk/DiskManager.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o
+.PHONY : disk/DiskManager.cpp.o
+
+disk/DiskManager.i: disk/DiskManager.cpp.i
+
+.PHONY : disk/DiskManager.i
+
+# target to preprocess a source file
+disk/DiskManager.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.i
+.PHONY : disk/DiskManager.cpp.i
+
+disk/DiskManager.s: disk/DiskManager.cpp.s
+
+.PHONY : disk/DiskManager.s
+
+# target to generate assembly for a file
+disk/DiskManager.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.s
+.PHONY : disk/DiskManager.cpp.s
+
+shell/DbInterface.o: shell/DbInterface.cpp.o
+
+.PHONY : shell/DbInterface.o
+
+# target to build an object file
+shell/DbInterface.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/DbInterface.cpp.o
+.PHONY : shell/DbInterface.cpp.o
+
+shell/DbInterface.i: shell/DbInterface.cpp.i
+
+.PHONY : shell/DbInterface.i
+
+# target to preprocess a source file
+shell/DbInterface.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/DbInterface.cpp.i
+.PHONY : shell/DbInterface.cpp.i
+
+shell/DbInterface.s: shell/DbInterface.cpp.s
+
+.PHONY : shell/DbInterface.s
+
+# target to generate assembly for a file
+shell/DbInterface.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/DbInterface.cpp.s
+.PHONY : shell/DbInterface.cpp.s
+
+shell/Shell.o: shell/Shell.cpp.o
+
+.PHONY : shell/Shell.o
+
+# target to build an object file
+shell/Shell.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/Shell.cpp.o
+.PHONY : shell/Shell.cpp.o
+
+shell/Shell.i: shell/Shell.cpp.i
+
+.PHONY : shell/Shell.i
+
+# target to preprocess a source file
+shell/Shell.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/Shell.cpp.i
+.PHONY : shell/Shell.cpp.i
+
+shell/Shell.s: shell/Shell.cpp.s
+
+.PHONY : shell/Shell.s
+
+# target to generate assembly for a file
+shell/Shell.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/Shell.cpp.s
+.PHONY : shell/Shell.cpp.s
+
+table/TableHeap.o: table/TableHeap.cpp.o
+
+.PHONY : table/TableHeap.o
+
+# target to build an object file
+table/TableHeap.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.o
+.PHONY : table/TableHeap.cpp.o
+
+table/TableHeap.i: table/TableHeap.cpp.i
+
+.PHONY : table/TableHeap.i
+
+# target to preprocess a source file
+table/TableHeap.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.i
+.PHONY : table/TableHeap.cpp.i
+
+table/TableHeap.s: table/TableHeap.cpp.s
+
+.PHONY : table/TableHeap.s
+
+# target to generate assembly for a file
+table/TableHeap.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.s
+.PHONY : table/TableHeap.cpp.s
+
+table/Tuple.o: table/Tuple.cpp.o
+
+.PHONY : table/Tuple.o
+
+# target to build an object file
+table/Tuple.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/Tuple.cpp.o
+.PHONY : table/Tuple.cpp.o
+
+table/Tuple.i: table/Tuple.cpp.i
+
+.PHONY : table/Tuple.i
+
+# target to preprocess a source file
+table/Tuple.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/Tuple.cpp.i
+.PHONY : table/Tuple.cpp.i
+
+table/Tuple.s: table/Tuple.cpp.s
+
+.PHONY : table/Tuple.s
+
+# target to generate assembly for a file
+table/Tuple.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/Tuple.cpp.s
+.PHONY : table/Tuple.cpp.s
 
 util/StringUtils.o: util/StringUtils.cpp.o
 
@@ -485,6 +863,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Minisql"
+	@echo "... buffer/Buffer.o"
+	@echo "... buffer/Buffer.i"
+	@echo "... buffer/Buffer.s"
+	@echo "... buffer/BufferPoolManager.o"
+	@echo "... buffer/BufferPoolManager.i"
+	@echo "... buffer/BufferPoolManager.s"
+	@echo "... buffer/DbMetaPage.o"
+	@echo "... buffer/DbMetaPage.i"
+	@echo "... buffer/DbMetaPage.s"
+	@echo "... buffer/LruReplacer.o"
+	@echo "... buffer/LruReplacer.i"
+	@echo "... buffer/LruReplacer.s"
+	@echo "... buffer/Page.o"
+	@echo "... buffer/Page.i"
+	@echo "... buffer/Page.s"
+	@echo "... buffer/TableMetaPage.o"
+	@echo "... buffer/TableMetaPage.i"
+	@echo "... buffer/TableMetaPage.s"
+	@echo "... buffer/TablePage.o"
+	@echo "... buffer/TablePage.i"
+	@echo "... buffer/TablePage.s"
+	@echo "... catalog/IndexMeta.o"
+	@echo "... catalog/IndexMeta.i"
+	@echo "... catalog/IndexMeta.s"
+	@echo "... catalog/TableMeta.o"
+	@echo "... catalog/TableMeta.i"
+	@echo "... catalog/TableMeta.s"
 	@echo "... command/Command.o"
 	@echo "... command/Command.i"
 	@echo "... command/Command.s"
@@ -518,9 +923,24 @@ help:
 	@echo "... command/Sql.o"
 	@echo "... command/Sql.i"
 	@echo "... command/Sql.s"
-	@echo "... shell/shell.o"
-	@echo "... shell/shell.i"
-	@echo "... shell/shell.s"
+	@echo "... concurrency/Transaction.o"
+	@echo "... concurrency/Transaction.i"
+	@echo "... concurrency/Transaction.s"
+	@echo "... disk/DiskManager.o"
+	@echo "... disk/DiskManager.i"
+	@echo "... disk/DiskManager.s"
+	@echo "... shell/DbInterface.o"
+	@echo "... shell/DbInterface.i"
+	@echo "... shell/DbInterface.s"
+	@echo "... shell/Shell.o"
+	@echo "... shell/Shell.i"
+	@echo "... shell/Shell.s"
+	@echo "... table/TableHeap.o"
+	@echo "... table/TableHeap.i"
+	@echo "... table/TableHeap.s"
+	@echo "... table/Tuple.o"
+	@echo "... table/Tuple.i"
+	@echo "... table/Tuple.s"
 	@echo "... util/StringUtils.o"
 	@echo "... util/StringUtils.i"
 	@echo "... util/StringUtils.s"

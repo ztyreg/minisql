@@ -126,6 +126,21 @@ LruReplacerTest/fast:
 .PHONY : LruReplacerTest/fast
 
 # Convenience name for target.
+test/CMakeFiles/BufferPoolManagerTest.dir/rule:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/BufferPoolManagerTest.dir/rule
+.PHONY : test/CMakeFiles/BufferPoolManagerTest.dir/rule
+
+# Convenience name for target.
+BufferPoolManagerTest: test/CMakeFiles/BufferPoolManagerTest.dir/rule
+
+.PHONY : BufferPoolManagerTest
+
+# fast build rule for target.
+BufferPoolManagerTest/fast:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/BufferPoolManagerTest.dir/build.make test/CMakeFiles/BufferPoolManagerTest.dir/build
+.PHONY : BufferPoolManagerTest/fast
+
+# Convenience name for target.
 test/CMakeFiles/check.dir/rule:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/check.dir/rule
 .PHONY : test/CMakeFiles/check.dir/rule
@@ -209,6 +224,33 @@ __/extern/gmock/gmock_main.cc.s:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/__/extern/gmock/gmock_main.cc.s
 .PHONY : __/extern/gmock/gmock_main.cc.s
 
+buffer/BufferPoolManagerTest.o: buffer/BufferPoolManagerTest.cpp.o
+
+.PHONY : buffer/BufferPoolManagerTest.o
+
+# target to build an object file
+buffer/BufferPoolManagerTest.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/BufferPoolManagerTest.dir/build.make test/CMakeFiles/BufferPoolManagerTest.dir/buffer/BufferPoolManagerTest.cpp.o
+.PHONY : buffer/BufferPoolManagerTest.cpp.o
+
+buffer/BufferPoolManagerTest.i: buffer/BufferPoolManagerTest.cpp.i
+
+.PHONY : buffer/BufferPoolManagerTest.i
+
+# target to preprocess a source file
+buffer/BufferPoolManagerTest.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/BufferPoolManagerTest.dir/build.make test/CMakeFiles/BufferPoolManagerTest.dir/buffer/BufferPoolManagerTest.cpp.i
+.PHONY : buffer/BufferPoolManagerTest.cpp.i
+
+buffer/BufferPoolManagerTest.s: buffer/BufferPoolManagerTest.cpp.s
+
+.PHONY : buffer/BufferPoolManagerTest.s
+
+# target to generate assembly for a file
+buffer/BufferPoolManagerTest.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/BufferPoolManagerTest.dir/build.make test/CMakeFiles/BufferPoolManagerTest.dir/buffer/BufferPoolManagerTest.cpp.s
+.PHONY : buffer/BufferPoolManagerTest.cpp.s
+
 buffer/LruReplacerTest.o: buffer/LruReplacerTest.cpp.o
 
 .PHONY : buffer/LruReplacerTest.o
@@ -243,8 +285,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... LruReplacerTest"
-	@echo "... check"
+	@echo "... BufferPoolManagerTest"
 	@echo "... rebuild_cache"
+	@echo "... check"
 	@echo "... edit_cache"
 	@echo "... gtest"
 	@echo "... __/extern/gmock/gmock-gtest-all.o"
@@ -253,6 +296,9 @@ help:
 	@echo "... __/extern/gmock/gmock_main.o"
 	@echo "... __/extern/gmock/gmock_main.i"
 	@echo "... __/extern/gmock/gmock_main.s"
+	@echo "... buffer/BufferPoolManagerTest.o"
+	@echo "... buffer/BufferPoolManagerTest.i"
+	@echo "... buffer/BufferPoolManagerTest.s"
 	@echo "... buffer/LruReplacerTest.o"
 	@echo "... buffer/LruReplacerTest.i"
 	@echo "... buffer/LruReplacerTest.s"

@@ -6,6 +6,10 @@
 #define MINISQL_DBMETAPAGE_H
 
 #include "Page.h"
+#include <string>
+#include <map>
+
+using namespace std;
 
 /**
 * Format (size in byte):
@@ -16,14 +20,19 @@
 
 class DbMetaPage : public Page {
 private:
-    int recordCount;
+    map<string, int> entries;
+
 
 public:
-    DbMetaPage(int recordCount);
+    explicit DbMetaPage(Page const& p) : Page(p) {};
 
     virtual ~DbMetaPage();
 
     void parsePage();
+
+    void composePage();
+
+    void addMeta(string data);
 
 };
 

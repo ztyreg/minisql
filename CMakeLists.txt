@@ -7,13 +7,14 @@ endmacro()
 
 cmake_minimum_required(VERSION 3.7)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 # source
 add_subdirectory(src)
 add_subdirectory(test)
 
 # data
+configure_file(data/test.txt src/test.txt COPYONLY)
 configure_file(data/miniSQLTest.txt src/miniSQLTest.txt COPYONLY)
 configure_file(data/miniSQLTest/instruction0.txt src/instruction0.txt COPYONLY)
 configure_file(data/miniSQLTest/instruction1.txt src/instruction1.txt COPYONLY)
@@ -28,4 +29,5 @@ configure_file(data/miniSQLTest/instruction9.txt src/instruction9.txt COPYONLY)
 configure_file(data/miniSQLTest/student.txt src/student.txt COPYONLY)
 
 include_directories(BEFORE src) # This is needed for gtest.
+
 

@@ -123,6 +123,50 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="BufferPoolManagerTest">
+				<Option output="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/BufferPoolManagerTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/zty/Documents/Courses/Database/minisql/extern/gmock"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 BufferPoolManagerTest"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BufferPoolManagerTest/fast">
+				<Option output="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/BufferPoolManagerTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/zty/Documents/Courses/Database/minisql/extern/gmock"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 BufferPoolManagerTest/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="check">
 				<Option working_dir="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test"/>
 				<Option type="4"/>
@@ -183,6 +227,60 @@
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/extern/gmock/gmock_main.cc">
 			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/IndexMeta.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/IndexMeta.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/TableMeta.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/TableMeta.h">
+			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Command.cpp">
 			<Option target="Minisql"/>
@@ -250,7 +348,40 @@
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Sql.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/shell.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/common/Config.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/DbInterface.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/DbInterface.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/Shell.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.h">
 			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp">
@@ -258,6 +389,9 @@
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.h">
 			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/test/buffer/BufferPoolManagerTest.cpp">
+			<Option target="BufferPoolManagerTest"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/test/buffer/LruReplacerTest.cpp">
 			<Option target="LruReplacerTest"/>
@@ -269,6 +403,9 @@
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest.txt">
+			<Option virtualFolder="CMake Files\data\"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/test.txt">
 			<Option virtualFolder="CMake Files\data\"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction0.txt">

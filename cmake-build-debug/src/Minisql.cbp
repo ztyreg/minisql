@@ -60,6 +60,60 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/IndexMeta.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/IndexMeta.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/TableMeta.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/TableMeta.h">
+			<Option target="Minisql"/>
+		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Command.cpp">
 			<Option target="Minisql"/>
 		</Unit>
@@ -126,7 +180,40 @@
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Sql.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/shell.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/common/Config.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/DbInterface.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/DbInterface.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/Shell.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.h">
 			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp">
@@ -142,6 +229,9 @@
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest.txt">
+			<Option virtualFolder="CMake Files\data\"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/test.txt">
 			<Option virtualFolder="CMake Files\data\"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction0.txt">

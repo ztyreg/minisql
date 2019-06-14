@@ -50,6 +50,7 @@ Page *BufferPoolManager::fetchPage(page_id_t pageId)
     // TODO page table
     for (int i = 0; i < poolSize; i++) {
         if (pages[i].pageId == pageId) {
+            cout << "Found page in page table" << endl;
             return &pages[i];
         }
     }
@@ -62,11 +63,13 @@ Page *BufferPoolManager::fetchPage(page_id_t pageId)
 
     } else {
         // fetch from free list
+        cout << "New page in free list" << endl;
         page = freeList->front();
         freeList->pop_front();
     }
 
     //retrieve the physical page
+    cout << "Retrieving physical page #" << pageId << " ..." << endl;
     diskManager->readPage(pageId, page->data);
     page->pageId = pageId;
     assert(!page->isDirty);

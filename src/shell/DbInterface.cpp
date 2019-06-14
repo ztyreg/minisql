@@ -4,7 +4,6 @@
 
 #include "DbInterface.h"
 #include "../buffer/TablePage.h"
-#include "../buffer/DbMetaPage.h"
 #include "../common/Config.h"
 #include <iostream>
 
@@ -14,18 +13,23 @@ void DbInterface::init(string name)
     bufferPoolManager = new BufferPoolManager(BUFFER_POOL_SIZE, diskManager);
     // read page 0, which is used to store metadata
 
-    Page *metaPage = bufferPoolManager->fetchPage(0);
-    if (metaPage == nullptr) {
-        metaPage = bufferPoolManager->newPage(0);
-    }
+    dbMetaPage = new DbMetaPage(*bufferPoolManager->fetchPage(0));
+    dbMetaPage->parsePage();
+
+//    Page *metaPage = bufferPoolManager->fetchPage(0);
+//    if (metaPage == nullptr) {
+//        metaPage = bufferPoolManager->newPage(0);
+//    }
 
 }
 
 DbInterface::~DbInterface()
 {
+
+
+    delete dbMetaPage;
     delete bufferPoolManager;
     delete diskManager;
-
 }
 
 DbInterface::DbInterface()
@@ -35,12 +39,11 @@ DbInterface::DbInterface()
 
 void DbInterface::writeMeta(string tableName, string data)
 {
-    char test[PAGE_SIZE] = "write test";
-//    diskManager->writePage(0, test);
+    dbMetaPage->composePage();
+    cout << "Writing db metadata ..." << dbMetaPage->data << endl;
+    diskManager->replacePage(0, dbMetaPage->data);
 
 
-    auto *dbMetaPage = static_cast<DbMetaPage *>(bufferPoolManager->fetchPage(0));
-    dbMetaPage->parsePage();
 
 
 

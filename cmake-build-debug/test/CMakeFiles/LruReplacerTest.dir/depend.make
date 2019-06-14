@@ -4,5 +4,7 @@
 test/CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o: ../extern/gmock/gtest/gtest.h
 test/CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o: ../src/buffer/LruReplacer.cpp
 test/CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o: ../src/buffer/LruReplacer.h
+test/CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o: ../src/buffer/Page.h
+test/CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o: ../src/common/Config.h
 test/CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o: ../test/buffer/LruReplacerTest.cpp
 

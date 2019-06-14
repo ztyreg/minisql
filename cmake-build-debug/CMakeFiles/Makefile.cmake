@@ -49,6 +49,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../data/miniSQLTest/instruction8.txt"
   "../data/miniSQLTest/instruction9.txt"
   "../data/miniSQLTest/student.txt"
+  "../data/test.txt"
   "../src/CMakeLists.txt"
   "../test/CMakeLists.txt"
   )
@@ -61,6 +62,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "src/test.txt"
   "src/miniSQLTest.txt"
   "src/instruction0.txt"
   "src/instruction1.txt"
@@ -82,6 +84,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/Minisql.dir/DependInfo.cmake"
   "test/CMakeFiles/LruReplacerTest.dir/DependInfo.cmake"
+  "test/CMakeFiles/BufferPoolManagerTest.dir/DependInfo.cmake"
   "test/CMakeFiles/check.dir/DependInfo.cmake"
   "test/CMakeFiles/gtest.dir/DependInfo.cmake"
   )

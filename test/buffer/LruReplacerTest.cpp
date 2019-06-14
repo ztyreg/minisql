@@ -9,7 +9,7 @@
 #include "gtest/gtest.h"
 
 
-TEST(LRUReplacerTest, SampleTest) {
+TEST(LruReplacerTest, SampleTest) {
     LruReplacer<int> lruReplacer;
 
     EXPECT_EQ(0, lruReplacer.size());

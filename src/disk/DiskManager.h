@@ -19,7 +19,7 @@ private:
     page_id_t nextPageId;
 
 public:
-    DiskManager(const string &dbName);
+    explicit DiskManager(const string& dbName);
 
     virtual ~DiskManager();
 
@@ -32,6 +32,7 @@ public:
 
     int getFileSize(const std::string &file_name);
 
+    void replacePage(page_id_t pageId, const char *pageData);
 };
 
 
