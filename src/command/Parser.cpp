@@ -33,6 +33,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
         if (tokens[0] == "create" && tokens[1] == "table") {
             ///create table
             auto * createTable = new CreateTable;
+            createTable->setDdl(sqlString);
             createTable->setTableName(tokens[2]);
             if (tokens[3] != "(") throw runtime_error("Syntax error!");
 

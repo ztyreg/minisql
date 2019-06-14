@@ -75,13 +75,15 @@ Result CreateTable::execute(DbInterface &db)
     // store table metadata
     auto* tableMeta = new TableMeta();
     // TODO: store metadata
+    // page 0 is used to store metadata
 
     if (tableMeta->tableExists(tableName)) {
         return result;// TODO
     }
 
 
-    db.writeData(tableName, "test");
+    // store DDL as metadata
+    db.writeMeta(tableName, getDdl());
 
 
 
@@ -93,5 +95,15 @@ Result CreateTable::execute(DbInterface &db)
 
 CreateTable::CreateTable()
 {}
+
+const string &CreateTable::getDdl() const
+{
+    return Ddl;
+}
+
+void CreateTable::setDdl(const string &ddl)
+{
+    Ddl = ddl;
+}
 
 

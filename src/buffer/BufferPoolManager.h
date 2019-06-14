@@ -25,12 +25,14 @@ private:
 public:
     BufferPoolManager(int poolSize, DiskManager *diskManager);
 
+    virtual ~BufferPoolManager();
+
     /**
      * Allocate new page
      * @param pageId: stores page ID
      * @return
      */
-    Page *newPage(page_id_t &pageId);
+    Page *newPage(page_id_t pageId);
 
     /**
      * Deallocate page
@@ -59,6 +61,7 @@ public:
 
 
 };
+
 
 
 #endif //MINISQL_BUFFERPOOLMANAGER_H

@@ -8,6 +8,7 @@
 #include <cstdint>
 
 #define PAGE_SIZE 4096
+#define BUFFER_POOL_SIZE 1024
 #define INVALID_PAGE_ID -1
 
 typedef uint32_t page_id_t;

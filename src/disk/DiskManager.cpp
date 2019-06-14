@@ -3,6 +3,7 @@
 //
 
 #include <sys/stat.h>
+#include <iostream>
 #include "DiskManager.h"
 #include "../common/Config.h"
 
@@ -32,7 +33,7 @@ void DiskManager::writePage(page_id_t pageId, const char *pageData)
     dbIo.write(pageData, PAGE_SIZE);
     // I/O error
     if (dbIo.bad()) {
-        throw runtime_error("I/O error while writing!");
+        return;
     }
     dbIo.flush();
 
@@ -41,17 +42,16 @@ void DiskManager::writePage(page_id_t pageId, const char *pageData)
 void DiskManager::readPage(page_id_t pageId, char *pageData)
 {
     int offset = pageId * PAGE_SIZE;
-    char *tempData = nullptr;
     // check if read beyond file length
     if (offset > getFileSize(dbName)) {
-        throw runtime_error("I/O error while writing!");
+        cerr << "I/O error while reading" << endl;
     } else {
         dbIo.seekp(offset);
-        dbIo.read(tempData, PAGE_SIZE);
+        dbIo.read(pageData, PAGE_SIZE);
         int readCount = dbIo.gcount();
         if (readCount < PAGE_SIZE) {
+            //not a complete page
             memset(pageData + readCount, 0, PAGE_SIZE - readCount);
-            throw runtime_error("I/O error while reading (debugged)!");
         }
     }
 

@@ -14,6 +14,7 @@
 class CreateTable : public Command
 {
 private:
+    string Ddl = "";
     string tableName = "";
     string primaryKey = "";
     typedef struct column_struct {
@@ -27,6 +28,10 @@ private:
 
 public:
     CreateTable();
+
+    const string &getDdl() const;
+
+    void setDdl(const string &ddl);
 
     const string &getTableName() const;
 

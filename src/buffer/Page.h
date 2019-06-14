@@ -16,6 +16,7 @@ private:
     char data[PAGE_SIZE];
 
 public:
+    void printData();
 
 
 };
