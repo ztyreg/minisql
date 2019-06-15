@@ -9,7 +9,7 @@
 #include <vector>
 #include <iostream>
 #include "Command.h"
-#include "../shell/DbInterface.h"
+#include "../catalog/DbInterface.h"
 
 class CreateTable : public Command
 {

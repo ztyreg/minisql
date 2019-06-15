@@ -17,11 +17,11 @@ BufferPoolManager::BufferPoolManager(int poolSize, DiskManager *diskManager)
     }
 }
 
-Page *BufferPoolManager::newPage(page_id_t pageId)
+Page *BufferPoolManager::newPage(page_id_t &pageId)
 {
     Page *page = nullptr;
     if (!freeList->empty()) {
-        page = *freeList->begin();
+        page = freeList->front();
         freeList->pop_front();
         //TODO dirty?
     } else {
@@ -36,7 +36,9 @@ Page *BufferPoolManager::newPage(page_id_t pageId)
 
     }
 
-    return nullptr;
+    pageId = diskManager->allocatePage();
+
+    return page;
 }
 
 bool BufferPoolManager::deletePage(page_id_t pageId)
@@ -44,6 +46,13 @@ bool BufferPoolManager::deletePage(page_id_t pageId)
     return false;
 }
 
+/**
+ * (1) Requested page in buffer ? return page : (2) ask DiskManager
+ * (2) Free frames ? random one : (3) victim
+ * (3) Dirty ? write and read : read
+ * @param pageId
+ * @return
+ */
 Page *BufferPoolManager::fetchPage(page_id_t pageId)
 {
     // page already in ?

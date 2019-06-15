@@ -8,7 +8,7 @@
 #include <string>
 #include <ostream>
 #include "Command.h"
-#include "../shell/DbInterface.h"
+#include "../catalog/DbInterface.h"
 
 using namespace std;
 

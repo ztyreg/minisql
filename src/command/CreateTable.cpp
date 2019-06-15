@@ -3,7 +3,6 @@
 //
 
 #include "CreateTable.h"
-#include "../catalog/TableMeta.h"
 #include "../table/TableHeap.h"
 
 const string &CreateTable::getTableName() const
@@ -83,7 +82,7 @@ Result CreateTable::execute(DbInterface &db)
 
 
     // store DDL as metadata
-    db.writeMeta(tableName, getDdl());
+    db.writeTableMeta(tableName, getDdl());
 
 
 

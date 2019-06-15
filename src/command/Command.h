@@ -9,7 +9,7 @@
 #include <vector>
 #include <iostream>
 #include "Result.h"
-#include "../shell/DbInterface.h"
+#include "../catalog/DbInterface.h"
 
 using namespace std;
 

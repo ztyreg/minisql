@@ -27,34 +27,13 @@ public:
 
     virtual ~BufferPoolManager();
 
-    /**
-     * Allocate new page
-     * @param pageId: stores page ID
-     * @return
-     */
-    Page *newPage(page_id_t pageId);
+    /* new page ID is stored in pageId */
+    Page *newPage(page_id_t &pageId);
 
-    /**
-     * Deallocate page
-     * @param pageId
-     * @return
-     */
     bool deletePage(page_id_t pageId);
 
-    /**
-     * (1) Requested page in buffer ? return page : (2) ask DiskManager
-     * (2) Free frames ? random one : (3) victim
-     * (3) Dirty ? write and read : read
-     * @param pageId
-     * @return
-     */
     Page *fetchPage(page_id_t pageId);
 
-    /**
-     * Write Page object to disk
-     * @param pageId
-     * @return
-     */
     bool flushPage(page_id_t pageId);
 
     list<Page *> *freeList;

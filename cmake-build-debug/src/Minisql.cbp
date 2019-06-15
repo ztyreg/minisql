@@ -78,6 +78,18 @@
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.h">
 			<Option target="Minisql"/>
 		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexMetaPage.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexMetaPage.h">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexPage.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexPage.h">
+			<Option target="Minisql"/>
+		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp">
 			<Option target="Minisql"/>
 		</Unit>
@@ -102,16 +114,10 @@
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/IndexMeta.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/DbInterface.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/IndexMeta.h">
-			<Option target="Minisql"/>
-		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/TableMeta.cpp">
-			<Option target="Minisql"/>
-		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/TableMeta.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/DbInterface.h">
 			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Command.cpp">
@@ -193,12 +199,6 @@
 			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.h">
-			<Option target="Minisql"/>
-		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/DbInterface.cpp">
-			<Option target="Minisql"/>
-		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/DbInterface.h">
 			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/Shell.cpp">

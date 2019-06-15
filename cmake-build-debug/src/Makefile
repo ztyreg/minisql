@@ -206,6 +206,60 @@ buffer/DbMetaPage.cpp.s:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.s
 .PHONY : buffer/DbMetaPage.cpp.s
 
+buffer/IndexMetaPage.o: buffer/IndexMetaPage.cpp.o
+
+.PHONY : buffer/IndexMetaPage.o
+
+# target to build an object file
+buffer/IndexMetaPage.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.o
+.PHONY : buffer/IndexMetaPage.cpp.o
+
+buffer/IndexMetaPage.i: buffer/IndexMetaPage.cpp.i
+
+.PHONY : buffer/IndexMetaPage.i
+
+# target to preprocess a source file
+buffer/IndexMetaPage.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.i
+.PHONY : buffer/IndexMetaPage.cpp.i
+
+buffer/IndexMetaPage.s: buffer/IndexMetaPage.cpp.s
+
+.PHONY : buffer/IndexMetaPage.s
+
+# target to generate assembly for a file
+buffer/IndexMetaPage.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.s
+.PHONY : buffer/IndexMetaPage.cpp.s
+
+buffer/IndexPage.o: buffer/IndexPage.cpp.o
+
+.PHONY : buffer/IndexPage.o
+
+# target to build an object file
+buffer/IndexPage.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.o
+.PHONY : buffer/IndexPage.cpp.o
+
+buffer/IndexPage.i: buffer/IndexPage.cpp.i
+
+.PHONY : buffer/IndexPage.i
+
+# target to preprocess a source file
+buffer/IndexPage.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.i
+.PHONY : buffer/IndexPage.cpp.i
+
+buffer/IndexPage.s: buffer/IndexPage.cpp.s
+
+.PHONY : buffer/IndexPage.s
+
+# target to generate assembly for a file
+buffer/IndexPage.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.s
+.PHONY : buffer/IndexPage.cpp.s
+
 buffer/LruReplacer.o: buffer/LruReplacer.cpp.o
 
 .PHONY : buffer/LruReplacer.o
@@ -314,59 +368,32 @@ buffer/TablePage.cpp.s:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.s
 .PHONY : buffer/TablePage.cpp.s
 
-catalog/IndexMeta.o: catalog/IndexMeta.cpp.o
+catalog/DbInterface.o: catalog/DbInterface.cpp.o
 
-.PHONY : catalog/IndexMeta.o
-
-# target to build an object file
-catalog/IndexMeta.cpp.o:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/IndexMeta.cpp.o
-.PHONY : catalog/IndexMeta.cpp.o
-
-catalog/IndexMeta.i: catalog/IndexMeta.cpp.i
-
-.PHONY : catalog/IndexMeta.i
-
-# target to preprocess a source file
-catalog/IndexMeta.cpp.i:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/IndexMeta.cpp.i
-.PHONY : catalog/IndexMeta.cpp.i
-
-catalog/IndexMeta.s: catalog/IndexMeta.cpp.s
-
-.PHONY : catalog/IndexMeta.s
-
-# target to generate assembly for a file
-catalog/IndexMeta.cpp.s:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/IndexMeta.cpp.s
-.PHONY : catalog/IndexMeta.cpp.s
-
-catalog/TableMeta.o: catalog/TableMeta.cpp.o
-
-.PHONY : catalog/TableMeta.o
+.PHONY : catalog/DbInterface.o
 
 # target to build an object file
-catalog/TableMeta.cpp.o:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/TableMeta.cpp.o
-.PHONY : catalog/TableMeta.cpp.o
+catalog/DbInterface.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.o
+.PHONY : catalog/DbInterface.cpp.o
 
-catalog/TableMeta.i: catalog/TableMeta.cpp.i
+catalog/DbInterface.i: catalog/DbInterface.cpp.i
 
-.PHONY : catalog/TableMeta.i
+.PHONY : catalog/DbInterface.i
 
 # target to preprocess a source file
-catalog/TableMeta.cpp.i:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/TableMeta.cpp.i
-.PHONY : catalog/TableMeta.cpp.i
+catalog/DbInterface.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.i
+.PHONY : catalog/DbInterface.cpp.i
 
-catalog/TableMeta.s: catalog/TableMeta.cpp.s
+catalog/DbInterface.s: catalog/DbInterface.cpp.s
 
-.PHONY : catalog/TableMeta.s
+.PHONY : catalog/DbInterface.s
 
 # target to generate assembly for a file
-catalog/TableMeta.cpp.s:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/TableMeta.cpp.s
-.PHONY : catalog/TableMeta.cpp.s
+catalog/DbInterface.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.s
+.PHONY : catalog/DbInterface.cpp.s
 
 command/Command.o: command/Command.cpp.o
 
@@ -719,33 +746,6 @@ disk/DiskManager.cpp.s:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.s
 .PHONY : disk/DiskManager.cpp.s
 
-shell/DbInterface.o: shell/DbInterface.cpp.o
-
-.PHONY : shell/DbInterface.o
-
-# target to build an object file
-shell/DbInterface.cpp.o:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/DbInterface.cpp.o
-.PHONY : shell/DbInterface.cpp.o
-
-shell/DbInterface.i: shell/DbInterface.cpp.i
-
-.PHONY : shell/DbInterface.i
-
-# target to preprocess a source file
-shell/DbInterface.cpp.i:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/DbInterface.cpp.i
-.PHONY : shell/DbInterface.cpp.i
-
-shell/DbInterface.s: shell/DbInterface.cpp.s
-
-.PHONY : shell/DbInterface.s
-
-# target to generate assembly for a file
-shell/DbInterface.cpp.s:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/DbInterface.cpp.s
-.PHONY : shell/DbInterface.cpp.s
-
 shell/Shell.o: shell/Shell.cpp.o
 
 .PHONY : shell/Shell.o
@@ -872,6 +872,12 @@ help:
 	@echo "... buffer/DbMetaPage.o"
 	@echo "... buffer/DbMetaPage.i"
 	@echo "... buffer/DbMetaPage.s"
+	@echo "... buffer/IndexMetaPage.o"
+	@echo "... buffer/IndexMetaPage.i"
+	@echo "... buffer/IndexMetaPage.s"
+	@echo "... buffer/IndexPage.o"
+	@echo "... buffer/IndexPage.i"
+	@echo "... buffer/IndexPage.s"
 	@echo "... buffer/LruReplacer.o"
 	@echo "... buffer/LruReplacer.i"
 	@echo "... buffer/LruReplacer.s"
@@ -884,12 +890,9 @@ help:
 	@echo "... buffer/TablePage.o"
 	@echo "... buffer/TablePage.i"
 	@echo "... buffer/TablePage.s"
-	@echo "... catalog/IndexMeta.o"
-	@echo "... catalog/IndexMeta.i"
-	@echo "... catalog/IndexMeta.s"
-	@echo "... catalog/TableMeta.o"
-	@echo "... catalog/TableMeta.i"
-	@echo "... catalog/TableMeta.s"
+	@echo "... catalog/DbInterface.o"
+	@echo "... catalog/DbInterface.i"
+	@echo "... catalog/DbInterface.s"
 	@echo "... command/Command.o"
 	@echo "... command/Command.i"
 	@echo "... command/Command.s"
@@ -929,9 +932,6 @@ help:
 	@echo "... disk/DiskManager.o"
 	@echo "... disk/DiskManager.i"
 	@echo "... disk/DiskManager.s"
-	@echo "... shell/DbInterface.o"
-	@echo "... shell/DbInterface.i"
-	@echo "... shell/DbInterface.s"
 	@echo "... shell/Shell.o"
 	@echo "... shell/Shell.i"
 	@echo "... shell/Shell.s"

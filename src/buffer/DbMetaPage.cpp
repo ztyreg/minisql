@@ -13,7 +13,10 @@ DbMetaPage::~DbMetaPage()
 
 }
 
-void DbMetaPage::parsePage()
+/**
+ * @return true if successful, false if new db
+ */
+bool DbMetaPage::parsePage()
 {
     printData();
 
@@ -41,15 +44,21 @@ void DbMetaPage::parsePage()
 
         }
 
-
-
     } else {
         //new database or corrupted file
+        cout << "New db ..." << endl;
+        memcpy(data, "minisqlformat...", DBMETA_HEADER);
+        memcpy(data+DBMETA_HEADER, to_string(0).c_str(), DBMETA_COUNT);
+        return false;
 
     }
+
+    cout << "meta pages: ";
     for (const auto &entry : entries) {
-        cout << entry.first << entry.second << endl;
+        cout << entry.first << " " << entry.second << " ";
     }
+    cout << endl;
+    return true;
 }
 
 void DbMetaPage::composePage()

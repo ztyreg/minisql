@@ -9,6 +9,7 @@
 
 DiskManager::DiskManager(const string& dbName) : dbName(dbName), nextPageId(0)
 {
+    setNextPageId();
     dbIo.open(dbName, ios::binary | ios::in | ios::app | ios::out);
     // not exists
     if (!dbIo.is_open()) {
@@ -26,27 +27,17 @@ DiskManager::~DiskManager()
     dbIo.close();
 }
 
+void DiskManager::clearFile()
+{
+    dbIo.close();
+    dbIo.open(dbName, ios::binary | ios::trunc | ios::out);
+    dbIo.close();
+}
+
 void DiskManager::writePage(page_id_t pageId, const char *pageData)
 {
     dbIo.close();
     dbIo.open(dbName, ios::binary | ios::in | ios::app | ios::out);
-
-    int offset = pageId * PAGE_SIZE;
-    dbIo.seekp(offset);
-    dbIo.write(pageData, PAGE_SIZE);
-    // I/O error
-    if (dbIo.bad()) {
-        cerr << "I/O error while writing" << endl;
-        return;
-    }
-    dbIo.flush();
-
-}
-
-void DiskManager::replacePage(page_id_t pageId, const char *pageData)
-{
-    dbIo.close();
-    dbIo.open(dbName, ios::binary | ios::in | ios::trunc | ios::out);
 
     int offset = pageId * PAGE_SIZE;
     dbIo.seekp(offset);
@@ -90,3 +81,14 @@ page_id_t DiskManager::allocatePage()
     return nextPageId++;
 }
 
+void DiskManager::setNextPageId()
+{
+    if (getFileSize(dbName) % PAGE_SIZE != 0)
+        cerr << "Corrupt db file!" << endl;
+
+    nextPageId = getFileSize(dbName)/PAGE_SIZE;
+    // skip page 0
+    if (nextPageId == 0) nextPageId++;
+    cout << "File size: " << getFileSize(dbName) << endl;
+    cout << "Opened db. Next page ID: " << nextPageId << endl;
+}

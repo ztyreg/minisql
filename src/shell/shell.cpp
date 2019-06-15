@@ -6,7 +6,7 @@
 #include "../command/Result.h"
 #include "../command/Sql.h"
 #include "../util/StringUtils.h"
-#include "DbInterface.h"
+#include "../catalog/DbInterface.h"
 
 using namespace std;
 

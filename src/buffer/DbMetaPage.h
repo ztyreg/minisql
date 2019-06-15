@@ -12,13 +12,11 @@
 using namespace std;
 
 /**
-* Format (size in byte):
-*  -----------------------------------------------------------------
-* | RecordCount (4) | Entry_1 name (32) | Entry_1 root_id (4) | ... |
-*  -----------------------------------------------------------------
+* | HEADER (16) | record_count (4) | entry_1_name (32) | entry_1_meta_id (4) | ...
 */
 
 class DbMetaPage : public Page {
+    friend class DbInterface;
 private:
     map<string, int> entries;
 
@@ -28,7 +26,7 @@ public:
 
     virtual ~DbMetaPage();
 
-    void parsePage();
+    bool parsePage();
 
     void composePage();
 

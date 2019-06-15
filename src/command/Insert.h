@@ -7,7 +7,7 @@
 
 #include <ostream>
 #include "Command.h"
-#include "../shell/DbInterface.h"
+#include "../catalog/DbInterface.h"
 
 class Insert : public Command
 {

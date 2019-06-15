@@ -23,16 +23,18 @@ public:
 
     virtual ~DiskManager();
 
+    void clearFile();
+
     void writePage(page_id_t pageId, const char *pageData);
 
     void readPage(page_id_t pageId, char *pageData);
 
     page_id_t allocatePage();
 
+    void setNextPageId();
 
     int getFileSize(const std::string &file_name);
 
-    void replacePage(page_id_t pageId, const char *pageData);
 };
 
 

@@ -18,6 +18,7 @@ class DbInterface {
 private:
     DiskManager *diskManager;
     BufferPoolManager *bufferPoolManager;
+    TableHeap *tableHeap;
     map<string, int> tableStart;
     map<string, int> tableEnd;
     DbMetaPage *dbMetaPage;
@@ -30,7 +31,7 @@ public:
 
     void init(string name);
 
-    void writeMeta(string tableName, string data);
+    void writeTableMeta(string tableName, string data);
 
 };
 

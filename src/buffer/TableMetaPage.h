@@ -5,8 +5,21 @@
 #ifndef MINISQL_TABLEMETAPAGE_H
 #define MINISQL_TABLEMETAPAGE_H
 
+#include "Page.h"
+#include <string>
 
-class TableMetaPage {
+using namespace std;
+
+
+/**
+ * | root_id (4) | ddl_size (4) | CREATE TABLE … ;
+ */
+class TableMetaPage : Page {
+    friend class DbInterface;
+public:
+    explicit TableMetaPage(Page const& p) : Page(p) {};
+
+    void composePage(page_id_t rootId, string ddl);
 
 };
 
