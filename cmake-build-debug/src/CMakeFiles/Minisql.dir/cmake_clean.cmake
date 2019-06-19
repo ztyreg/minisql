@@ -23,6 +23,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o"
   "CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o"
   "CMakeFiles/Minisql.dir/shell/Shell.cpp.o"
+  "CMakeFiles/Minisql.dir/table/Table.cpp.o"
   "CMakeFiles/Minisql.dir/table/TableHeap.cpp.o"
   "CMakeFiles/Minisql.dir/table/Tuple.cpp.o"
   "CMakeFiles/Minisql.dir/util/StringUtils.cpp.o"

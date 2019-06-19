@@ -773,6 +773,33 @@ shell/Shell.cpp.s:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/shell/Shell.cpp.s
 .PHONY : shell/Shell.cpp.s
 
+table/Table.o: table/Table.cpp.o
+
+.PHONY : table/Table.o
+
+# target to build an object file
+table/Table.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/Table.cpp.o
+.PHONY : table/Table.cpp.o
+
+table/Table.i: table/Table.cpp.i
+
+.PHONY : table/Table.i
+
+# target to preprocess a source file
+table/Table.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/Table.cpp.i
+.PHONY : table/Table.cpp.i
+
+table/Table.s: table/Table.cpp.s
+
+.PHONY : table/Table.s
+
+# target to generate assembly for a file
+table/Table.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Minisql.dir/build.make src/CMakeFiles/Minisql.dir/table/Table.cpp.s
+.PHONY : table/Table.cpp.s
+
 table/TableHeap.o: table/TableHeap.cpp.o
 
 .PHONY : table/TableHeap.o
@@ -935,6 +962,9 @@ help:
 	@echo "... shell/Shell.o"
 	@echo "... shell/Shell.i"
 	@echo "... shell/Shell.s"
+	@echo "... table/Table.o"
+	@echo "... table/Table.i"
+	@echo "... table/Table.s"
 	@echo "... table/TableHeap.o"
 	@echo "... table/TableHeap.i"
 	@echo "... table/TableHeap.s"
