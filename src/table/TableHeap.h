@@ -7,8 +7,9 @@
 #ifndef MINISQL_TABLEHEAP_H
 #define MINISQL_TABLEHEAP_H
 
-#include "../buffer/Page.h"
 #include <string>
+#include "Table.h"
+
 
 using namespace std;
 
@@ -17,8 +18,7 @@ using namespace std;
  */
 class TableHeap {
 private:
-    string name;
-    Page *pages;
+    map<string, Table *> tables;
 public:
     explicit TableHeap();
 

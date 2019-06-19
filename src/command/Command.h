@@ -20,8 +20,7 @@ typedef struct whereType {
     string type;
 } whereClause;
 
-class Command
-{
+class Command {
 private:
     double total_time;
     clock_t start, end;
@@ -36,8 +35,7 @@ public:
 
 };
 
-class Unknown : public Command
-{
+class Unknown : public Command {
 public:
     Result execute(DbInterface &db) override;
 

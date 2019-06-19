@@ -372,6 +372,12 @@
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/Shell.cpp">
 			<Option target="Minisql"/>
 		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Table.cpp">
+			<Option target="Minisql"/>
+		</Unit>
+		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Table.h">
+			<Option target="Minisql"/>
+		</Unit>
 		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.cpp">
 			<Option target="Minisql"/>
 		</Unit>

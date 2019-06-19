@@ -11,12 +11,13 @@
 
 using namespace std;
 
-class Parser
-{
+class Parser {
 public:
     unique_ptr<Command> parse(string sqlString);
-    vector <whereClause> parseWhere(vector <string> tokens);
-    vector <string> getCommaSeparatedFields(vector <string>& tokens);
+
+    vector<whereClause> parseWhere(vector<string> tokens);
+
+    vector<string> getCommaSeparatedFields(vector<string> &tokens);
 
 };
 

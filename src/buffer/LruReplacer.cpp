@@ -4,6 +4,7 @@
 
 #include "LruReplacer.h"
 #include "Page.h"
+#include <iostream>
 
 template<class T>
 LruReplacer<T>::LruReplacer()

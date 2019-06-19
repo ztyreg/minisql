@@ -5,6 +5,7 @@
 #ifndef MINISQL_PAGE_H
 #define MINISQL_PAGE_H
 
+#include <cstring>
 #include "../common/Config.h"
 
 /**
@@ -28,6 +29,9 @@ protected:
 public:
     void printData();
 
+    page_id_t getPageId() const { return pageId; }
+
+    void resetMemory() { memset(data, 0, PAGE_SIZE); }
 
 
 };

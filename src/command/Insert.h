@@ -13,12 +13,7 @@ class Insert : public Command
 {
 private:
     string tableName;
-    typedef struct {
-        string type;
-        string field;
-    } value;
-
-    vector <value> values;
+    vector <value_t> values;
 
 public:
     Insert();
@@ -31,7 +26,7 @@ public:
 
     void addValue(string type, string field);
 
-    const vector<value> &getValues() const;
+    const vector<value_t> &getValues() const;
 
     friend ostream &operator<<(ostream &os, const Insert &insert);
 

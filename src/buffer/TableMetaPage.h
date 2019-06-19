@@ -5,8 +5,9 @@
 #ifndef MINISQL_TABLEMETAPAGE_H
 #define MINISQL_TABLEMETAPAGE_H
 
-#include "Page.h"
 #include <string>
+#include "Page.h"
+#include "vector"
 
 using namespace std;
 
@@ -16,10 +17,24 @@ using namespace std;
  */
 class TableMetaPage : Page {
     friend class DbInterface;
+private:
+    string ddl = "";
+    string tableName = "";
+    string primaryKey = "";
+    vector<column_t> columns; //column defined in Config.h
+
+    page_id_t rootId;
+
 public:
     explicit TableMetaPage(Page const& p) : Page(p) {};
 
+    void composePage();
+
     void composePage(page_id_t rootId, string ddl);
+
+    void parsePage();
+
+    const string &getDdl() const;
 
 };
 

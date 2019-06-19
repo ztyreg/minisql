@@ -24,14 +24,14 @@ void Insert::setTableName(const string &tableName)
     Insert::tableName = tableName;
 }
 
-const vector<Insert::value> &Insert::getValues() const
+const vector<value_t> &Insert::getValues() const
 {
     return values;
 }
 
 void Insert::addValue(string type, string field)
 {
-    value val;
+    value_t val;
     val.type = std::move(type);
     val.field = std::move(field);
     values.push_back(val);
@@ -40,8 +40,10 @@ void Insert::addValue(string type, string field)
 
 Result Insert::execute(DbInterface &db)
 {
-    cout << "\texecuting insert ..." << endl;
+    cout << "executing INSERT ..." << endl;
     Result result;
+
+    db.insertTuple(tableName, values);
 
     return result;
 

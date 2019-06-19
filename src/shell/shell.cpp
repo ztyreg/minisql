@@ -7,6 +7,8 @@
 #include "../command/Sql.h"
 #include "../util/StringUtils.h"
 #include "../catalog/DbInterface.h"
+#include "../common/Config.h"
+#include "../table/TableHeap.h"
 
 using namespace std;
 

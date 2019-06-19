@@ -18,7 +18,6 @@ DbMetaPage::~DbMetaPage()
  */
 bool DbMetaPage::parsePage()
 {
-    printData();
 
     //check header
     char header[DBMETA_HEADER+1];
@@ -30,7 +29,7 @@ bool DbMetaPage::parsePage()
     char tempName[33];
     char tempId[5];
     if (string(header) == "minisqlformat...") {
-        cout << "Parsing page ..." << endl;
+        cout << "Parsing db meta page ..." << endl;
         memcpy(tempCount, data+DBMETA_HEADER, DBMETA_COUNT);
         count = atoi(tempCount);
         for (int i = 0; i < count; ++i) {
@@ -53,17 +52,13 @@ bool DbMetaPage::parsePage()
 
     }
 
-    cout << "meta pages: ";
-    for (const auto &entry : entries) {
-        cout << entry.first << " " << entry.second << " ";
-    }
-    cout << endl;
     return true;
 }
 
 void DbMetaPage::composePage()
 {
 //    entries.insert(make_pair("takes", 4));
+    resetMemory();
 
     memcpy(data, "minisqlformat...", DBMETA_HEADER);
     memcpy(data+DBMETA_HEADER, to_string(entries.size()).c_str(), DBMETA_COUNT);

@@ -22,7 +22,7 @@ const string &CreateTable::getPrimaryKey() const
 
 void CreateTable::addColumn(string columnName, string dataType, int charLength, bool isUnique)
 {
-    column col;
+    column_t col;
     //pass by value, so use move
     col.columnName = std::move(columnName);
     col.dataType = std::move(dataType);
@@ -71,22 +71,8 @@ Result CreateTable::execute(DbInterface &db)
     Result result;
 
 
-    // store table metadata
-//    auto* tableMeta = new TableMeta();
-    // TODO: store metadata
-    // page 0 is used to store metadata
-
-//    if (tableMeta->tableExists(tableName)) {
-//        return result;// TODO
-//    }
-
-
     // store DDL as metadata
     db.writeTableMeta(tableName, getDdl());
-
-
-
-//    delete tableMeta;
 
     return result;
 

@@ -16,8 +16,10 @@ void DropTable::setTableName(const string &tableName)
 
 Result DropTable::execute(DbInterface &db)
 {
-    cout << "\texecuting drop table ... " << endl;
+    cout << "executing drop table ... " << endl;
     Result result;
+
+    db.deleteTableMeta(tableName);
 
     return result;
 

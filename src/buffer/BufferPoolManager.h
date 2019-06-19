@@ -9,6 +9,7 @@
 #include "Page.h"
 #include "../disk/DiskManager.h"
 #include "LruReplacer.h"
+#include <map>
 
 using namespace std;
 
@@ -16,9 +17,11 @@ class BufferPoolManager {
     friend class Page;
 private:
     int poolSize;
-    Page *pages;
+    Page *pages; //pages in memory of number PAGE_SIZE
     DiskManager *diskManager;
     LruReplacer<Page *> *replacer;
+    map<page_id_t, Page *> pageTable; //for quickly find page in pages
+    list<Page *> *freeList;
 
 
 
@@ -36,7 +39,6 @@ public:
 
     bool flushPage(page_id_t pageId);
 
-    list<Page *> *freeList;
 
 
 };

@@ -11,20 +11,13 @@
 #include "Command.h"
 #include "../catalog/DbInterface.h"
 
-class CreateTable : public Command
-{
+class CreateTable : public Command {
+    friend class TableMetaPage;
 private:
     string Ddl = "";
     string tableName = "";
     string primaryKey = "";
-    typedef struct column_struct {
-        string columnName;
-        string dataType; //int, float, char
-        int charLength; //0-255
-        bool isUnique;
-        bool isPrimaryKey;
-    } column;
-    vector <column> columns;
+    vector<column_t> columns; //column defined in Config.h
 
 public:
     CreateTable();

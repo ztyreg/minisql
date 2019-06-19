@@ -5,11 +5,12 @@
 #ifndef MINISQL_DBINTERFACE_H
 #define MINISQL_DBINTERFACE_H
 
-#include "../table/TableHeap.h"
 #include "../table/Tuple.h"
 #include "../disk/DiskManager.h"
 #include "../buffer/DbMetaPage.h"
 #include "../buffer/BufferPoolManager.h"
+#include "../buffer/TableMetaPage.h"
+
 #include <map>
 
 using namespace std;
@@ -18,11 +19,12 @@ class DbInterface {
 private:
     DiskManager *diskManager;
     BufferPoolManager *bufferPoolManager;
-    TableHeap *tableHeap;
     map<string, int> tableStart;
     map<string, int> tableEnd;
     DbMetaPage *dbMetaPage;
     void readMeta();
+
+//    map<string, Table *> tables;
 
 public:
     DbInterface();
@@ -31,9 +33,14 @@ public:
 
     void init(string name);
 
-    void writeTableMeta(string tableName, string data);
+    void writeTableMeta(const string& tableName, string data);
+
+    void deleteTableMeta(const string &tableName);
+
+    void insertTuple(const string &tableName, vector<value_t> tuple);
 
 };
+
 
 
 #endif //MINISQL_DBINTERFACE_H

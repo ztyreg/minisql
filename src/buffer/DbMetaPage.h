@@ -17,12 +17,14 @@ using namespace std;
 
 class DbMetaPage : public Page {
     friend class DbInterface;
+
 private:
     map<string, int> entries;
 
 
 public:
-    explicit DbMetaPage(Page const& p) : Page(p) {};
+    explicit DbMetaPage(Page const &p) : Page(p)
+    {};
 
     virtual ~DbMetaPage();
 
@@ -31,6 +33,12 @@ public:
     void composePage();
 
     void addMeta(string data);
+
+    inline int getEntryNumber()
+    { return entries.size(); }
+
+    inline bool entryExists(const string &name)
+    { return entries.find(name) != entries.end(); }
 
 };
 

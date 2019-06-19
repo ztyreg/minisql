@@ -6,10 +6,11 @@
 #include <iostream>
 
 BufferPoolManager::BufferPoolManager(int poolSize, DiskManager *diskManager)
-: poolSize(poolSize), diskManager(diskManager)
+        : poolSize(poolSize), diskManager(diskManager)
 {
     pages = new Page[poolSize];
     freeList = new list<Page *>;
+    replacer = new LruReplacer<Page *>;
 
     //initialize free list
     for (int i = 0; i < poolSize; ++i) {
@@ -23,20 +24,29 @@ Page *BufferPoolManager::newPage(page_id_t &pageId)
     if (!freeList->empty()) {
         page = freeList->front();
         freeList->pop_front();
-        //TODO dirty?
     } else {
         /* find a victim */
         if (!replacer->victim(page)) {
             return nullptr;
         }
+        cout << "\tBuffer: found victim page #" << page->pageId << endl;
         if (page->isDirty) {
             diskManager->writePage(page->pageId, page->data);
             page->isDirty = false;
         }
 
+        pageTable.erase(page->getPageId());
+
     }
 
     pageId = diskManager->allocatePage();
+
+    page->pageId = pageId;
+    page->isDirty = true;
+    page->resetMemory();
+    pageTable[pageId] = page;
+    replacer->insert(page);
+
 
     return page;
 }
@@ -55,32 +65,44 @@ bool BufferPoolManager::deletePage(page_id_t pageId)
  */
 Page *BufferPoolManager::fetchPage(page_id_t pageId)
 {
-    // page already in ?
-    // TODO page table
-    for (int i = 0; i < poolSize; i++) {
-        if (pages[i].pageId == pageId) {
-            cout << "Found page in page table" << endl;
-            return &pages[i];
-        }
+    Page *page = nullptr;
+    if (pageTable.find(pageId) != pageTable.end()) {
+        // page already in memory
+        cout << "\tBuffer: fetched page #" << pageId << " in page table" << endl;
+        page = pageTable[pageId];
+        replacer->insert(page);
+        return page;
     }
 
-    Page *page = nullptr;
+
     if (freeList->empty()) {
         // use replacer
+        cout << "\tBuffer: new page #" << pageId << " from replacer" << endl;
+        if (!replacer->victim(page)) {
+            return nullptr;
+        }
+        cout << "\tBuffer: found victim page #" << page->pageId << endl;
+        if (page->isDirty) {
+            diskManager->writePage(page->pageId, page->data);
+            page->isDirty = false;
+        }
+
+        pageTable.erase(page->getPageId());
 
         // flush dirty page
 
     } else {
         // fetch from free list
-        cout << "New page in free list" << endl;
+        cout << "\tBuffer: new page #" << pageId << " from free list" << endl;
         page = freeList->front();
         freeList->pop_front();
     }
 
     //retrieve the physical page
-    cout << "Retrieving physical page #" << pageId << " ..." << endl;
+    cout << "\tBuffer: retrieving physical page #" << pageId << " ..." << endl;
     diskManager->readPage(pageId, page->data);
     page->pageId = pageId;
+    replacer->insert(page);
     assert(!page->isDirty);
 
     return page;
@@ -93,6 +115,7 @@ bool BufferPoolManager::flushPage(page_id_t pageId)
 
 BufferPoolManager::~BufferPoolManager()
 {
+    delete replacer;
     delete freeList;
     delete [] pages;
 
