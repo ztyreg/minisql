@@ -21,8 +21,8 @@ Command::~Command()
 {
     end = clock();
     //time count stops 
-    total_time = ((double) (end - start)) / CLK_TCK;
-    cout << "Finished in " << total_time << " s" << endl;
+    total_time = ((double) (end - start));
+    cout << "[" << "Finished in " << total_time << "]" << endl;
 }
 
 Command::Command()

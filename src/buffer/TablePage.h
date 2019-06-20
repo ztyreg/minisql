@@ -31,12 +31,15 @@ public:
     /* initialize header */
     explicit TablePage(Page *p);
 
-    void composePage(page_id_t id, page_id_t prevId, page_id_t nextId,
-                     int size, int max, int count);
+    void composePage(page_id_t pageId, page_id_t prevId, page_id_t nextId, int size, int max, int count);
+
+    void composePage();
 
     void parsePage();
 
     bool pageFull();
+
+    void addTupleString(char *t);
 
 
 };

@@ -67,7 +67,7 @@ void CreateTable::addPrimaryKey(string column)
 
 Result CreateTable::execute(DbInterface &db)
 {
-    cout << "\texecuting create table ... " << endl;
+    cout << "EXECUTING CREATE TABLE ... " << endl;
     Result result;
 
 

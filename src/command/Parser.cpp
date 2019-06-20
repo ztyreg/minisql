@@ -21,13 +21,13 @@
  */
 unique_ptr<Command> Parser::parse(string sqlString)
 {
-    cout << "\tBegin parsing ... ";
-    cout << sqlString;
+    if (TRACKPARSE) cout << "\tBegin parsing ... ";
+    if (TRACKPARSE) cout << sqlString;
 
     vector <string> tokens = split(sqlString);
-    cout << "\tTokens ... ";
-    for (const auto &item : tokens) { cout << item << "+"; }
-    cout << endl;
+    if (TRACKPARSE) cout << "\tTokens ... ";
+    if (TRACKPARSE) for (const auto &item : tokens) { cout << item << "+"; }
+    if (TRACKPARSE) cout << endl;
 
     try {
         if (tokens[0] == "create" && tokens[1] == "table") {
@@ -83,7 +83,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
                 if (tokens[pos] == ")") break;
                 else if (tokens[pos++] != ",") throw runtime_error("Syntax error!");
             }
-            cout << *createTable << endl;
+            if (TRACKPARSE) cout << *createTable << endl;
             return unique_ptr<Command>(createTable);
 
         } else if (tokens[0] == "drop" && tokens[1] == "table") {
@@ -113,7 +113,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
                 else if (tokens[pos++] != ",") throw runtime_error("Syntax error!");
             }
 
-            cout << *createIndex << endl;
+            if (TRACKPARSE) cout << *createIndex << endl;
             return unique_ptr<Command>(createIndex);
 
         } else if (tokens[0] == "drop" && tokens[1] == "index") {
@@ -123,7 +123,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
 
             dropIndex->setIndexName(tokens[2]);
 
-            cout << *dropIndex << endl;
+            if (TRACKPARSE) cout << *dropIndex << endl;
             return unique_ptr<Command>(dropIndex);
 
         } else if (tokens[0] == "insert" && tokens[1] == "into" && tokens[3] == "values") {
@@ -162,7 +162,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
                 else if (tokens[pos++] != ",") throw runtime_error("Syntax error!");
             }
 
-            cout << *insert << endl;
+            if (TRACKPARSE) cout << *insert << endl;
             return unique_ptr<Command>(insert);
 
         } else if (tokens[0] == "delete" && tokens[1] == "from") {
@@ -180,7 +180,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
             tokens.erase(tokens.begin(), tokens.begin() + 4);
             del->setWheres(parseWhere(tokens));
 
-            cout << *del << endl;
+            if (TRACKPARSE) cout << *del << endl;
             return unique_ptr<Command>(del);
 
         } else if (tokens[0] == "select") {
@@ -210,13 +210,13 @@ unique_ptr<Command> Parser::parse(string sqlString)
                 }
             }
 
-            cout << *select << endl;
+            if (TRACKPARSE) cout << *select << endl;
             return unique_ptr<Command>(select);
 
         } else {
         }
     } catch (...) {
-        cout << "Syntax error!" << endl;
+        cerr << "Syntax error!" << endl;
     }
 
 

@@ -24,16 +24,16 @@ Page *BufferPoolManager::newPage(page_id_t &pageId)
 {
     Page *page = nullptr;
     if (!freeList->empty()) {
-        cout << "\tBuffer: new page (free list)" << endl;
+        if (TRACKBUFFER) cout << "\tBuffer: new page (free list)" << endl;
         page = freeList->front();
         freeList->pop_front();
     } else {
         /* find a victim */
-        cout << "\tBuffer: new page (replace)" << endl;
+        if (TRACKBUFFER) cout << "\tBuffer: new page (replace)" << endl;
         if (!replacer->victim(page)) {
             return nullptr;
         }
-        cout << "\tBuffer: victim page is #" << page->pageId << endl;
+        if (TRACKBUFFER) cout << "\tBuffer: victim page is #" << page->pageId << endl;
         if (page->isDirty) {
             diskManager->writePage(page->pageId, page->data);
             page->isDirty = false;
@@ -44,7 +44,7 @@ Page *BufferPoolManager::newPage(page_id_t &pageId)
     }
 
     pageId = diskManager->allocatePage();
-    cout << "\tBuffer: new page #" << pageId << endl;
+    if (TRACKBUFFER) cout << "\tBuffer: new page #" << pageId << endl;
 
     page->pageId = pageId;
     page->isDirty = true;
@@ -75,7 +75,7 @@ Page *BufferPoolManager::fetchPage(page_id_t pageId)
     Page *page = nullptr;
     if (pageTable.find(pageId) != pageTable.end()) {
         // page already in memory
-        cout << "\tBuffer: fetched page #" << pageId << " (page table)" << endl;
+        if (TRACKBUFFER) cout << "\tBuffer: fetched page #" << pageId << " (page table)" << endl;
         page = pageTable[pageId];
         replacer->insert(page);
         return page;
@@ -84,11 +84,11 @@ Page *BufferPoolManager::fetchPage(page_id_t pageId)
 
     if (freeList->empty()) {
         // use replacer
-        cout << "\tBuffer: fetched page #" << pageId << " (replace)" << endl;
+        if (TRACKBUFFER) cout << "\tBuffer: fetched page #" << pageId << " (replace)" << endl;
         if (!replacer->victim(page)) {
             return nullptr;
         }
-        cout << "\tBuffer: found victim page #" << page->pageId << endl;
+        if (TRACKBUFFER) cout << "\tBuffer: found victim page #" << page->pageId << endl;
         if (page->isDirty) {
             diskManager->writePage(page->pageId, page->data);
             page->isDirty = false;
@@ -100,13 +100,13 @@ Page *BufferPoolManager::fetchPage(page_id_t pageId)
 
     } else {
         // fetch from free list
-        cout << "\tBuffer: fetched page #" << pageId << " (free list)" << endl;
+        if (TRACKBUFFER) cout << "\tBuffer: fetched page #" << pageId << " (free list)" << endl;
         page = freeList->front();
         freeList->pop_front();
     }
 
     //retrieve the physical page
-    cout << "\tBuffer: retrieving physical page #" << pageId << " ..." << endl;
+    if (TRACKBUFFER) cout << "\tBuffer: retrieving physical page #" << pageId << " ..." << endl;
     diskManager->readPage(pageId, page->data);
     page->pageId = pageId;
     replacer->insert(page);
@@ -124,7 +124,7 @@ bool BufferPoolManager::flushPage(page_id_t pageId)
 
     diskManager->writePage(page->pageId, page->data);
     page->isDirty = false;
-    cout << "\tBuffer: flushed page #" << pageId << endl;
+    if (TRACKBUFFER) cout << "\tBuffer: flushed page #" << pageId << endl;
     return false;
 }
 

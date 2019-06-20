@@ -10,17 +10,29 @@
 
 using namespace std;
 
-void TablePage::composePage(page_id_t id, page_id_t prevId, page_id_t nextId,
-                            int size, int max, int count)
+void TablePage::composePage(page_id_t pageId, page_id_t prevId, page_id_t nextId, int size, int max, int count)
 {
     resetMemory();
     //pageId
-    memwrite_int(data, id);
+    memwrite_int(data, pageId);
     memwrite_int(data+TABLE_ID, prevId);
     memwrite_int(data+TABLE_ID+TABLE_PREVID, nextId);
     memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID, size);
     memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE, max);
-    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE+TABLE_COUNT, count);
+    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE+TABLE_MAX, count);
+
+}
+
+void TablePage::composePage()
+{
+    resetMemory();
+    //pageId
+    memwrite_int(data, pageId);
+    memwrite_int(data+TABLE_ID, prevId);
+    memwrite_int(data+TABLE_ID+TABLE_PREVID, nextId);
+    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID, size);
+    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE, max);
+    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE+TABLE_MAX, count);
 
 }
 
@@ -31,7 +43,7 @@ void TablePage::parsePage()
     memread_int(data+TABLE_ID+TABLE_PREVID, (int *)&nextId);
     memread_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID, &size);
     memread_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE, &max);
-    memread_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE+TABLE_COUNT, &count);
+    memread_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE+TABLE_MAX, &count);
 
 }
 
@@ -43,6 +55,13 @@ bool TablePage::pageFull()
 TablePage::TablePage(Page *p) : Page(*p)
 {
 
+}
+
+void TablePage::addTupleString(char *t)
+{
+    memcpy(data + TABLE_ID + TABLE_PREVID + TABLE_NEXTID + TABLE_SIZE +
+           TABLE_MAX + TABLE_COUNT + size * count, t, strlen(t));
+    count++;
 }
 
 

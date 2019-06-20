@@ -27,9 +27,12 @@ using namespace std;
 #define TABLE_NEXTID 4
 #define TABLE_COUNT 4
 #define TABLE_SIZE 4
+#define TABLE_MAX 4
 
 #define DEBUG false
-#define TEST true
+//#define TEST
+#define TRACKBUFFER false
+#define TRACKPARSE false
 
 typedef uint32_t page_id_t;
 

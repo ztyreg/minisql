@@ -40,7 +40,7 @@ void Insert::addValue(string type, string field)
 
 Result Insert::execute(DbInterface &db)
 {
-    cout << "executing INSERT ..." << endl;
+    cout << "EXECUTING INSERT ..." << endl;
     Result result;
 
     db.insertTuple(tableName, values);
