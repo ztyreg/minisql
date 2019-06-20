@@ -204,6 +204,7 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
     tablePage->parsePage();
 
     page_id_t nextId = tablePage->nextId;
+
     while (nextId != INVALID_PAGE_ID) {
         delete tablePage;
         tablePage = new TablePage(bufferPoolManager->fetchPage(nextId));
@@ -213,7 +214,6 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
 
     cout << "\tlast page ID #" << tablePage->pageId
          << " count: " << tablePage->count << endl;
-
 
     //tuple size are the same
 

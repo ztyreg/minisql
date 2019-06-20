@@ -26,12 +26,12 @@ void TablePage::composePage(page_id_t id, page_id_t prevId, page_id_t nextId,
 
 void TablePage::parsePage()
 {
-    memwrite_int(data, pageId);
-    memwrite_int(data+TABLE_ID, prevId);
-    memwrite_int(data+TABLE_ID+TABLE_PREVID, nextId);
-    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID, size);
-    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE, max);
-    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE+TABLE_COUNT, count);
+    memread_int(data, (int *)&pageId);
+    memread_int(data+TABLE_ID, (int *)&prevId);
+    memread_int(data+TABLE_ID+TABLE_PREVID, (int *)&nextId);
+    memread_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID, &size);
+    memread_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE, &max);
+    memread_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE+TABLE_COUNT, &count);
 
 }
 
