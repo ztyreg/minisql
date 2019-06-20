@@ -83,6 +83,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/Minisql.dir/DependInfo.cmake"
+  "test/CMakeFiles/StringUtilsTest.dir/DependInfo.cmake"
   "test/CMakeFiles/LruReplacerTest.dir/DependInfo.cmake"
   "test/CMakeFiles/BufferPoolManagerTest.dir/DependInfo.cmake"
   "test/CMakeFiles/check.dir/DependInfo.cmake"

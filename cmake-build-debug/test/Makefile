@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/zty/Documents/Courses/Database/minisql/cmake-build-deb
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,21 @@ preinstall/fast:
 depend:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+test/CMakeFiles/StringUtilsTest.dir/rule:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/StringUtilsTest.dir/rule
+.PHONY : test/CMakeFiles/StringUtilsTest.dir/rule
+
+# Convenience name for target.
+StringUtilsTest: test/CMakeFiles/StringUtilsTest.dir/rule
+
+.PHONY : StringUtilsTest
+
+# fast build rule for target.
+StringUtilsTest/fast:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/StringUtilsTest.dir/build.make test/CMakeFiles/StringUtilsTest.dir/build
+.PHONY : StringUtilsTest/fast
 
 # Convenience name for target.
 test/CMakeFiles/LruReplacerTest.dir/rule:
@@ -278,17 +293,45 @@ buffer/LruReplacerTest.cpp.s:
 	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/LruReplacerTest.dir/build.make test/CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.s
 .PHONY : buffer/LruReplacerTest.cpp.s
 
+util/StringUtilsTest.o: util/StringUtilsTest.cpp.o
+
+.PHONY : util/StringUtilsTest.o
+
+# target to build an object file
+util/StringUtilsTest.cpp.o:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/StringUtilsTest.dir/build.make test/CMakeFiles/StringUtilsTest.dir/util/StringUtilsTest.cpp.o
+.PHONY : util/StringUtilsTest.cpp.o
+
+util/StringUtilsTest.i: util/StringUtilsTest.cpp.i
+
+.PHONY : util/StringUtilsTest.i
+
+# target to preprocess a source file
+util/StringUtilsTest.cpp.i:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/StringUtilsTest.dir/build.make test/CMakeFiles/StringUtilsTest.dir/util/StringUtilsTest.cpp.i
+.PHONY : util/StringUtilsTest.cpp.i
+
+util/StringUtilsTest.s: util/StringUtilsTest.cpp.s
+
+.PHONY : util/StringUtilsTest.s
+
+# target to generate assembly for a file
+util/StringUtilsTest.cpp.s:
+	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(MAKE) -f test/CMakeFiles/StringUtilsTest.dir/build.make test/CMakeFiles/StringUtilsTest.dir/util/StringUtilsTest.cpp.s
+.PHONY : util/StringUtilsTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... StringUtilsTest"
 	@echo "... LruReplacerTest"
 	@echo "... BufferPoolManagerTest"
 	@echo "... rebuild_cache"
 	@echo "... check"
-	@echo "... edit_cache"
 	@echo "... gtest"
 	@echo "... __/extern/gmock/gmock-gtest-all.o"
 	@echo "... __/extern/gmock/gmock-gtest-all.i"
@@ -302,6 +345,9 @@ help:
 	@echo "... buffer/LruReplacerTest.o"
 	@echo "... buffer/LruReplacerTest.i"
 	@echo "... buffer/LruReplacerTest.s"
+	@echo "... util/StringUtilsTest.o"
+	@echo "... util/StringUtilsTest.i"
+	@echo "... util/StringUtilsTest.s"
 .PHONY : help
 
 

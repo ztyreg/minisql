@@ -23,6 +23,8 @@ private:
     string primaryKey = "";
     vector<column_t> columns; //column defined in Config.h
 
+    int tupleLength;
+
     page_id_t rootId;
 
 public:
@@ -35,6 +37,9 @@ public:
     void parsePage();
 
     const string &getDdl() const;
+
+    int getTupleLength() const;
+
 
 };
 

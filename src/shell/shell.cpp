@@ -12,6 +12,8 @@
 
 using namespace std;
 
+static_assert(sizeof(float) == sizeof(uint32_t), "");
+static_assert(sizeof(int) == sizeof(uint32_t), "");
 
 /**
  * print prompt and get SQL

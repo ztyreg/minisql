@@ -7,6 +7,7 @@
 #include "../command/CreateTable.h"
 #include <iostream>
 
+
 void TableMetaPage::composePage(page_id_t rootId, string ddl)
 {
     resetMemory();
@@ -43,6 +44,21 @@ void TableMetaPage::parsePage()
     primaryKey = meta->primaryKey;
     columns.swap(meta->columns);
 
+    tupleLength = 0;
+    for (const auto &item : columns) {
+        if (item.dataType == "int") {
+            tupleLength += 4;
+
+        } else if (item.dataType == "float") {
+            tupleLength += 4;
+
+        } else if (item.dataType == "char") {
+            tupleLength += item.charLength;
+
+        }
+
+
+    }
 
 }
 
@@ -64,3 +80,9 @@ const string &TableMetaPage::getDdl() const
 {
     return ddl;
 }
+
+int TableMetaPage::getTupleLength() const
+{
+    return tupleLength;
+}
+

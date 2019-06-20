@@ -124,6 +124,19 @@ Minisql/fast:
 .PHONY : Minisql/fast
 
 #=============================================================================
+# Target rules for targets named StringUtilsTest
+
+# Build rule for target.
+StringUtilsTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 StringUtilsTest
+.PHONY : StringUtilsTest
+
+# fast build rule for target.
+StringUtilsTest/fast:
+	$(MAKE) -f test/CMakeFiles/StringUtilsTest.dir/build.make test/CMakeFiles/StringUtilsTest.dir/build
+.PHONY : StringUtilsTest/fast
+
+#=============================================================================
 # Target rules for targets named LruReplacerTest
 
 # Build rule for target.
@@ -184,6 +197,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Minisql"
+	@echo "... StringUtilsTest"
 	@echo "... LruReplacerTest"
 	@echo "... BufferPoolManagerTest"
 	@echo "... check"

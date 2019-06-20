@@ -17,4 +17,12 @@ std::string rtrim_copy(std::string s);
 std::string trim_copy(std::string s);
 std::vector<std::string> split(const std::string& subject);
 std::string single_space(std::string const &input);
+int bstring_to_int(std::string bin);
+float bstring_to_float(std::string bin);
+std::string int_to_bstring(int bin);
+std::string float_to_bstring(float bin);
+void memwrite_int(char mem[], int n);
+void memwrite_float(char mem[], float n);
+void memread_int(char mem[], int *n);
+void memread_float(char mem[], float *n);
 #endif //PROJECT_STRINGUTILS_H

@@ -128,6 +128,7 @@ test/all:
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/StringUtilsTest.dir/clean
 test/clean: test/CMakeFiles/LruReplacerTest.dir/clean
 test/clean: test/CMakeFiles/BufferPoolManagerTest.dir/clean
 test/clean: test/CMakeFiles/check.dir/clean
@@ -139,6 +140,38 @@ test/clean: test/CMakeFiles/gtest.dir/clean
 test/preinstall:
 
 .PHONY : test/preinstall
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/StringUtilsTest.dir
+
+# All Build rule for target.
+test/CMakeFiles/StringUtilsTest.dir/all: test/CMakeFiles/gtest.dir/all
+	$(MAKE) -f test/CMakeFiles/StringUtilsTest.dir/build.make test/CMakeFiles/StringUtilsTest.dir/depend
+	$(MAKE) -f test/CMakeFiles/StringUtilsTest.dir/build.make test/CMakeFiles/StringUtilsTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=34,35 "Built target StringUtilsTest"
+.PHONY : test/CMakeFiles/StringUtilsTest.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/StringUtilsTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/StringUtilsTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles 0
+.PHONY : test/CMakeFiles/StringUtilsTest.dir/rule
+
+# Convenience name for target.
+StringUtilsTest: test/CMakeFiles/StringUtilsTest.dir/rule
+
+.PHONY : StringUtilsTest
+
+# clean rule for target.
+test/CMakeFiles/StringUtilsTest.dir/clean:
+	$(MAKE) -f test/CMakeFiles/StringUtilsTest.dir/build.make test/CMakeFiles/StringUtilsTest.dir/clean
+.PHONY : test/CMakeFiles/StringUtilsTest.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/StringUtilsTest.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/LruReplacerTest.dir
@@ -208,6 +241,7 @@ clean: test/CMakeFiles/BufferPoolManagerTest.dir/clean
 # Target rules for target test/CMakeFiles/check.dir
 
 # All Build rule for target.
+test/CMakeFiles/check.dir/all: test/CMakeFiles/StringUtilsTest.dir/all
 test/CMakeFiles/check.dir/all: test/CMakeFiles/LruReplacerTest.dir/all
 test/CMakeFiles/check.dir/all: test/CMakeFiles/BufferPoolManagerTest.dir/all
 	$(MAKE) -f test/CMakeFiles/check.dir/build.make test/CMakeFiles/check.dir/depend
@@ -217,7 +251,7 @@ test/CMakeFiles/check.dir/all: test/CMakeFiles/BufferPoolManagerTest.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/check.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles 0
 .PHONY : test/CMakeFiles/check.dir/rule
@@ -244,7 +278,7 @@ clean: test/CMakeFiles/check.dir/clean
 test/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f test/CMakeFiles/gtest.dir/build.make test/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=34,35,36 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=36,37,38 "Built target gtest"
 .PHONY : test/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

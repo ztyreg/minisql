@@ -10,8 +10,11 @@ using namespace std;
 
 void TablePage::composePage(page_id_t id, page_id_t prevId, page_id_t nextId)
 {
+    //pageId
     memcpy(data, to_string(id).c_str(), TABLE_ID);
+    //prevId
     memcpy(data+TABLE_ID, to_string(prevId).c_str(), TABLE_PREVID);
+    //nextId
     memcpy(data+TABLE_ID+TABLE_PREVID, to_string(nextId).c_str(), TABLE_NEXTID);
     memcpy(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID,
             to_string(TABLE_TUPLE_START).c_str(), TABLE_POINTER);
