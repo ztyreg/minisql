@@ -3,9 +3,12 @@
 
 test/CMakeFiles/BufferPoolManagerTest.dir/buffer/BufferPoolManagerTest.cpp.o
  ../extern/gmock/gtest/gtest.h
+ /Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.cpp
  /Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.h
+ /Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp
  /Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.h
  /Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.h
  /Users/zty/Documents/Courses/Database/minisql/src/common/Config.h
+ /Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.cpp
  /Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.h
  /Users/zty/Documents/Courses/Database/minisql/test/buffer/BufferPoolManagerTest.cpp

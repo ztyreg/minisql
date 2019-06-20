@@ -25,29 +25,25 @@ bool DbMetaPage::parsePage()
     memset(header + DBMETA_HEADER, 0, sizeof(char));
 
     int count;
-    char tempCount[5];
     char tempName[33];
-    char tempId[5];
+    int id;
     if (string(header) == "minisqlformat...") {
         cout << "Parsing db meta page ..." << endl;
-        memcpy(tempCount, data+DBMETA_HEADER, DBMETA_COUNT);
-        count = atoi(tempCount);
+        memread_int(data+DBMETA_HEADER, &count);
         for (int i = 0; i < count; ++i) {
             memcpy(tempName,
                     data+DBMETA_HEADER+DBMETA_COUNT+(DBMETA_NAME+DBMETA_ID)*i,
                     DBMETA_NAME);
-            memcpy(tempId,
-                    data+DBMETA_HEADER+DBMETA_COUNT+(DBMETA_NAME+DBMETA_ID)*i+DBMETA_NAME,
-                    DBMETA_ID);
-            entries.insert(make_pair(tempName, atoi(tempId)));
-
+            memread_int(data+DBMETA_HEADER+DBMETA_COUNT+(DBMETA_NAME+DBMETA_ID)*i+DBMETA_NAME,
+                    &id);
+            entries.insert(make_pair(tempName, id));
         }
 
     } else {
         //new database or corrupted file
         cout << "New db ..." << endl;
         memcpy(data, "minisqlformat...", DBMETA_HEADER);
-        memcpy(data+DBMETA_HEADER, to_string(0).c_str(), DBMETA_COUNT);
+        memwrite_int(data+DBMETA_HEADER, 0);
         return false;
 
     }
@@ -61,13 +57,13 @@ void DbMetaPage::composePage()
     resetMemory();
 
     memcpy(data, "minisqlformat...", DBMETA_HEADER);
-    memcpy(data+DBMETA_HEADER, to_string(entries.size()).c_str(), DBMETA_COUNT);
+    memwrite_int(data+DBMETA_HEADER, entries.size());
     int j = 0;
     for (auto const &entry : entries) {
         memcpy(data+DBMETA_HEADER+DBMETA_COUNT+(DBMETA_NAME+DBMETA_ID)*j,
                entry.first.c_str(), DBMETA_NAME);
-        memcpy(data+DBMETA_HEADER+DBMETA_COUNT+(DBMETA_NAME+DBMETA_ID)*j+DBMETA_NAME,
-               to_string(entry.second).c_str(), DBMETA_ID);
+        memwrite_int(data+DBMETA_HEADER+DBMETA_COUNT+(DBMETA_NAME+DBMETA_ID)*j+DBMETA_NAME,
+                entry.second);
         j++;
     }
 
@@ -76,5 +72,10 @@ void DbMetaPage::composePage()
 void DbMetaPage::addMeta(string data)
 {
 
+
+}
+
+DbMetaPage::DbMetaPage(Page *p) : Page(*p)
+{
 
 }

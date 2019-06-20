@@ -7,6 +7,7 @@
 
 #include <cstring>
 #include "../common/Config.h"
+#include "../util/StringUtils.h"
 
 /**
 * Format (size in byte):
@@ -18,6 +19,9 @@
 class Page {
     friend class BufferPoolManager;
     friend class DbInterface;
+    friend class DbMetaPage;
+    friend class TableMetaPage;
+    friend class TablePage;
 
 private:
     bool isDirty = false;

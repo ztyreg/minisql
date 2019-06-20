@@ -29,8 +29,7 @@ private:
     int count;
 public:
     /* initialize header */
-    explicit TablePage(Page const &p) : Page(p)
-    {};
+    explicit TablePage(Page *p);
 
     void composePage(page_id_t id, page_id_t prevId, page_id_t nextId,
                      int size, int max, int count);
@@ -39,7 +38,6 @@ public:
 
     bool pageFull();
 
-    page_id_t getNextId() const;
 
 };
 

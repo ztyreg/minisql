@@ -28,7 +28,8 @@ private:
     page_id_t rootId;
 
 public:
-    explicit TableMetaPage(Page const& p) : Page(p) {};
+
+    explicit TableMetaPage(Page *p);
 
     void composePage();
 

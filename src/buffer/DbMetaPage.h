@@ -23,8 +23,7 @@ private:
 
 
 public:
-    explicit DbMetaPage(Page const &p) : Page(p)
-    {};
+    explicit DbMetaPage(Page *p);
 
     virtual ~DbMetaPage();
 

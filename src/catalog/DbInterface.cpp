@@ -15,7 +15,7 @@ void DbInterface::init(string name)
     bufferPoolManager = new BufferPoolManager(BUFFER_POOL_SIZE, diskManager);
     // read page 0, which is used to store metadata
 
-    dbMetaPage = new DbMetaPage(*bufferPoolManager->fetchPage(0));
+    dbMetaPage = new DbMetaPage(bufferPoolManager->fetchPage(0));
     if (!dbMetaPage->parsePage()) {
         //new db
         diskManager->clearFile();
@@ -62,13 +62,16 @@ void DbInterface::writeTableMeta(const string &tableName, string data)
     //meta pages could be directly accessed
     //new page to store table meta
     page_id_t metaId;
+    //not the same page
+    Page *page1 = bufferPoolManager->newPage(metaId);
     auto *tableMetaPage =
-            new TableMetaPage(*bufferPoolManager->newPage(metaId));
+            new TableMetaPage(page1);
 
     //new table root page
     page_id_t rootId;
+    Page *page2 = bufferPoolManager->newPage(rootId);
     auto *tablePage =
-            new TablePage(*bufferPoolManager->newPage(rootId));
+            new TablePage(page2);
 
     //add table metadata
     tableMetaPage->composePage(rootId, std::move(data));
@@ -86,23 +89,39 @@ void DbInterface::writeTableMeta(const string &tableName, string data)
     dbMetaPage->composePage();
 
 
-    cout << "Wrting " << tableMetaPage->data << " to " << metaId << endl;
+    cout << "Wrting to " << metaId << endl;
     diskManager->writePage(metaId, tableMetaPage->data);
-    cout << "Wrting " << tablePage->data << " to " << rootId << endl;
+    memcpy(page1->data, tableMetaPage->data, PAGE_SIZE);
+    if (DEBUG) strcpy(TEST_CHAR, page1->data);
+
+    cout << "Wrting to " << rootId << endl;
     diskManager->writePage(rootId, tablePage->data);
+    memcpy(page2->data, tablePage->data, PAGE_SIZE);
+
     cout << "Wrting to page 0" << endl;
     diskManager->writePage(0, dbMetaPage->data);
 
 
-    //
-    //test
-    //
+#ifdef TEST
     cout << "CREATE TABLE test ..." << endl;
+    Page *pPage = bufferPoolManager->fetchPage(0);
     auto *testDbMetaPage =
-            new DbMetaPage(*bufferPoolManager->fetchPage(0));
+            new DbMetaPage(pPage);
     testDbMetaPage->parsePage();
     cout << "\tsize of entries now: " << testDbMetaPage->getEntryNumber() << endl;
+
+    Page *pPage2 = bufferPoolManager->fetchPage(metaId);
+    if (DEBUG) cout << "DEBUG: #" << pPage2->pageId << " " << pPage2 << endl;
+    auto *testTableMetaPage =
+            new TableMetaPage(pPage2);
+    if (DEBUG) cout << "DEBUG: #" << testTableMetaPage->pageId << " " << endl;
+    if (DEBUG) cout << strcmp(TEST_CHAR, testTableMetaPage->data) << endl;
+    testTableMetaPage->parsePage();
+    cout << "\tDDL:" << testTableMetaPage->ddl << endl;
+
+    delete testTableMetaPage;
     delete testDbMetaPage;
+#endif
 
     delete tablePage;
     delete tableMetaPage;
@@ -127,7 +146,7 @@ void DbInterface::deleteTableMeta(const string &tableName)
     //
     cout << "DROP TABLE test ..." << endl;
     auto *testDbMetaPage =
-            new DbMetaPage(*bufferPoolManager->fetchPage(0));
+            new DbMetaPage(bufferPoolManager->fetchPage(0));
     testDbMetaPage->parsePage();
     cout << "\tsize of entries now: " << testDbMetaPage->getEntryNumber() << endl;
     delete testDbMetaPage;
@@ -144,14 +163,11 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
 
     page_id_t metaId = dbMetaPage->entries[tableName];
     auto *tableMetaPage =
-            new TableMetaPage(*bufferPoolManager->fetchPage(metaId));
+            new TableMetaPage(bufferPoolManager->fetchPage(metaId));
     tableMetaPage->parsePage();
 
-    //
-    //test
-    //
+#ifdef TEST
     cout << "INSERT test ..." << endl;
-    cout << tableMetaPage->primaryKey << endl;
     for (const auto &item : tableMetaPage->columns) {
         if (item.dataType == "char") {
             cout << item.columnName << "(" << item.dataType << "[" << item.charLength << "])";
@@ -163,9 +179,7 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
         cout << " ";
     }
     cout << endl;
-    //
-    //end test
-    //
+#endif
 
     //check value type
     if (tableMetaPage->columns.size() != tuple.size()) {
@@ -173,7 +187,6 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
         return;
     }
     for (int i = 0; i < tuple.size(); ++i) {
-        cout << tableMetaPage->columns[i].dataType << tuple[i].type << endl;
         //int will be converted to float
         if (tableMetaPage->columns[i].dataType == "float" &&
             tuple[i].type == "int")
@@ -183,15 +196,23 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
         }
     }
 
-    cout << "HERE" << endl;
 
     //last table page
     page_id_t rootId = tableMetaPage->getRootId();
     auto *tablePage =
-            new TablePage(*bufferPoolManager->fetchPage(rootId));
+            new TablePage(bufferPoolManager->fetchPage(rootId));
     tablePage->parsePage();
 
-    page_id_t nextId;
+    page_id_t nextId = tablePage->nextId;
+    while (nextId != INVALID_PAGE_ID) {
+        delete tablePage;
+        tablePage = new TablePage(bufferPoolManager->fetchPage(nextId));
+        tablePage->parsePage();
+        nextId = tablePage->nextId;
+    }
+
+    cout << "\tlast page ID #" << tablePage->pageId
+         << " count: " << tablePage->count << endl;
 
 
     //tuple size are the same

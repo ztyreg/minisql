@@ -54,6 +54,16 @@ int main(int argc, char* argv[])
     unique_ptr<Command> command;
     cout << "Welcome to minisql shell." << endl;
 
+    //
+    //test
+    //
+    ofstream f;
+    f.open("dbfile", ios::out | ios::binary | ios::trunc);
+    f.close();
+    //
+    //end test
+    //
+
     DbInterface db;
     db.init("dbfile");
 

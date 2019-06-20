@@ -28,8 +28,12 @@ using namespace std;
 #define TABLE_COUNT 4
 #define TABLE_SIZE 4
 
+#define DEBUG false
+#define TEST true
+
 typedef uint32_t page_id_t;
 
+extern char TEST_CHAR[4096];
 
 /**
  * table column data types and features

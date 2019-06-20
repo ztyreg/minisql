@@ -12,11 +12,11 @@ void TableMetaPage::composePage(page_id_t rootId, string ddl)
 {
     resetMemory();
 
-    memcpy(data, to_string(rootId).c_str(), TABLEMETA_ID);
+    memwrite_int(data, rootId);
 
     const char *ddlArray = ddl.c_str();
     int ddlSize = strlen(ddlArray);
-    memcpy(data+TABLEMETA_ID, to_string(ddlSize).c_str(), TABLEMETA_SIZE);
+    memwrite_int(data+TABLEMETA_ID, ddlSize);
 
     memcpy(data+TABLEMETA_ID+TABLEMETA_SIZE, ddl.c_str(), ddlSize);
 
@@ -24,15 +24,14 @@ void TableMetaPage::composePage(page_id_t rootId, string ddl)
 
 void TableMetaPage::parsePage()
 {
-    char tempId[5];
-    char tempSize[5];
-    char tempDdl[4096];
+    if (DEBUG) cout << strcmp(TEST_CHAR, data) << endl;
+    int size;
+    char tempDdl[PAGE_SIZE];
+    memset(tempDdl, 0, PAGE_SIZE);
 
-    memcpy(tempId, data, TABLEMETA_ID);
-    memcpy(tempSize, data+TABLEMETA_ID, TABLEMETA_SIZE);
-    rootId = atoi(tempId);
+    memread_int(data, (int *)(&rootId));
+    memread_int(data+TABLEMETA_ID, (int *)(&size));
 
-    int size = atoi(tempSize);
     memcpy(tempDdl, data+TABLEMETA_ID+TABLEMETA_SIZE, size);
     ddl = string(tempDdl);
 
@@ -96,4 +95,9 @@ page_id_t TableMetaPage::getRootId() const
 {
     return rootId;
 }
+
+TableMetaPage::TableMetaPage(Page *p) : Page(*p)
+{
+}
+
 
