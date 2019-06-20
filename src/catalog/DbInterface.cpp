@@ -72,8 +72,13 @@ void DbInterface::writeTableMeta(const string &tableName, string data)
 
     //add table metadata
     tableMetaPage->composePage(rootId, std::move(data));
+    tableMetaPage->parsePage();
+    cout << "\tnew table with tuple length "
+         << tableMetaPage->getTupleLength() << endl;
     //add table data
-    tablePage->composePage(rootId, INVALID_PAGE_ID, INVALID_PAGE_ID);
+    tablePage->composePage(rootId, INVALID_PAGE_ID, INVALID_PAGE_ID,
+                           tableMetaPage->getTupleLength(),
+                           tableMetaPage->calMaxNumOfTuples(), 0);
 
     //add db metadata
     dbMetaPage->entries.insert(make_pair(tableName, metaId));
@@ -158,6 +163,9 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
         cout << " ";
     }
     cout << endl;
+    //
+    //end test
+    //
 
     //check value type
     if (tableMetaPage->columns.size() != tuple.size()) {
@@ -176,7 +184,14 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
     }
 
     cout << "HERE" << endl;
+
     //last table page
+    page_id_t rootId = tableMetaPage->getRootId();
+    auto *tablePage =
+            new TablePage(*bufferPoolManager->fetchPage(rootId));
+    tablePage->parsePage();
+
+    page_id_t nextId;
 
 
     //tuple size are the same
@@ -189,5 +204,6 @@ void DbInterface::insertTuple(const string &tableName, vector<value_t> tuple)
 
 
     delete tableMetaPage;
+    delete tablePage;
 }
 

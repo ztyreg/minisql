@@ -25,11 +25,8 @@ using namespace std;
 #define TABLE_ID 4
 #define TABLE_PREVID 4
 #define TABLE_NEXTID 4
-#define TABLE_POINTER 4
 #define TABLE_COUNT 4
-#define TABLE_OFFSET 4
 #define TABLE_SIZE 4
-#define TABLE_TUPLE_START 512
 
 typedef uint32_t page_id_t;
 

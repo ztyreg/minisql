@@ -40,6 +40,9 @@ public:
 
     int getTupleLength() const;
 
+    int calMaxNumOfTuples();
+
+    page_id_t getRootId() const;
 
 };
 

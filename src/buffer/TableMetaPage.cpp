@@ -86,3 +86,14 @@ int TableMetaPage::getTupleLength() const
     return tupleLength;
 }
 
+int TableMetaPage::calMaxNumOfTuples()
+{
+    return (PAGE_SIZE-TABLE_ID-TABLE_PREVID-TABLE_NEXTID-
+    TABLEMETA_SIZE-TABLE_COUNT)/tupleLength;
+}
+
+page_id_t TableMetaPage::getRootId() const
+{
+    return rootId;
+}
+
