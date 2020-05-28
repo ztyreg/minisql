@@ -1,8 +1,14 @@
-# minisql
+# Minisql
 
 ## Introduction
 
-A DBMS with create table/drop table/select/insert/delete operations. Implemented SQL interpreter, record manager and memory buffer with page replacement algorithm.
+A DBMS (Database Management System) from scratch.
+
+**Supported operations:** create table/drop table/select/insert/delete operations. 
+
+**Other features:** SQL interpreter, record manager and memory buffer with page replacement algorithm (LRU).
+
+## Get Started
 
 Executable and test files are in the `cmake-build-debug/src/` folder.
 
