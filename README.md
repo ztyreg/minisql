@@ -2,19 +2,21 @@
 
 ## Introduction
 
-A DBMS (Database Management System) from scratch.
+This is a DBMS (Database Management System).
 
 **Supported operations:** create table/drop table/select/insert/delete operations. 
 
 **Other features:** SQL interpreter, record manager and memory buffer with page replacement algorithm (LRU).
 
-## Get Started
+Please see [this PDF](./Features.pdf) for a complete list of features (in Mandarin).
+
+### Getting Started
 
 Executable and test files are in the `cmake-build-debug/src/` folder.
 
 Run `cmake-build-debug/src/Minisql` to start.
 
-## Samples
+### Samples
 
 `student.txt`
 
@@ -41,3 +43,4 @@ insert into student2 values(1080100006,'name6',89.5);
 insert into student2 values(1080100007,'name7',63);
 ```
 
+## Features
