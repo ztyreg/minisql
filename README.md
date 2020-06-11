@@ -8,7 +8,7 @@ This is a DBMS (Database Management System).
 
 **Other features:** SQL interpreter, record manager and memory buffer with page replacement algorithm (LRU).
 
-Please see [this PDF](./Features.pdf) for a complete list of features (in Mandarin).
+Please see [this PDF](./Features.md) for a complete list of features (in Mandarin).
 
 ### Getting Started
 
