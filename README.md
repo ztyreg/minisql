@@ -44,4 +44,4 @@ insert into student2 values(1080100007,'name7',63);
 ```
 
 ## Features
-Please see Features.md for a complete list of features (in Mandarin).
+Please see [Features.md](./Features.md) for a complete list of features (in Mandarin).
