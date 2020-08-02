@@ -47,7 +47,7 @@ insert into student2 values(1080100007,'name7',63);
 
 ### High-Level Design
 
-![design](./design.png =250x)
+![design](./design.png =100x20)
 
 ### Implmentations
 
