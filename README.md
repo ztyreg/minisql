@@ -47,8 +47,7 @@ insert into student2 values(1080100007,'name7',63);
 
 ### High-Level Design
 
-<img src="https://github.com/ztyreg/minisql/design.png" width="200">
-![design](./design.png =100x20)
+<img src="https://github.com/ztyreg/minisql/blob/master/design.png" width="200">
 
 ### Implmentations
 
