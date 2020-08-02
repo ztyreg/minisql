@@ -51,4 +51,4 @@ insert into student2 values(1080100007,'name7',63);
 
 ### Implmentations
 
-Please see [Features.md](./Features.md) for a complete list of features (in Chinese).
+Please see [Features.md](./Features.md =250x) for a complete list of features (in Chinese).
