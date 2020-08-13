@@ -9,8 +9,10 @@ This is a DBMS (Database Management System).
 create table/drop table/select/insert/delete operations. 
 
 ### Throughput
-
-5000 insertions finished in 65s on Mac Mini 2018
+On Mac Mini 2018:
+* 1000 insertions finished in 4s
+* 5000 insertions finished in 65s
+* 10000 insertions finished in 270s
 
 ### Other features 
 
