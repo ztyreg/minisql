@@ -10,6 +10,10 @@ This is a DBMS (Database Management System).
 
 Please see [Features.md](./Features.md) for a complete list of features (in Chinese).
 
+### Throughput
+
+5000 insertions finished in 65s on Mac Mini 2018
+
 ### Getting Started
 
 Executable and test files are in the `cmake-build-debug/src/` folder.
