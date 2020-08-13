@@ -9,7 +9,7 @@ This is a DBMS (Database Management System).
 create table/drop table/select/insert/delete operations. 
 
 ### Throughput
-On Mac Mini 2018:
+On Mac Mini 2018 (time complexity is O(n^2) without the index):
 * 1000 insertions finished in 4s
 * 5000 insertions finished in 65s
 * 10000 insertions finished in 270s
