@@ -33,14 +33,13 @@ public:
 
     void composePage(page_id_t pageId, page_id_t prevId, page_id_t nextId, int size, int max, int count);
 
-    void composePage();
+    void refreshPage();
 
     void parsePage();
 
     bool pageFull();
 
-    void addTupleString(char *t);
-
+    void addTupleString(char *t, int len);
 
 };
 

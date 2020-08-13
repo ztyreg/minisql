@@ -13,7 +13,7 @@ class DropIndex : public Command
 {
 private:
     string indexName;
-
+    string tableName;
 public:
     DropIndex();
 
@@ -22,6 +22,10 @@ public:
     const string &getIndexName() const;
 
     void setIndexName(const string &indexName);
+
+    const string &getTableName() const;
+
+    void setTableName(const string &tableName);
 
     friend ostream &operator<<(ostream &os, const DropIndex &dropIndex);
 

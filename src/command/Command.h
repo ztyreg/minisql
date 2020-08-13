@@ -13,17 +13,9 @@
 
 using namespace std;
 
-typedef struct whereType {
-    string columnName;
-    string op;
-    string field;
-    string type;
-} whereClause;
 
 class Command {
 private:
-    double total_time;
-    clock_t start, end;
 public:
     Command();
 

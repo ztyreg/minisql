@@ -22,6 +22,16 @@ void DropIndex::setIndexName(const string &indexName)
     DropIndex::indexName = indexName;
 }
 
+const string &DropIndex::getTableName()  const {
+    return tableName;
+}
+
+void DropIndex::setTableName(const string &tableName) {
+    this->tableName=tableName;
+}
+
+
+
 ostream &operator<<(ostream &os, const DropIndex &dropIndex)
 {
     os << "\tindexName: " << dropIndex.indexName;
@@ -32,7 +42,7 @@ Result DropIndex::execute(DbInterface &db)
 {
     cout << "\texecuting drop index ... " << endl;
     Result result;
-
+    db.deleteIndexMeta(tableName,indexName);
     return result;
 
 }

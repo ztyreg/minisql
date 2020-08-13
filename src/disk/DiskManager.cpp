@@ -4,6 +4,7 @@
 
 #include <sys/stat.h>
 #include <iostream>
+#include <cstring>
 #include "DiskManager.h"
 #include "../common/Config.h"
 

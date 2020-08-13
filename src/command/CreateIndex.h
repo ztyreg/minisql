@@ -7,10 +7,13 @@
 
 #include "Command.h"
 #include <ostream>
+#include "../buffer/IndexMetaPage.h"
 
 class CreateIndex : public Command
 {
+    friend class IndexMetaPage;
 private:
+    string Ddl="";
     string tableName;
     string indexName;
     vector <string> columns;
@@ -35,6 +38,10 @@ public:
     Result execute(DbInterface &db) override;
 
     friend ostream &operator<<(ostream &os, const CreateIndex &createIndex);
+
+    const string &getDdl() const;
+
+    void setDdl(const string &ddl);
 
 };
 

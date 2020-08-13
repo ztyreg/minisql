@@ -101,6 +101,7 @@ unique_ptr<Command> Parser::parse(string sqlString)
             auto * createIndex = new CreateIndex;
             if (tokens[5] != "(" || tokens[tokens.size() - 1] != ")")
                 throw runtime_error("Syntax error!");
+            createIndex->setDdl(sqlString);
             createIndex->setIndexName(tokens[2]);
             createIndex->setTableName(tokens[4]);
 
@@ -119,10 +120,10 @@ unique_ptr<Command> Parser::parse(string sqlString)
         } else if (tokens[0] == "drop" && tokens[1] == "index") {
             ///drop index
             auto * dropIndex = new DropIndex;
-            if (tokens.size() != 3) throw runtime_error("Syntax error!");
+            if (tokens.size() != 5) throw runtime_error("Syntax error!");
 
             dropIndex->setIndexName(tokens[2]);
-
+            dropIndex->setTableName(tokens[4]);
             if (TRACKPARSE) cout << *dropIndex << endl;
             return unique_ptr<Command>(dropIndex);
 

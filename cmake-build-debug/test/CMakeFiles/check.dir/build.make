@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zty/Documents/Courses/Database/minisql
+CMAKE_SOURCE_DIR = /Users/zty/Documents/Courses/Database/finished_index
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug
 
 # Utility rule file for check.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/zty/Documents/Courses/Database/minisql/cmake-build-deb
 include test/CMakeFiles/check.dir/progress.make
 
 test/CMakeFiles/check:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --verbose
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --verbose
 
 check: test/CMakeFiles/check
 check: test/CMakeFiles/check.dir/build.make
@@ -67,10 +67,10 @@ test/CMakeFiles/check.dir/build: check
 .PHONY : test/CMakeFiles/check.dir/build
 
 test/CMakeFiles/check.dir/clean:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test && $(CMAKE_COMMAND) -P CMakeFiles/check.dir/cmake_clean.cmake
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/test && $(CMAKE_COMMAND) -P CMakeFiles/check.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/check.dir/clean
 
 test/CMakeFiles/check.dir/depend:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zty/Documents/Courses/Database/minisql /Users/zty/Documents/Courses/Database/minisql/test /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/test/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zty/Documents/Courses/Database/finished_index /Users/zty/Documents/Courses/Database/finished_index/test /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/test /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/test/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/check.dir/depend
 

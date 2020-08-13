@@ -39,8 +39,6 @@ public:
 
     bool flushPage(page_id_t pageId);
 
-
-
 };
 
 

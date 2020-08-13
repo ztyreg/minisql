@@ -17,6 +17,7 @@ using namespace std;
  */
 class TableMetaPage : Page {
     friend class DbInterface;
+
 private:
     string ddl = "";
     string tableName = "";
@@ -45,6 +46,17 @@ public:
 
     page_id_t getRootId() const;
 
+    int getAttrOffset(string attrName) const;
+
+    int getAttrSize(string attrName) const;
+
+    string getAttrType(string attrName) const;
+
+    bool isAttrUnique(string attrName);
+
+    int getColumnIndexByName(string columnName);
+
+    string getColumnTypeByName(string columnName);
 };
 
 

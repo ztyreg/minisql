@@ -47,7 +47,7 @@ Result CreateIndex::execute(DbInterface &db)
 {
     cout << "\texecuting create index ... " << endl;
     Result result;
-
+    db.createIndex(tableName, columns[0], Ddl);
     return result;
 
 }
@@ -61,4 +61,14 @@ ostream &operator<<(ostream &os, const CreateIndex &createIndex)
         os << item << " ";
     }
     return os;
+}
+
+const string &CreateIndex::getDdl() const
+{
+    return Ddl;
+}
+
+void CreateIndex::setDdl(const string &ddl)
+{
+    Ddl = ddl;
 }

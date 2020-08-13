@@ -8,6 +8,7 @@
 #include <iostream>
 
 
+
 void TableMetaPage::composePage(page_id_t rootId, string ddl)
 {
     resetMemory();
@@ -100,4 +101,67 @@ TableMetaPage::TableMetaPage(Page *p) : Page(*p)
 {
 }
 
+int TableMetaPage::getAttrOffset(string attrName) const {
+    int offset = 0;
+    for (const auto &item : columns) {
+        if(item.columnName==attrName) return offset;
+        else{
+            if (item.dataType == "int")
+                offset += 4;
+            else if (item.dataType == "float")
+                offset += 4;
+            else if (item.dataType == "char")
+                offset += item.charLength;
+        }
+    }
+    return tupleLength; //if not find, return tuple length
+}
+
+int TableMetaPage::getAttrSize(string attrName) const {
+    for (const auto &item : columns){
+        if(item.columnName==attrName) {
+            if(item.dataType=="char")
+                return item.charLength;
+            else
+                return 4;
+        }
+
+    }
+    return 4;
+}
+
+string TableMetaPage::getAttrType(string attrName) const {
+    for (const auto &item : columns){
+        if(item.columnName==attrName) return item.dataType;
+    }
+    return "";
+}
+
+bool TableMetaPage::isAttrUnique(string attrName) {
+    for (const auto &item : columns){
+        if(item.columnName==attrName)
+            return item.isUnique;
+    }
+    return false;
+}
+
+int TableMetaPage::getColumnIndexByName(string columnName)
+{
+    int i;
+    for (i = 0; i < columns.size(); i++) {
+        if (columns[i].columnName == columnName)
+            return i;
+    }
+    return -1;
+}
+
+string TableMetaPage::getColumnTypeByName(string columnName)
+{
+    int i;
+    for (i = 0; i < columns.size(); i++) {
+        if (columns[i].columnName == columnName)
+            return columns[i].dataType;
+    }
+    return "";
+}
 

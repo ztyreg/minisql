@@ -28,15 +28,12 @@ private:
     page_id_t pageId = INVALID_PAGE_ID;
 
 protected:
-    char data[PAGE_SIZE];
+    char data[PAGE_SIZE]{};
 
 public:
-    void printData();
-
     page_id_t getPageId() const { return pageId; }
 
     void resetMemory() { memset(data, 0, PAGE_SIZE); }
-
 
 };
 

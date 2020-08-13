@@ -38,6 +38,8 @@ typedef uint32_t page_id_t;
 
 extern char TEST_CHAR[4096];
 
+#define DEGREE 15
+
 /**
  * table column data types and features
  */
@@ -56,4 +58,22 @@ typedef struct {
     string type;
     string field;
 } value_t;
+
+/**
+ * where clause
+ */
+typedef struct whereType {
+    string columnName;
+    //LT GT LE GE EQ NE
+    string op;
+    string field;
+    string type;
+} whereClause;
+//ID > 100011001(int)
+
+
+#define SEARCH 1
+#define INSERT 2
+#define DELETE 3
+
 #endif //MINISQL_CONFIG_H

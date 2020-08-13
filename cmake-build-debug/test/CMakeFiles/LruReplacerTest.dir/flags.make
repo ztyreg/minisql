@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /Users/zty/Documents/Courses/Database/minisql/extern/gmock 
+CXX_INCLUDES = -isystem /Users/zty/Documents/Courses/Database/finished_index/extern/gmock 
 

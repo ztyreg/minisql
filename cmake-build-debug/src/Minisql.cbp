@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\data\;CMake Files\data\miniSQLTest\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src"/>
+				<Option working_dir="/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Minisql">
-				<Option output="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Minisql" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src"/>
+				<Option output="/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Minisql" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -32,15 +32,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 Minisql"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 Minisql"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Minisql/fast">
-				<Option output="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Minisql" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src"/>
+				<Option output="/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Minisql" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
@@ -53,227 +53,227 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 Minisql/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 Minisql/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/Buffer.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/Buffer.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/BufferPoolManager.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/BufferPoolManager.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/DbMetaPage.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/DbMetaPage.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexMetaPage.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexMetaPage.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexMetaPage.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexMetaPage.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexPage.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexPage.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexPage.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexPage.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/LruReplacer.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/LruReplacer.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/Page.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/Page.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/TableMetaPage.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/TableMetaPage.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/TablePage.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/buffer/TablePage.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/DbInterface.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/catalog/DbInterface.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/catalog/DbInterface.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/catalog/DbInterface.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Command.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Command.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Command.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Command.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/CreateIndex.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/CreateIndex.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/CreateIndex.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/CreateIndex.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/CreateTable.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/CreateTable.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/CreateTable.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/CreateTable.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Delete.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Delete.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Delete.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Delete.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/DropIndex.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/DropIndex.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/DropIndex.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/DropIndex.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/DropTable.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/DropTable.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/DropTable.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/DropTable.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Insert.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Insert.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Insert.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Insert.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Parser.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Parser.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Parser.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Parser.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Result.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Result.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Result.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Result.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Select.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Select.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Select.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Select.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Sql.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Sql.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/command/Sql.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/command/Sql.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/common/Config.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/common/Config.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/common/Data.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/common/Data.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/concurrency/Transaction.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/concurrency/Transaction.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/shell/Shell.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/disk/DiskManager.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Table.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/disk/DiskManager.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Table.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/index/BTree.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/index/BTree.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/index/IndexManager.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/index/IndexManager.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/shell/Shell.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/util/StringUtils.cpp">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.h">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/util/StringUtils.h">
 			<Option target="Minisql"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/CMakeLists.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/src/CMakeLists.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest.txt">
 			<Option virtualFolder="CMake Files\data\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/test.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/test.txt">
 			<Option virtualFolder="CMake Files\data\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction0.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction0.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction1.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction1.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction2.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction2.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction3.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction3.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction4.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction4.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction5.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction5.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction6.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction6.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction7.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction7.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction8.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction8.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/instruction9.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/instruction9.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/data/miniSQLTest/student.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/data/miniSQLTest/student.txt">
 			<Option virtualFolder="CMake Files\data\miniSQLTest\"/>
 		</Unit>
-		<Unit filename="/Users/zty/Documents/Courses/Database/minisql/test/CMakeLists.txt">
+		<Unit filename="/Users/zty/Documents/Courses/Database/finished_index/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
 	</Project>

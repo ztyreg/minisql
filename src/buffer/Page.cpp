@@ -6,12 +6,4 @@
 #include <iostream>
 using namespace std;
 
-void Page::printData()
-{
-    cout << "Page physical data ... ";
-    for (int i = 0; i < PAGE_SIZE; ++i) {
-        cout << data[i];
-    }
-    cout << endl;
 
-}

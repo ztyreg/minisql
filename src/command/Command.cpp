@@ -19,15 +19,10 @@ Result Unknown::execute(DbInterface &db)
 
 Command::~Command()
 {
-    end = clock();
-    //time count stops 
-    total_time = ((double) (end - start));
-    cout << "[" << "Finished in " << total_time << "]" << endl;
 }
 
 Command::Command()
 {
-    start = clock();
 }
 
 ostream &operator<<(ostream &os, const Command &command)

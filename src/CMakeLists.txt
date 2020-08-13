@@ -6,5 +6,5 @@ project(Minisql)
 
 file(GLOB SRC */*.*)
 
-add_executable(Minisql ${SRC})
+add_executable(Minisql ${SRC} common/Data.cpp common/Data.h index/BTree.cpp index/BTree.h index/IndexManager.cpp index/IndexManager.h)
 

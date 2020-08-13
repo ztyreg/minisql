@@ -24,8 +24,9 @@ void Delete::setTableName(const string &tableName)
 
 Result Delete::execute(DbInterface &db)
 {
-    cout << "\texecuting delete ..." << endl;
+//    cout << "\texecuting delete ..." << endl;
     Result result;
+    db.deleteTuple(tableName, wheres);
 
     return result;
 }

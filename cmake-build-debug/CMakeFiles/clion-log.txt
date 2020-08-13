@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zty/Documents/Courses/Database/minisql
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zty/Documents/Courses/Database/finished_index
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug
+-- Build files have been written to: /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug

@@ -3,7 +3,6 @@
 //
 
 #include "CreateTable.h"
-#include "../table/TableHeap.h"
 
 const string &CreateTable::getTableName() const
 {
@@ -73,7 +72,8 @@ Result CreateTable::execute(DbInterface &db)
 
     // store DDL as metadata
     db.writeTableMeta(tableName, getDdl());
-
+    string data="create index primarykey on "+tableName+" ( "+primaryKey+" )";
+    db.createIndex(tableName,primaryKey,data);
     return result;
 
 }

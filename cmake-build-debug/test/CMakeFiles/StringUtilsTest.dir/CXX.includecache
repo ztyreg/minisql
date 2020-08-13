@@ -139,6 +139,8 @@ regex
 -
 sstream
 -
+cassert
+-
 StringUtils.h
 /Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.h
 
@@ -148,6 +150,8 @@ algorithm
 cctype
 -
 locale
+-
+vector
 -
 
 /Users/zty/Documents/Courses/Database/minisql/test/util/StringUtilsTest.cpp

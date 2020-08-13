@@ -8,7 +8,6 @@
 #include "../util/StringUtils.h"
 #include "../catalog/DbInterface.h"
 #include "../common/Config.h"
-#include "../table/TableHeap.h"
 
 using namespace std;
 
@@ -63,6 +62,8 @@ int main(int argc, char* argv[])
     //
     //end test
     //
+    double total_time;
+    clock_t start, end;
 
     DbInterface db;
     db.init("dbfile");
@@ -73,7 +74,7 @@ int main(int argc, char* argv[])
         Sql sql;
         //input
         promptAndGetSql(cin, sql);
-        cout << sql;
+//        cout << sql;
         //to one-line string
 
         vector <string> tokens = split(sql.getSql());
@@ -84,22 +85,34 @@ int main(int argc, char* argv[])
                 cout << "Input file ... " << endl;
                 ifstream infile(tokens[1]);
                 while (!infile.eof()) {
+                    //time
+                    start = clock();
                     Sql fileSql;
                     promptAndGetSql(infile, fileSql);
-                    cout << fileSql;
-                    //parse
+                    cout << fileSql.getSql() << endl;
+                    ///parse
                     command = parser.parse(fileSql.getSql());
-                    //execute
+                    ///execute
                     Result result = command->execute(db);
                     command.reset(nullptr);
+                    //time
+                    end = clock();
+                    total_time = ((double) (end - start));
+                    cout << "[" << "Finished in " << total_time << "]" << endl;
                 }
             }
         } else {
-            //parse
+            //time
+            start = clock();
+            ///parse
             command = parser.parse(sql.getSql());
-            //execute
+            ///execute
             Result result = command->execute(db);
             command.reset(nullptr);
+            //time
+            end = clock();
+            total_time = ((double) (end - start));
+            cout << "[" << "Finished in " << total_time << "]" << endl;
         }
 
 

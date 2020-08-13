@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <cctype>
 #include <locale>
+#include <vector>
 
 void ltrim(std::string &s);
 void rtrim(std::string &s);

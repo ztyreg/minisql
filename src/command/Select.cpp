@@ -34,8 +34,13 @@ void Select::setSelectAll(bool selectAll)
 
 Result Select::execute(DbInterface &db)
 {
-    cout << "\texecuting select ..." << endl;
-    return Result();
+//    cout << "EXECUTING SELECT ..." << endl;
+    Result result;
+
+    result.setTuples(db.readTuple(tableName, selectAll, columnNames, wheres));
+    result.printTuples();
+
+    return result;
 }
 
 const vector<whereClause> &Select::getWheres() const

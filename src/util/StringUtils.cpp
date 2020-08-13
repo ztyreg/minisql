@@ -4,6 +4,7 @@
 
 #include <regex>
 #include <sstream>
+#include <cassert>
 #include "StringUtils.h"
 
 // trim from start (in place)
@@ -127,7 +128,7 @@ void memread_int(char *mem, int *n)
 
 }
 
-void memread_float(char *mem, float *n)
+void memread_float( char *mem, float *n)
 {
     memcpy(n, mem, 4);
 

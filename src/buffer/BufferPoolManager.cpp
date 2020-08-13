@@ -4,6 +4,7 @@
 
 #include "BufferPoolManager.h"
 #include <iostream>
+#include <cassert>
 
 char TEST_CHAR[4096];
 

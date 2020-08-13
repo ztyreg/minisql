@@ -23,9 +23,8 @@ void TablePage::composePage(page_id_t pageId, page_id_t prevId, page_id_t nextId
 
 }
 
-void TablePage::composePage()
+void TablePage::refreshPage()
 {
-    resetMemory();
     //pageId
     memwrite_int(data, pageId);
     memwrite_int(data+TABLE_ID, prevId);
@@ -57,11 +56,13 @@ TablePage::TablePage(Page *p) : Page(*p)
 
 }
 
-void TablePage::addTupleString(char *t)
+void TablePage::addTupleString(char *t, int len)
 {
     memcpy(data + TABLE_ID + TABLE_PREVID + TABLE_NEXTID + TABLE_SIZE +
-           TABLE_MAX + TABLE_COUNT + size * count, t, strlen(t));
+           TABLE_MAX + TABLE_COUNT + size * count, t, len);
     count++;
+    memwrite_int(data+TABLE_ID+TABLE_PREVID+TABLE_NEXTID+TABLE_SIZE+TABLE_MAX, count);
 }
+
 
 

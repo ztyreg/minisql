@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zty/Documents/Courses/Database/minisql/src
+# Install script for directory: /Users/zty/Documents/Courses/Database/finished_index/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

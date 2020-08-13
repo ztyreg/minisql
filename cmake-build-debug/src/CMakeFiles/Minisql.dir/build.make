@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zty/Documents/Courses/Database/minisql
+CMAKE_SOURCE_DIR = /Users/zty/Documents/Courses/Database/finished_index
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/Minisql.dir/depend.make
@@ -59,367 +59,367 @@ include src/CMakeFiles/Minisql.dir/flags.make
 
 src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.o: ../src/buffer/Buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/Buffer.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/Buffer.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/Buffer.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/Buffer.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.cpp > CMakeFiles/Minisql.dir/buffer/Buffer.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/Buffer.cpp > CMakeFiles/Minisql.dir/buffer/Buffer.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/Buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/Buffer.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/Buffer.cpp -o CMakeFiles/Minisql.dir/buffer/Buffer.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/Buffer.cpp -o CMakeFiles/Minisql.dir/buffer/Buffer.cpp.s
 
 src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.o: ../src/buffer/BufferPoolManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/BufferPoolManager.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.cpp > CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/BufferPoolManager.cpp > CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/BufferPoolManager.cpp -o CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/BufferPoolManager.cpp -o CMakeFiles/Minisql.dir/buffer/BufferPoolManager.cpp.s
 
 src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.o: ../src/buffer/DbMetaPage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/DbMetaPage.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.cpp > CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/DbMetaPage.cpp > CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/DbMetaPage.cpp -o CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/DbMetaPage.cpp -o CMakeFiles/Minisql.dir/buffer/DbMetaPage.cpp.s
 
 src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.o: ../src/buffer/IndexMetaPage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexMetaPage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexMetaPage.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexMetaPage.cpp > CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexMetaPage.cpp > CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexMetaPage.cpp -o CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexMetaPage.cpp -o CMakeFiles/Minisql.dir/buffer/IndexMetaPage.cpp.s
 
 src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.o: ../src/buffer/IndexPage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexPage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexPage.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexPage.cpp > CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexPage.cpp > CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/IndexPage.cpp -o CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/IndexPage.cpp -o CMakeFiles/Minisql.dir/buffer/IndexPage.cpp.s
 
 src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.o: ../src/buffer/LruReplacer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/LruReplacer.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp > CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/LruReplacer.cpp > CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/LruReplacer.cpp -o CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/LruReplacer.cpp -o CMakeFiles/Minisql.dir/buffer/LruReplacer.cpp.s
 
 src/CMakeFiles/Minisql.dir/buffer/Page.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/Page.cpp.o: ../src/buffer/Page.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/Page.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/Page.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/Page.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/Page.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/Page.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/Page.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/Page.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.cpp > CMakeFiles/Minisql.dir/buffer/Page.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/Page.cpp > CMakeFiles/Minisql.dir/buffer/Page.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/Page.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/Page.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/Page.cpp -o CMakeFiles/Minisql.dir/buffer/Page.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/Page.cpp -o CMakeFiles/Minisql.dir/buffer/Page.cpp.s
 
 src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.o: ../src/buffer/TableMetaPage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/TableMetaPage.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.cpp > CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/TableMetaPage.cpp > CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/TableMetaPage.cpp -o CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/TableMetaPage.cpp -o CMakeFiles/Minisql.dir/buffer/TableMetaPage.cpp.s
 
 src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.o: ../src/buffer/TablePage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/TablePage.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/buffer/TablePage.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/buffer/TablePage.cpp
 
 src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/buffer/TablePage.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.cpp > CMakeFiles/Minisql.dir/buffer/TablePage.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/buffer/TablePage.cpp > CMakeFiles/Minisql.dir/buffer/TablePage.cpp.i
 
 src/CMakeFiles/Minisql.dir/buffer/TablePage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/buffer/TablePage.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/buffer/TablePage.cpp -o CMakeFiles/Minisql.dir/buffer/TablePage.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/buffer/TablePage.cpp -o CMakeFiles/Minisql.dir/buffer/TablePage.cpp.s
 
 src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.o: ../src/catalog/DbInterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/catalog/DbInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/catalog/DbInterface.cpp
 
 src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/catalog/DbInterface.cpp > CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/catalog/DbInterface.cpp > CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.i
 
 src/CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/catalog/DbInterface.cpp -o CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/catalog/DbInterface.cpp -o CMakeFiles/Minisql.dir/catalog/DbInterface.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/Command.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/Command.cpp.o: ../src/command/Command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/Minisql.dir/command/Command.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Command.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/Command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/Minisql.dir/command/Command.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Command.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/Command.cpp
 
 src/CMakeFiles/Minisql.dir/command/Command.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/Command.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/Command.cpp > CMakeFiles/Minisql.dir/command/Command.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/Command.cpp > CMakeFiles/Minisql.dir/command/Command.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/Command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/Command.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/Command.cpp -o CMakeFiles/Minisql.dir/command/Command.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/Command.cpp -o CMakeFiles/Minisql.dir/command/Command.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/CreateIndex.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/CreateIndex.cpp.o: ../src/command/CreateIndex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/Minisql.dir/command/CreateIndex.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/CreateIndex.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/CreateIndex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/Minisql.dir/command/CreateIndex.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/CreateIndex.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/CreateIndex.cpp
 
 src/CMakeFiles/Minisql.dir/command/CreateIndex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/CreateIndex.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/CreateIndex.cpp > CMakeFiles/Minisql.dir/command/CreateIndex.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/CreateIndex.cpp > CMakeFiles/Minisql.dir/command/CreateIndex.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/CreateIndex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/CreateIndex.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/CreateIndex.cpp -o CMakeFiles/Minisql.dir/command/CreateIndex.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/CreateIndex.cpp -o CMakeFiles/Minisql.dir/command/CreateIndex.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/CreateTable.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/CreateTable.cpp.o: ../src/command/CreateTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/Minisql.dir/command/CreateTable.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/CreateTable.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/CreateTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/Minisql.dir/command/CreateTable.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/CreateTable.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/CreateTable.cpp
 
 src/CMakeFiles/Minisql.dir/command/CreateTable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/CreateTable.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/CreateTable.cpp > CMakeFiles/Minisql.dir/command/CreateTable.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/CreateTable.cpp > CMakeFiles/Minisql.dir/command/CreateTable.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/CreateTable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/CreateTable.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/CreateTable.cpp -o CMakeFiles/Minisql.dir/command/CreateTable.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/CreateTable.cpp -o CMakeFiles/Minisql.dir/command/CreateTable.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/Delete.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/Delete.cpp.o: ../src/command/Delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/Minisql.dir/command/Delete.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Delete.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/Delete.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/Minisql.dir/command/Delete.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Delete.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/Delete.cpp
 
 src/CMakeFiles/Minisql.dir/command/Delete.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/Delete.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/Delete.cpp > CMakeFiles/Minisql.dir/command/Delete.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/Delete.cpp > CMakeFiles/Minisql.dir/command/Delete.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/Delete.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/Delete.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/Delete.cpp -o CMakeFiles/Minisql.dir/command/Delete.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/Delete.cpp -o CMakeFiles/Minisql.dir/command/Delete.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/DropIndex.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/DropIndex.cpp.o: ../src/command/DropIndex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/Minisql.dir/command/DropIndex.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/DropIndex.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/DropIndex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/Minisql.dir/command/DropIndex.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/DropIndex.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/DropIndex.cpp
 
 src/CMakeFiles/Minisql.dir/command/DropIndex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/DropIndex.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/DropIndex.cpp > CMakeFiles/Minisql.dir/command/DropIndex.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/DropIndex.cpp > CMakeFiles/Minisql.dir/command/DropIndex.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/DropIndex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/DropIndex.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/DropIndex.cpp -o CMakeFiles/Minisql.dir/command/DropIndex.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/DropIndex.cpp -o CMakeFiles/Minisql.dir/command/DropIndex.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/DropTable.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/DropTable.cpp.o: ../src/command/DropTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/Minisql.dir/command/DropTable.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/DropTable.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/DropTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/Minisql.dir/command/DropTable.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/DropTable.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/DropTable.cpp
 
 src/CMakeFiles/Minisql.dir/command/DropTable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/DropTable.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/DropTable.cpp > CMakeFiles/Minisql.dir/command/DropTable.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/DropTable.cpp > CMakeFiles/Minisql.dir/command/DropTable.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/DropTable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/DropTable.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/DropTable.cpp -o CMakeFiles/Minisql.dir/command/DropTable.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/DropTable.cpp -o CMakeFiles/Minisql.dir/command/DropTable.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/Insert.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/Insert.cpp.o: ../src/command/Insert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/Minisql.dir/command/Insert.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Insert.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/Insert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/Minisql.dir/command/Insert.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Insert.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/Insert.cpp
 
 src/CMakeFiles/Minisql.dir/command/Insert.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/Insert.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/Insert.cpp > CMakeFiles/Minisql.dir/command/Insert.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/Insert.cpp > CMakeFiles/Minisql.dir/command/Insert.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/Insert.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/Insert.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/Insert.cpp -o CMakeFiles/Minisql.dir/command/Insert.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/Insert.cpp -o CMakeFiles/Minisql.dir/command/Insert.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/Parser.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/Parser.cpp.o: ../src/command/Parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/Minisql.dir/command/Parser.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Parser.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/Minisql.dir/command/Parser.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Parser.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/Parser.cpp
 
 src/CMakeFiles/Minisql.dir/command/Parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/Parser.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/Parser.cpp > CMakeFiles/Minisql.dir/command/Parser.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/Parser.cpp > CMakeFiles/Minisql.dir/command/Parser.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/Parser.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/Parser.cpp -o CMakeFiles/Minisql.dir/command/Parser.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/Parser.cpp -o CMakeFiles/Minisql.dir/command/Parser.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/Result.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/Result.cpp.o: ../src/command/Result.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/Minisql.dir/command/Result.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Result.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/Result.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/Minisql.dir/command/Result.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Result.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/Result.cpp
 
 src/CMakeFiles/Minisql.dir/command/Result.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/Result.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/Result.cpp > CMakeFiles/Minisql.dir/command/Result.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/Result.cpp > CMakeFiles/Minisql.dir/command/Result.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/Result.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/Result.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/Result.cpp -o CMakeFiles/Minisql.dir/command/Result.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/Result.cpp -o CMakeFiles/Minisql.dir/command/Result.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/Select.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/Select.cpp.o: ../src/command/Select.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/Minisql.dir/command/Select.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Select.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/Select.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/Minisql.dir/command/Select.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Select.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/Select.cpp
 
 src/CMakeFiles/Minisql.dir/command/Select.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/Select.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/Select.cpp > CMakeFiles/Minisql.dir/command/Select.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/Select.cpp > CMakeFiles/Minisql.dir/command/Select.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/Select.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/Select.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/Select.cpp -o CMakeFiles/Minisql.dir/command/Select.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/Select.cpp -o CMakeFiles/Minisql.dir/command/Select.cpp.s
 
 src/CMakeFiles/Minisql.dir/command/Sql.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/command/Sql.cpp.o: ../src/command/Sql.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/Minisql.dir/command/Sql.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Sql.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/command/Sql.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/Minisql.dir/command/Sql.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/command/Sql.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/command/Sql.cpp
 
 src/CMakeFiles/Minisql.dir/command/Sql.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/command/Sql.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/command/Sql.cpp > CMakeFiles/Minisql.dir/command/Sql.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/command/Sql.cpp > CMakeFiles/Minisql.dir/command/Sql.cpp.i
 
 src/CMakeFiles/Minisql.dir/command/Sql.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/command/Sql.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/command/Sql.cpp -o CMakeFiles/Minisql.dir/command/Sql.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/command/Sql.cpp -o CMakeFiles/Minisql.dir/command/Sql.cpp.s
+
+src/CMakeFiles/Minisql.dir/common/Data.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
+src/CMakeFiles/Minisql.dir/common/Data.cpp.o: ../src/common/Data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/Minisql.dir/common/Data.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/common/Data.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/common/Data.cpp
+
+src/CMakeFiles/Minisql.dir/common/Data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/common/Data.cpp.i"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/common/Data.cpp > CMakeFiles/Minisql.dir/common/Data.cpp.i
+
+src/CMakeFiles/Minisql.dir/common/Data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/common/Data.cpp.s"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/common/Data.cpp -o CMakeFiles/Minisql.dir/common/Data.cpp.s
 
 src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o: ../src/concurrency/Transaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/concurrency/Transaction.cpp
 
 src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.cpp > CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/concurrency/Transaction.cpp > CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.i
 
 src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/concurrency/Transaction.cpp -o CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/concurrency/Transaction.cpp -o CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.s
 
 src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o: ../src/disk/DiskManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/disk/DiskManager.cpp
 
 src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/disk/DiskManager.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.cpp > CMakeFiles/Minisql.dir/disk/DiskManager.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/disk/DiskManager.cpp > CMakeFiles/Minisql.dir/disk/DiskManager.cpp.i
 
 src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/disk/DiskManager.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/disk/DiskManager.cpp -o CMakeFiles/Minisql.dir/disk/DiskManager.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/disk/DiskManager.cpp -o CMakeFiles/Minisql.dir/disk/DiskManager.cpp.s
+
+src/CMakeFiles/Minisql.dir/index/BTree.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
+src/CMakeFiles/Minisql.dir/index/BTree.cpp.o: ../src/index/BTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/Minisql.dir/index/BTree.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/index/BTree.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/index/BTree.cpp
+
+src/CMakeFiles/Minisql.dir/index/BTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/index/BTree.cpp.i"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/index/BTree.cpp > CMakeFiles/Minisql.dir/index/BTree.cpp.i
+
+src/CMakeFiles/Minisql.dir/index/BTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/index/BTree.cpp.s"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/index/BTree.cpp -o CMakeFiles/Minisql.dir/index/BTree.cpp.s
+
+src/CMakeFiles/Minisql.dir/index/IndexManager.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
+src/CMakeFiles/Minisql.dir/index/IndexManager.cpp.o: ../src/index/IndexManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/Minisql.dir/index/IndexManager.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/index/IndexManager.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/index/IndexManager.cpp
+
+src/CMakeFiles/Minisql.dir/index/IndexManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/index/IndexManager.cpp.i"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/index/IndexManager.cpp > CMakeFiles/Minisql.dir/index/IndexManager.cpp.i
+
+src/CMakeFiles/Minisql.dir/index/IndexManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/index/IndexManager.cpp.s"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/index/IndexManager.cpp -o CMakeFiles/Minisql.dir/index/IndexManager.cpp.s
 
 src/CMakeFiles/Minisql.dir/shell/Shell.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/shell/Shell.cpp.o: ../src/shell/Shell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/Minisql.dir/shell/Shell.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/shell/Shell.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/shell/Shell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/Minisql.dir/shell/Shell.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/shell/Shell.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/shell/Shell.cpp
 
 src/CMakeFiles/Minisql.dir/shell/Shell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/shell/Shell.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/shell/Shell.cpp > CMakeFiles/Minisql.dir/shell/Shell.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/shell/Shell.cpp > CMakeFiles/Minisql.dir/shell/Shell.cpp.i
 
 src/CMakeFiles/Minisql.dir/shell/Shell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/shell/Shell.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/shell/Shell.cpp -o CMakeFiles/Minisql.dir/shell/Shell.cpp.s
-
-src/CMakeFiles/Minisql.dir/table/Table.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
-src/CMakeFiles/Minisql.dir/table/Table.cpp.o: ../src/table/Table.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/Minisql.dir/table/Table.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/table/Table.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/table/Table.cpp
-
-src/CMakeFiles/Minisql.dir/table/Table.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/table/Table.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/table/Table.cpp > CMakeFiles/Minisql.dir/table/Table.cpp.i
-
-src/CMakeFiles/Minisql.dir/table/Table.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/table/Table.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/table/Table.cpp -o CMakeFiles/Minisql.dir/table/Table.cpp.s
-
-src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
-src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.o: ../src/table/TableHeap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/table/TableHeap.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.cpp
-
-src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/table/TableHeap.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.cpp > CMakeFiles/Minisql.dir/table/TableHeap.cpp.i
-
-src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/table/TableHeap.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/table/TableHeap.cpp -o CMakeFiles/Minisql.dir/table/TableHeap.cpp.s
-
-src/CMakeFiles/Minisql.dir/table/Tuple.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
-src/CMakeFiles/Minisql.dir/table/Tuple.cpp.o: ../src/table/Tuple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/Minisql.dir/table/Tuple.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/table/Tuple.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.cpp
-
-src/CMakeFiles/Minisql.dir/table/Tuple.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/table/Tuple.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.cpp > CMakeFiles/Minisql.dir/table/Tuple.cpp.i
-
-src/CMakeFiles/Minisql.dir/table/Tuple.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/table/Tuple.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/table/Tuple.cpp -o CMakeFiles/Minisql.dir/table/Tuple.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/shell/Shell.cpp -o CMakeFiles/Minisql.dir/shell/Shell.cpp.s
 
 src/CMakeFiles/Minisql.dir/util/StringUtils.cpp.o: src/CMakeFiles/Minisql.dir/flags.make
 src/CMakeFiles/Minisql.dir/util/StringUtils.cpp.o: ../src/util/StringUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/Minisql.dir/util/StringUtils.cpp.o"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/util/StringUtils.cpp.o -c /Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/Minisql.dir/util/StringUtils.cpp.o"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Minisql.dir/util/StringUtils.cpp.o -c /Users/zty/Documents/Courses/Database/finished_index/src/util/StringUtils.cpp
 
 src/CMakeFiles/Minisql.dir/util/StringUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Minisql.dir/util/StringUtils.cpp.i"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp > CMakeFiles/Minisql.dir/util/StringUtils.cpp.i
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zty/Documents/Courses/Database/finished_index/src/util/StringUtils.cpp > CMakeFiles/Minisql.dir/util/StringUtils.cpp.i
 
 src/CMakeFiles/Minisql.dir/util/StringUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Minisql.dir/util/StringUtils.cpp.s"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/minisql/src/util/StringUtils.cpp -o CMakeFiles/Minisql.dir/util/StringUtils.cpp.s
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zty/Documents/Courses/Database/finished_index/src/util/StringUtils.cpp -o CMakeFiles/Minisql.dir/util/StringUtils.cpp.s
 
 # Object files for target Minisql
 Minisql_OBJECTS = \
@@ -444,12 +444,12 @@ Minisql_OBJECTS = \
 "CMakeFiles/Minisql.dir/command/Result.cpp.o" \
 "CMakeFiles/Minisql.dir/command/Select.cpp.o" \
 "CMakeFiles/Minisql.dir/command/Sql.cpp.o" \
+"CMakeFiles/Minisql.dir/common/Data.cpp.o" \
 "CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o" \
 "CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o" \
+"CMakeFiles/Minisql.dir/index/BTree.cpp.o" \
+"CMakeFiles/Minisql.dir/index/IndexManager.cpp.o" \
 "CMakeFiles/Minisql.dir/shell/Shell.cpp.o" \
-"CMakeFiles/Minisql.dir/table/Table.cpp.o" \
-"CMakeFiles/Minisql.dir/table/TableHeap.cpp.o" \
-"CMakeFiles/Minisql.dir/table/Tuple.cpp.o" \
 "CMakeFiles/Minisql.dir/util/StringUtils.cpp.o"
 
 # External object files for target Minisql
@@ -476,17 +476,17 @@ src/Minisql: src/CMakeFiles/Minisql.dir/command/Parser.cpp.o
 src/Minisql: src/CMakeFiles/Minisql.dir/command/Result.cpp.o
 src/Minisql: src/CMakeFiles/Minisql.dir/command/Select.cpp.o
 src/Minisql: src/CMakeFiles/Minisql.dir/command/Sql.cpp.o
+src/Minisql: src/CMakeFiles/Minisql.dir/common/Data.cpp.o
 src/Minisql: src/CMakeFiles/Minisql.dir/concurrency/Transaction.cpp.o
 src/Minisql: src/CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o
+src/Minisql: src/CMakeFiles/Minisql.dir/index/BTree.cpp.o
+src/Minisql: src/CMakeFiles/Minisql.dir/index/IndexManager.cpp.o
 src/Minisql: src/CMakeFiles/Minisql.dir/shell/Shell.cpp.o
-src/Minisql: src/CMakeFiles/Minisql.dir/table/Table.cpp.o
-src/Minisql: src/CMakeFiles/Minisql.dir/table/TableHeap.cpp.o
-src/Minisql: src/CMakeFiles/Minisql.dir/table/Tuple.cpp.o
 src/Minisql: src/CMakeFiles/Minisql.dir/util/StringUtils.cpp.o
 src/Minisql: src/CMakeFiles/Minisql.dir/build.make
 src/Minisql: src/CMakeFiles/Minisql.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable Minisql"
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Minisql.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable Minisql"
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Minisql.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/Minisql.dir/build: src/Minisql
@@ -494,10 +494,10 @@ src/CMakeFiles/Minisql.dir/build: src/Minisql
 .PHONY : src/CMakeFiles/Minisql.dir/build
 
 src/CMakeFiles/Minisql.dir/clean:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/Minisql.dir/cmake_clean.cmake
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/Minisql.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/Minisql.dir/clean
 
 src/CMakeFiles/Minisql.dir/depend:
-	cd /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zty/Documents/Courses/Database/minisql /Users/zty/Documents/Courses/Database/minisql/src /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src /Users/zty/Documents/Courses/Database/minisql/cmake-build-debug/src/CMakeFiles/Minisql.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zty/Documents/Courses/Database/finished_index /Users/zty/Documents/Courses/Database/finished_index/src /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src /Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/src/CMakeFiles/Minisql.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/Minisql.dir/depend
 
