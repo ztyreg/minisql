@@ -4,23 +4,28 @@
 
 This is a DBMS (Database Management System).
 
-**Supported operations:** create table/drop table/select/insert/delete operations. 
+### Supported Operations
 
-**Other features:** SQL interpreter, record manager and memory buffer with page replacement algorithm (LRU).
-
-Please see [Features.md](./Features.md) for a complete list of features (in Chinese).
+create table/drop table/select/insert/delete operations. 
 
 ### Throughput
 
 5000 insertions finished in 65s on Mac Mini 2018
 
-### Getting Started
+### Other features 
+
+SQL interpreter, record manager and memory buffer with page replacement algorithm (LRU).
+
+Please see [Features.md](./Features.md) for a complete list of features (in Chinese).
+
+
+## Getting Started
 
 Executable and test files are in the `cmake-build-debug/src/` folder.
 
 Run `cmake-build-debug/src/Minisql` to start.
 
-### Samples
+## Samples
 
 `student.txt`
 
@@ -47,12 +52,10 @@ insert into student2 values(1080100006,'name6',89.5);
 insert into student2 values(1080100007,'name7',63);
 ```
 
-## Features
+## Implmentations
 
 ### High-Level Design
 
 <img src="https://github.com/ztyreg/minisql/blob/master/design.png" width="600">
-
-### Implmentations
 
 Please see [Features.md](./Features.md) for a complete list of features (in Chinese).
