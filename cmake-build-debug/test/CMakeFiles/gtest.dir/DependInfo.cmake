@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zty/Documents/Courses/Database/finished_index/extern/gmock/gmock-gtest-all.cc" "/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/test/CMakeFiles/gtest.dir/__/extern/gmock/gmock-gtest-all.cc.o"
-  "/Users/zty/Documents/Courses/Database/finished_index/extern/gmock/gmock_main.cc" "/Users/zty/Documents/Courses/Database/finished_index/cmake-build-debug/test/CMakeFiles/gtest.dir/__/extern/gmock/gmock_main.cc.o"
+  "/Users/zty/Dropbox/Projects/minisql/extern/gmock/gmock-gtest-all.cc" "/Users/zty/Dropbox/Projects/minisql/cmake-build-debug/test/CMakeFiles/gtest.dir/__/extern/gmock/gmock-gtest-all.cc.o"
+  "/Users/zty/Dropbox/Projects/minisql/extern/gmock/gmock_main.cc" "/Users/zty/Dropbox/Projects/minisql/cmake-build-debug/test/CMakeFiles/gtest.dir/__/extern/gmock/gmock_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

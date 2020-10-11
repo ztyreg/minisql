@@ -25,10 +25,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/Minisql.dir/disk/DiskManager.cpp.o"
   "CMakeFiles/Minisql.dir/index/BTree.cpp.o"
   "CMakeFiles/Minisql.dir/index/IndexManager.cpp.o"
-  "CMakeFiles/Minisql.dir/shell/Shell.cpp.o"
+  "CMakeFiles/Minisql.dir/shell/shell.cpp.o"
   "CMakeFiles/Minisql.dir/util/StringUtils.cpp.o"
-  "Minisql.pdb"
   "Minisql"
+  "Minisql.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

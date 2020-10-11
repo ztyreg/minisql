@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <fstream>
 #include <cassert>
 #include "../command/Parser.h"
@@ -20,8 +21,7 @@ static_assert(sizeof(int) == sizeof(uint32_t), "");
  * @param cin
  * @param sql
  */
-void promptAndGetSql(istream& cin, Sql& sql)
-{
+void promptAndGetSql(istream &cin, Sql &sql) {
     string line;
     cout << "minisql> ";
     getline(cin, line);
@@ -47,8 +47,7 @@ void promptAndGetSql(istream& cin, Sql& sql)
 
 }
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char *argv[]) {
     Parser parser;
     unique_ptr<Command> command;
     cout << "Welcome to minisql shell." << endl;
@@ -56,9 +55,9 @@ int main(int argc, char* argv[])
     //
     //test
     //
-    ofstream f;
-    f.open("dbfile", ios::out | ios::binary | ios::trunc);
-    f.close();
+//    ofstream f;
+//    f.open("dbfile", ios::out | ios::binary | ios::trunc);
+//    f.close();
     //
     //end test
     //
@@ -67,6 +66,21 @@ int main(int argc, char* argv[])
 
     DbInterface db;
     db.init("dbfile");
+
+    // execute in command line
+    if (argc > 1 && string(argv[1]) == "-c") {
+        if (argc == 2) {
+            return 0;
+        }
+        Sql sql;
+        string line = string(argv[2]);
+        sql.addLine(line);
+        sql.combineLines();
+        command = parser.parse(sql.getSql());
+        Result result = command->execute(db);
+        command.reset(nullptr);
+        return 0;
+    }
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wmissing-noreturn"
@@ -77,7 +91,7 @@ int main(int argc, char* argv[])
 //        cout << sql;
         //to one-line string
 
-        vector <string> tokens = split(sql.getSql());
+        vector<string> tokens = split(sql.getSql());
         if (tokens[0] == "execfile") {
             ///execfile
             if (tokens.size() == 1) cout << "Error: please specify file name!" << endl;

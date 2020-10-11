@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/BufferPoolManagerTest.dir/buffer/BufferPoolManagerTest.cpp.o"
-  "BufferPoolManagerTest.pdb"
   "BufferPoolManagerTest"
+  "BufferPoolManagerTest.pdb"
+  "CMakeFiles/BufferPoolManagerTest.dir/buffer/BufferPoolManagerTest.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

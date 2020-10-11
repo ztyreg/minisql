@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o"
-  "LruReplacerTest.pdb"
   "LruReplacerTest"
+  "LruReplacerTest.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
