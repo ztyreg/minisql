@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/wrap/hardwrap.js"></script>
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <script src="codemirror/mode/sql/sql.js"></script>
+
 </head>
 <body>
 
@@ -59,10 +64,11 @@
     </div>
     <div class="row">
         <div class="one-half column">
-            <textarea id="command" name="command" rows="30" cols="20" style="width: 100%; height: 80%"></textarea>
+            <div id="command"></div>
+<!--            <textarea id="command" name="command" rows="30" cols="20" style="width: 100%; height: 80%"></textarea>-->
         </div>
         <div class="one-half column">
-            <textarea id="output" name="output" rows="30" cols="20" style="width: 100%; height: 80%"
+            <textarea id="output" name="output" rows="30" cols="20" style="width: 100%;"
                       disabled>
             </textarea>
         </div>

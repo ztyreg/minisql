@@ -2,6 +2,7 @@
   "name": "minisql",
   "version": "1.0.0",
   "dependencies": {
+    "codemirror": "^5.58.1",
     "express": "^4.17.1"
   }
 }

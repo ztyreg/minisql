@@ -1,3 +1,19 @@
 textarea {
-    font-family: Monaco, monospace;
+    font-family: monospace;
+    font-size: 13px;
+    min-height: 500px;
 }
+
+.CodeMirror {
+    font-family: monospace;
+    font-size: 13px;
+    border: 1px solid #eee;
+    min-height: 500px;
+    /*height: 100%;*/
+    /*position:absolute;*/
+    /*top:0;*/
+    /*bottom:0;*/
+    /*left:0;*/
+    /*right:0;*/
+}
+
