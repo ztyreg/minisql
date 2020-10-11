@@ -40,6 +40,8 @@ init_code +=
 init_code +=
     '-- select * from student where id=1080100001;\n';
 init_code +=
+    '-- select * from student where id<>1080100001;\n';
+init_code +=
     '-- select * from student;\n';
 
 
