@@ -6,7 +6,7 @@ const app = express();
 
 app.use(bodyParser.json())
 
-const exe = '../cmake-build-debug/src/Minisql';
+const exe = '../cmake-build/src/Minisql';
 
 const bash = function (command, res) {
     exec(command, (error, stdout, stderr) => {

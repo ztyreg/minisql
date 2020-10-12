@@ -28,9 +28,13 @@ init_code = 'create table student(\n' +
 init_code +=
     '-- Anything after "--" is comment\n\n';
 init_code +=
-    '-- Click "Execute" below to create "student" table\n\n';
+    '-- Click "Execute" below to create "student" table\n';
 init_code +=
-    '-- Currently only one command can be run at a time\n\n';
+    '-- If it already exists, run\n';
+init_code +=
+    '-- drop table student;\n';
+init_code +=
+    '-- In this web demo, only one command can be run at a time\n\n';
 init_code +=
     '-- You can also try the following commands\n';
 init_code +=
@@ -60,7 +64,7 @@ var myCodeMirror = CodeMirror(document.querySelector('#command'), {
 // code_command.textContent += 'select * from student;';
 
 text_output.textContent = "Welcome to MiniSQL shell!\n\n" +
-    "A new database file is created every time this page is loaded.\n\n" +
+    //"A new database file is created every time this page is loaded.\n\n" +
     'See "About" for features.\n' +
     'See "MiniSQL Syntax" for all syntax.\n' +
     'See "Sample Commands" for examples.\n\n' +
