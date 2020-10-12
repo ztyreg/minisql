@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o  -o LruReplacerTest  libgtest.a 
+/Library/Developer/CommandLineTools/usr/bin/c++  -std=c++11 -O3 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o  -o LruReplacerTest  libgtest.a 

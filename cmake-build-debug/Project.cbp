@@ -398,13 +398,13 @@
 		<Unit filename="/Users/zty/Dropbox/Projects/minisql/src/command/Sql.h">
 			<Option target="Minisql"/>
 		</Unit>
+		<Unit filename="/Users/zty/Dropbox/Projects/minisql/src/common/Config.h">
+			<Option target="Minisql"/>
+		</Unit>
 		<Unit filename="/Users/zty/Dropbox/Projects/minisql/src/common/Data.cpp">
 			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Dropbox/Projects/minisql/src/common/Data.h">
-			<Option target="Minisql"/>
-		</Unit>
-		<Unit filename="/Users/zty/Dropbox/Projects/minisql/src/common/config.h">
 			<Option target="Minisql"/>
 		</Unit>
 		<Unit filename="/Users/zty/Dropbox/Projects/minisql/src/concurrency/Transaction.cpp">
