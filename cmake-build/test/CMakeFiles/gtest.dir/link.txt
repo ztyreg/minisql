@@ -1,2 +1,2 @@
-/usr/bin/ar cr libgtest.a  CMakeFiles/gtest.dir/__/extern/gmock/gmock-gtest-all.cc.o CMakeFiles/gtest.dir/__/extern/gmock/gmock_main.cc.o
+/usr/bin/ar qc libgtest.a  CMakeFiles/gtest.dir/__/extern/gmock/gmock-gtest-all.cc.o CMakeFiles/gtest.dir/__/extern/gmock/gmock_main.cc.o
 /usr/bin/ranlib libgtest.a

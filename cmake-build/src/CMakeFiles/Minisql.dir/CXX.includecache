@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,171 +6,171 @@
 
 #IncludeRegexTransform: 
 
-/home/ec2-user/minisql/src/buffer/Buffer.cpp
+/home/parallels/Workspace/minisql/src/buffer/Buffer.cpp
 Buffer.h
-/home/ec2-user/minisql/src/buffer/Buffer.h
+/home/parallels/Workspace/minisql/src/buffer/Buffer.h
 
-/home/ec2-user/minisql/src/buffer/Buffer.h
+/home/parallels/Workspace/minisql/src/buffer/Buffer.h
 cstdint
 -
 
-/home/ec2-user/minisql/src/buffer/BufferPoolManager.cpp
+/home/parallels/Workspace/minisql/src/buffer/BufferPoolManager.cpp
 BufferPoolManager.h
-/home/ec2-user/minisql/src/buffer/BufferPoolManager.h
+/home/parallels/Workspace/minisql/src/buffer/BufferPoolManager.h
 iostream
 -
 cassert
 -
 
-/home/ec2-user/minisql/src/buffer/BufferPoolManager.h
+/home/parallels/Workspace/minisql/src/buffer/BufferPoolManager.h
 list
 -
 Page.h
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 ../disk/DiskManager.h
-/home/ec2-user/minisql/src/disk/DiskManager.h
+/home/parallels/Workspace/minisql/src/disk/DiskManager.h
 LruReplacer.h
-/home/ec2-user/minisql/src/buffer/LruReplacer.h
+/home/parallels/Workspace/minisql/src/buffer/LruReplacer.h
 map
 -
 
-/home/ec2-user/minisql/src/buffer/DbMetaPage.cpp
+/home/parallels/Workspace/minisql/src/buffer/DbMetaPage.cpp
 DbMetaPage.h
-/home/ec2-user/minisql/src/buffer/DbMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/DbMetaPage.h
 iostream
 -
 
-/home/ec2-user/minisql/src/buffer/DbMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/DbMetaPage.h
 Page.h
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 string
 -
 map
 -
 
-/home/ec2-user/minisql/src/buffer/IndexMetaPage.cpp
+/home/parallels/Workspace/minisql/src/buffer/IndexMetaPage.cpp
 IndexMetaPage.h
-/home/ec2-user/minisql/src/buffer/IndexMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/IndexMetaPage.h
 iostream
 -
 ../command/Parser.h
-/home/ec2-user/minisql/src/command/Parser.h
+/home/parallels/Workspace/minisql/src/command/Parser.h
 ../command/CreateIndex.h
-/home/ec2-user/minisql/src/command/CreateIndex.h
+/home/parallels/Workspace/minisql/src/command/CreateIndex.h
 
-/home/ec2-user/minisql/src/buffer/IndexMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/IndexMetaPage.h
 Page.h
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 string
 -
 
-/home/ec2-user/minisql/src/buffer/IndexPage.cpp
+/home/parallels/Workspace/minisql/src/buffer/IndexPage.cpp
 IndexPage.h
-/home/ec2-user/minisql/src/buffer/IndexPage.h
+/home/parallels/Workspace/minisql/src/buffer/IndexPage.h
 
-/home/ec2-user/minisql/src/buffer/IndexPage.h
+/home/parallels/Workspace/minisql/src/buffer/IndexPage.h
 Page.h
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 string
 -
 ../index/BTree.h
-/home/ec2-user/minisql/src/index/BTree.h
+/home/parallels/Workspace/minisql/src/index/BTree.h
 
-/home/ec2-user/minisql/src/buffer/LruReplacer.cpp
+/home/parallels/Workspace/minisql/src/buffer/LruReplacer.cpp
 LruReplacer.h
-/home/ec2-user/minisql/src/buffer/LruReplacer.h
+/home/parallels/Workspace/minisql/src/buffer/LruReplacer.h
 Page.h
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 iostream
 -
 
-/home/ec2-user/minisql/src/buffer/LruReplacer.h
+/home/parallels/Workspace/minisql/src/buffer/LruReplacer.h
 vector
 -
 
-/home/ec2-user/minisql/src/buffer/Page.cpp
+/home/parallels/Workspace/minisql/src/buffer/Page.cpp
 Page.h
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 iostream
 -
 
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 cstring
 -
 ../common/Config.h
-/home/ec2-user/minisql/src/common/Config.h
+/home/parallels/Workspace/minisql/src/common/Config.h
 ../util/StringUtils.h
-/home/ec2-user/minisql/src/util/StringUtils.h
+/home/parallels/Workspace/minisql/src/util/StringUtils.h
 
-/home/ec2-user/minisql/src/buffer/TableMetaPage.cpp
+/home/parallels/Workspace/minisql/src/buffer/TableMetaPage.cpp
 TableMetaPage.h
-/home/ec2-user/minisql/src/buffer/TableMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/TableMetaPage.h
 ../command/Parser.h
-/home/ec2-user/minisql/src/command/Parser.h
+/home/parallels/Workspace/minisql/src/command/Parser.h
 ../command/CreateTable.h
-/home/ec2-user/minisql/src/command/CreateTable.h
+/home/parallels/Workspace/minisql/src/command/CreateTable.h
 iostream
 -
 memory
 -
 
-/home/ec2-user/minisql/src/buffer/TableMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/TableMetaPage.h
 string
 -
 Page.h
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 vector
-/home/ec2-user/minisql/src/buffer/vector
+/home/parallels/Workspace/minisql/src/buffer/vector
 
-/home/ec2-user/minisql/src/buffer/TablePage.cpp
+/home/parallels/Workspace/minisql/src/buffer/TablePage.cpp
 TablePage.h
-/home/ec2-user/minisql/src/buffer/TablePage.h
+/home/parallels/Workspace/minisql/src/buffer/TablePage.h
 ../common/Config.h
-/home/ec2-user/minisql/src/common/Config.h
+/home/parallels/Workspace/minisql/src/common/Config.h
 string
 -
 iostream
 -
 ../util/StringUtils.h
-/home/ec2-user/minisql/src/util/StringUtils.h
+/home/parallels/Workspace/minisql/src/util/StringUtils.h
 
-/home/ec2-user/minisql/src/buffer/TablePage.h
+/home/parallels/Workspace/minisql/src/buffer/TablePage.h
 Page.h
-/home/ec2-user/minisql/src/buffer/Page.h
+/home/parallels/Workspace/minisql/src/buffer/Page.h
 
-/home/ec2-user/minisql/src/catalog/DbInterface.cpp
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.cpp
 utility
 -
 DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 iostream
 -
 string
 -
 
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 ../disk/DiskManager.h
-/home/ec2-user/minisql/src/disk/DiskManager.h
+/home/parallels/Workspace/minisql/src/disk/DiskManager.h
 ../buffer/DbMetaPage.h
-/home/ec2-user/minisql/src/buffer/DbMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/DbMetaPage.h
 ../buffer/BufferPoolManager.h
-/home/ec2-user/minisql/src/buffer/BufferPoolManager.h
+/home/parallels/Workspace/minisql/src/buffer/BufferPoolManager.h
 ../buffer/TableMetaPage.h
-/home/ec2-user/minisql/src/buffer/TableMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/TableMetaPage.h
 ../common/Data.h
-/home/ec2-user/minisql/src/common/Data.h
+/home/parallels/Workspace/minisql/src/common/Data.h
 ../index/BTree.h
-/home/ec2-user/minisql/src/index/BTree.h
+/home/parallels/Workspace/minisql/src/index/BTree.h
 ../buffer/IndexPage.h
-/home/ec2-user/minisql/src/buffer/IndexPage.h
+/home/parallels/Workspace/minisql/src/buffer/IndexPage.h
 ../buffer/TablePage.h
-/home/ec2-user/minisql/src/buffer/TablePage.h
+/home/parallels/Workspace/minisql/src/buffer/TablePage.h
 ../buffer/IndexMetaPage.h
-/home/ec2-user/minisql/src/buffer/IndexMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/IndexMetaPage.h
 map
 -
 
-/home/ec2-user/minisql/src/command/Command.cpp
+/home/parallels/Workspace/minisql/src/command/Command.cpp
 utility
 -
 utility
@@ -180,9 +180,9 @@ iostream
 time.h
 -
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 string
 -
 vector
@@ -190,27 +190,27 @@ vector
 iostream
 -
 Result.h
-/home/ec2-user/minisql/src/command/Result.h
+/home/parallels/Workspace/minisql/src/command/Result.h
 ../catalog/DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 
-/home/ec2-user/minisql/src/command/CreateIndex.cpp
+/home/parallels/Workspace/minisql/src/command/CreateIndex.cpp
 CreateIndex.h
-/home/ec2-user/minisql/src/command/CreateIndex.h
+/home/parallels/Workspace/minisql/src/command/CreateIndex.h
 
-/home/ec2-user/minisql/src/command/CreateIndex.h
+/home/parallels/Workspace/minisql/src/command/CreateIndex.h
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 ostream
 -
 ../buffer/IndexMetaPage.h
-/home/ec2-user/minisql/src/buffer/IndexMetaPage.h
+/home/parallels/Workspace/minisql/src/buffer/IndexMetaPage.h
 
-/home/ec2-user/minisql/src/command/CreateTable.cpp
+/home/parallels/Workspace/minisql/src/command/CreateTable.cpp
 CreateTable.h
-/home/ec2-user/minisql/src/command/CreateTable.h
+/home/parallels/Workspace/minisql/src/command/CreateTable.h
 
-/home/ec2-user/minisql/src/command/CreateTable.h
+/home/parallels/Workspace/minisql/src/command/CreateTable.h
 string
 -
 vector
@@ -218,89 +218,89 @@ vector
 iostream
 -
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 ../catalog/DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 
-/home/ec2-user/minisql/src/command/Delete.cpp
+/home/parallels/Workspace/minisql/src/command/Delete.cpp
 Delete.h
-/home/ec2-user/minisql/src/command/Delete.h
+/home/parallels/Workspace/minisql/src/command/Delete.h
 
-/home/ec2-user/minisql/src/command/Delete.h
+/home/parallels/Workspace/minisql/src/command/Delete.h
 ostream
 -
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 ../catalog/DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 
-/home/ec2-user/minisql/src/command/DropIndex.cpp
+/home/parallels/Workspace/minisql/src/command/DropIndex.cpp
 DropIndex.h
-/home/ec2-user/minisql/src/command/DropIndex.h
+/home/parallels/Workspace/minisql/src/command/DropIndex.h
 
-/home/ec2-user/minisql/src/command/DropIndex.h
+/home/parallels/Workspace/minisql/src/command/DropIndex.h
 ostream
 -
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 ../catalog/DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 
-/home/ec2-user/minisql/src/command/DropTable.cpp
+/home/parallels/Workspace/minisql/src/command/DropTable.cpp
 DropTable.h
-/home/ec2-user/minisql/src/command/DropTable.h
+/home/parallels/Workspace/minisql/src/command/DropTable.h
 
-/home/ec2-user/minisql/src/command/DropTable.h
+/home/parallels/Workspace/minisql/src/command/DropTable.h
 string
 -
 ostream
 -
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 ../catalog/DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 
-/home/ec2-user/minisql/src/command/Insert.cpp
+/home/parallels/Workspace/minisql/src/command/Insert.cpp
 utility
 -
 Insert.h
-/home/ec2-user/minisql/src/command/Insert.h
+/home/parallels/Workspace/minisql/src/command/Insert.h
 
-/home/ec2-user/minisql/src/command/Insert.h
+/home/parallels/Workspace/minisql/src/command/Insert.h
 ostream
 -
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 ../catalog/DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 
-/home/ec2-user/minisql/src/command/Parser.cpp
+/home/parallels/Workspace/minisql/src/command/Parser.cpp
 vector
 -
 Parser.h
-/home/ec2-user/minisql/src/command/Parser.h
+/home/parallels/Workspace/minisql/src/command/Parser.h
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 CreateTable.h
-/home/ec2-user/minisql/src/command/CreateTable.h
+/home/parallels/Workspace/minisql/src/command/CreateTable.h
 DropTable.h
-/home/ec2-user/minisql/src/command/DropTable.h
+/home/parallels/Workspace/minisql/src/command/DropTable.h
 CreateIndex.h
-/home/ec2-user/minisql/src/command/CreateIndex.h
+/home/parallels/Workspace/minisql/src/command/CreateIndex.h
 DropIndex.h
-/home/ec2-user/minisql/src/command/DropIndex.h
+/home/parallels/Workspace/minisql/src/command/DropIndex.h
 Insert.h
-/home/ec2-user/minisql/src/command/Insert.h
+/home/parallels/Workspace/minisql/src/command/Insert.h
 Select.h
-/home/ec2-user/minisql/src/command/Select.h
+/home/parallels/Workspace/minisql/src/command/Select.h
 Delete.h
-/home/ec2-user/minisql/src/command/Delete.h
+/home/parallels/Workspace/minisql/src/command/Delete.h
 ../util/StringUtils.h
-/home/ec2-user/minisql/src/util/StringUtils.h
+/home/parallels/Workspace/minisql/src/util/StringUtils.h
 
-/home/ec2-user/minisql/src/command/Parser.h
+/home/parallels/Workspace/minisql/src/command/Parser.h
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 string
 -
 iostream
@@ -308,67 +308,67 @@ iostream
 memory
 -
 
-/home/ec2-user/minisql/src/command/Result.cpp
+/home/parallels/Workspace/minisql/src/command/Result.cpp
 Result.h
-/home/ec2-user/minisql/src/command/Result.h
+/home/parallels/Workspace/minisql/src/command/Result.h
 iostream
 -
 
-/home/ec2-user/minisql/src/command/Result.h
+/home/parallels/Workspace/minisql/src/command/Result.h
 vector
 -
 string
 -
 
-/home/ec2-user/minisql/src/command/Select.cpp
+/home/parallels/Workspace/minisql/src/command/Select.cpp
 Select.h
-/home/ec2-user/minisql/src/command/Select.h
+/home/parallels/Workspace/minisql/src/command/Select.h
 
-/home/ec2-user/minisql/src/command/Select.h
+/home/parallels/Workspace/minisql/src/command/Select.h
 ostream
 -
 Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 ../catalog/DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 
-/home/ec2-user/minisql/src/command/Sql.cpp
+/home/parallels/Workspace/minisql/src/command/Sql.cpp
 regex
 -
 Sql.h
-/home/ec2-user/minisql/src/command/Sql.h
+/home/parallels/Workspace/minisql/src/command/Sql.h
 ../util/StringUtils.h
-/home/ec2-user/minisql/src/util/StringUtils.h
+/home/parallels/Workspace/minisql/src/util/StringUtils.h
 
-/home/ec2-user/minisql/src/command/Sql.h
+/home/parallels/Workspace/minisql/src/command/Sql.h
 iostream
 -
 vector
 -
 
-/home/ec2-user/minisql/src/common/Config.h
+/home/parallels/Workspace/minisql/src/common/Config.h
 cstdint
 -
 string
 -
 
-/home/ec2-user/minisql/src/common/Data.cpp
+/home/parallels/Workspace/minisql/src/common/Data.cpp
 Data.h
-/home/ec2-user/minisql/src/common/Data.h
+/home/parallels/Workspace/minisql/src/common/Data.h
 iostream
 -
 
-/home/ec2-user/minisql/src/common/Data.h
+/home/parallels/Workspace/minisql/src/common/Data.h
 string
 -
 
-/home/ec2-user/minisql/src/concurrency/Transaction.cpp
+/home/parallels/Workspace/minisql/src/concurrency/Transaction.cpp
 Transaction.h
-/home/ec2-user/minisql/src/concurrency/Transaction.h
+/home/parallels/Workspace/minisql/src/concurrency/Transaction.h
 
-/home/ec2-user/minisql/src/concurrency/Transaction.h
+/home/parallels/Workspace/minisql/src/concurrency/Transaction.h
 
-/home/ec2-user/minisql/src/disk/DiskManager.cpp
+/home/parallels/Workspace/minisql/src/disk/DiskManager.cpp
 sys/stat.h
 -
 iostream
@@ -376,23 +376,23 @@ iostream
 cstring
 -
 DiskManager.h
-/home/ec2-user/minisql/src/disk/DiskManager.h
+/home/parallels/Workspace/minisql/src/disk/DiskManager.h
 ../common/Config.h
-/home/ec2-user/minisql/src/common/Config.h
+/home/parallels/Workspace/minisql/src/common/Config.h
 
-/home/ec2-user/minisql/src/disk/DiskManager.h
+/home/parallels/Workspace/minisql/src/disk/DiskManager.h
 string
 -
 fstream
 -
 ../common/Config.h
-/home/ec2-user/minisql/src/common/Config.h
+/home/parallels/Workspace/minisql/src/common/Config.h
 
-/home/ec2-user/minisql/src/index/BTree.cpp
+/home/parallels/Workspace/minisql/src/index/BTree.cpp
 BTree.h
-/home/ec2-user/minisql/src/index/BTree.h
+/home/parallels/Workspace/minisql/src/index/BTree.h
 
-/home/ec2-user/minisql/src/index/BTree.h
+/home/parallels/Workspace/minisql/src/index/BTree.h
 vector
 -
 string
@@ -404,17 +404,17 @@ iostream
 sstream
 -
 ../common/Data.h
-/home/ec2-user/minisql/src/common/Data.h
+/home/parallels/Workspace/minisql/src/common/Data.h
 
-/home/ec2-user/minisql/src/index/IndexManager.cpp
+/home/parallels/Workspace/minisql/src/index/IndexManager.cpp
 IndexManager.h
-/home/ec2-user/minisql/src/index/IndexManager.h
+/home/parallels/Workspace/minisql/src/index/IndexManager.h
 
-/home/ec2-user/minisql/src/index/IndexManager.h
+/home/parallels/Workspace/minisql/src/index/IndexManager.h
 BTree.h
-/home/ec2-user/minisql/src/index/BTree.h
+/home/parallels/Workspace/minisql/src/index/BTree.h
 
-/home/ec2-user/minisql/src/shell/shell.cpp
+/home/parallels/Workspace/minisql/src/shell/shell.cpp
 iostream
 -
 string
@@ -424,21 +424,21 @@ fstream
 cassert
 -
 ../command/Parser.h
-/home/ec2-user/minisql/src/command/Parser.h
+/home/parallels/Workspace/minisql/src/command/Parser.h
 ../command/Command.h
-/home/ec2-user/minisql/src/command/Command.h
+/home/parallels/Workspace/minisql/src/command/Command.h
 ../command/Result.h
-/home/ec2-user/minisql/src/command/Result.h
+/home/parallels/Workspace/minisql/src/command/Result.h
 ../command/Sql.h
-/home/ec2-user/minisql/src/command/Sql.h
+/home/parallels/Workspace/minisql/src/command/Sql.h
 ../util/StringUtils.h
-/home/ec2-user/minisql/src/util/StringUtils.h
+/home/parallels/Workspace/minisql/src/util/StringUtils.h
 ../catalog/DbInterface.h
-/home/ec2-user/minisql/src/catalog/DbInterface.h
+/home/parallels/Workspace/minisql/src/catalog/DbInterface.h
 ../common/Config.h
-/home/ec2-user/minisql/src/common/Config.h
+/home/parallels/Workspace/minisql/src/common/Config.h
 
-/home/ec2-user/minisql/src/util/StringUtils.cpp
+/home/parallels/Workspace/minisql/src/util/StringUtils.cpp
 iostream
 -
 regex
@@ -450,9 +450,9 @@ cassert
 cstring
 -
 StringUtils.h
-/home/ec2-user/minisql/src/util/StringUtils.h
+/home/parallels/Workspace/minisql/src/util/StringUtils.h
 
-/home/ec2-user/minisql/src/util/StringUtils.h
+/home/parallels/Workspace/minisql/src/util/StringUtils.h
 algorithm
 -
 cctype

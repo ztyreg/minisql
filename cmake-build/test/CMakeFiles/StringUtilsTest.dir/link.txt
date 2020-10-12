@@ -1,1 +1,1 @@
-/usr/bin/clang++   -std=c++11 -O3    CMakeFiles/StringUtilsTest.dir/util/StringUtilsTest.cpp.o  -o StringUtilsTest -rdynamic libgtest.a 
+/usr/bin/c++  -std=c++11 -O3  -rdynamic CMakeFiles/StringUtilsTest.dir/util/StringUtilsTest.cpp.o  -o StringUtilsTest libgtest.a 

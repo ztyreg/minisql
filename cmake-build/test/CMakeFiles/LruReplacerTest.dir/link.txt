@@ -1,1 +1,1 @@
-/usr/bin/clang++   -std=c++11 -O3    CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o  -o LruReplacerTest -rdynamic libgtest.a 
+/usr/bin/c++  -std=c++11 -O3  -rdynamic CMakeFiles/LruReplacerTest.dir/buffer/LruReplacerTest.cpp.o  -o LruReplacerTest libgtest.a 
