@@ -109,19 +109,19 @@ insert into student2 values(1080100245,'name245',100); --unique key conflict
 select * from student2 where name='name245';
 
 --12
-insert into student2 values(1080197996,’name97996’,100);
+insert into student2 values(1080197996,'name97996',100);
 
 --13
-select * from student2 where name='name97996’;
+select * from student2 where name='name97996';
 
 --14
-delete from student2 where name='name97996’; --delete
+delete from student2 where name='name97996'; --delete
 
 --15
-select * from student2 where name='name97996’;
+select * from student2 where name='name97996';
 
 --16
-insert into student2 values(1080197996,’name97996’,100);
+insert into student2 values(1080197996,'name97996',100);
 
 --17
 -- Not implmented: drop index stuidx;
