@@ -1,0 +1,1 @@
+/usr/bin/clang++   -std=c++11 -O3    CMakeFiles/BufferPoolManagerTest.dir/buffer/BufferPoolManagerTest.cpp.o  -o BufferPoolManagerTest -rdynamic libgtest.a 

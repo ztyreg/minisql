@@ -1,0 +1,6 @@
+/home/ec2-user/minisql/cmake-build/test/CMakeFiles/BufferPoolManagerTest.dir
+/home/ec2-user/minisql/cmake-build/test/CMakeFiles/LruReplacerTest.dir
+/home/ec2-user/minisql/cmake-build/src/CMakeFiles/Minisql.dir
+/home/ec2-user/minisql/cmake-build/test/CMakeFiles/StringUtilsTest.dir
+/home/ec2-user/minisql/cmake-build/test/CMakeFiles/check.dir
+/home/ec2-user/minisql/cmake-build/test/CMakeFiles/gtest.dir

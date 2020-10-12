@@ -6,6 +6,7 @@
 #include "../command/Parser.h"
 #include "../command/CreateTable.h"
 #include <iostream>
+#include <memory>
 
 
 

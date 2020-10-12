@@ -5,9 +5,11 @@ macro(package_add_test TESTNAME)
     set_target_properties(${TESTNAME} PROPERTIES FOLDER tests)
 endmacro()
 
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 2.8)
 
 set(CMAKE_CXX_STANDARD 17)
+
+SET(CMAKE_CXX_FLAGS "-std=c++11 -O3")
 
 # source
 add_subdirectory(src)

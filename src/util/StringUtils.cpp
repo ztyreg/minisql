@@ -2,10 +2,14 @@
 // Created by y on 2019-05-25.
 //
 
+#include <iostream>
 #include <regex>
 #include <sstream>
 #include <cassert>
+#include <cstring>
 #include "StringUtils.h"
+
+using namespace std;
 
 // trim from start (in place)
 
