@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This is a DBMS (Database Management System).
+This is a DBMS (Database Management System) built in C++ and a accompanying web GUI.
+
+<img src="https://github.com/ztyreg/minisql/blob/master/demo.png" width="600">
 
 ### Supported Operations
 
