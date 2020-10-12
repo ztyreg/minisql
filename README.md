@@ -73,51 +73,49 @@ insert into student2 values(1080100007,'name7',63);
 
 Sample 2:
 
-```txt
---请按以下语句顺序执行，全部通过即可
-
+```sql
 --1
-select * from student2 where id=1080100245; --考察int类型上的等值条件查询 
+select * from student2 where id=1080100245; --int, equal
 
 --2
-select * from student2 where score=98.5; --考察float类型上的等值条件查询，观察数量 
+select * from student2 where score=98.5; --float, equal
 
 --3
-select * from student2 where name='name245'; --考察char类型上的等值条件查询，此处需观察执行时间t1
+select * from student2 where name='name245'; --char, equal
 
 --4
-select * from student2 where id<>1080109998; --考察int类型上的不等条件查询，观察数量
+select * from student2 where id<>1080109998; --int, not equal
 
 --5
-select * from student2 where score<>98.5; --考察float类型上的不等条件查询，观察数量
+select * from student2 where score<>98.5; --float, not equal
 
 --6
-select * from student2 where name<>'name9998’; --考察char类型上的不等条件查询，观察数量 
+select * from student2 where name<>'name9998’; --char, not equal
 
 --7
-select * from student2 where score>80 and score<85; --考察多条件and查询，观察数量 
+select * from student2 where score>80 and score<85; --and
 
 --8
-select * from student2 where score>95 and id<=1080100100; --考察多条件and查询，观察数量 
+select * from student2 where score>95 and id<=1080100100; --and
 
 --9
-insert into student2 values(1080100245,'name245',100); --报primary key约束冲突（或报unique约束冲突）
+insert into student2 values(1080100245,'name245',100); --unique key conflict
 
 --10
--- Not implmented: create index stuidx on student2 ( score ); --unique key才能建立索引
--- Not implmented: create index stuidx on student2 ( name ); --在name这个unique属性上创建index
+-- Not implmented: create index stuidx on student2 ( score ); --unique key
+-- Not implmented: create index stuidx on student2 ( name );
 
 --11
-select * from student2 where name='name245'; --此处需观察执行时间t2
+select * from student2 where name='name245';
 
 --12
-insert into student2 values(1080197996,’name97996’,100); --考察在建立b+树后再插入数据，b+树有没有做好insert
+insert into student2 values(1080197996,’name97996’,100);
 
 --13
-select * from student2 where name='name97996’; --此处需观察执行时间t3
+select * from student2 where name='name97996’;
 
 --14
-delete from student2 where name='name97996’; --考察delete，同时考察b+树的delete
+delete from student2 where name='name97996’; --delete
 
 --15
 select * from student2 where name='name97996’;
@@ -126,39 +124,37 @@ select * from student2 where name='name97996’;
 insert into student2 values(1080197996,’name97996’,100);
 
 --17
--- Not implmented: drop index stuidx; --考察drop index
+-- Not implmented: drop index stuidx;
 
 --18
-select * from student2 where name='name97996'; --需观察此处的执行时间t4
+select * from student2 where name='name97996';
 
 --19
-select * from student2 where name='name245'; --需观察此处的执行时间t5
+select * from student2 where name='name245';
 
 --20
-delete from student2 where id=1080100245; --考察delete
+delete from student2 where id=1080100245; --delete
 
 --21
 select * from student2 where id=1080100245;
 
 --22
-delete from student2 where score=98.5; --考察delete
+delete from student2 where score=98.5; --delete
 
 --23
 select * from student2 where score=98.5;
 
 --24
-delete from student2; --考察delete
+delete from student2; --delete
 
 --25
 select * from student2;
 
 --26
-drop table student2; --考察drop table
+drop table student2; --drop table
 
 --27
 select * from student2;
-
---index性能体现在，有t2<t1, t2<t5和t3<t4成立
 ```
 
 ## Implmentations
