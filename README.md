@@ -90,7 +90,7 @@ select * from student2 where id<>1080109998; --int, not equal
 select * from student2 where score<>98.5; --float, not equal
 
 --6
-select * from student2 where name<>'name9998’; --char, not equal
+select * from student2 where name<>'name9998'; --char, not equal
 
 --7
 select * from student2 where score>80 and score<85; --and
