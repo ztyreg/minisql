@@ -13,7 +13,7 @@ data_type:
     INTEGER | FLOAT | CHAR(M)
 ```
 
-Record should be shorter than page. Supports the primary key for a single attribute.
+Records should be shorter than page. Supports the primary key for a single attribute.
 
 **Delete**
 
