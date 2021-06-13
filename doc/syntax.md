@@ -45,7 +45,7 @@ value_list:
     value [, value] ...
 ```
 
-Reports error when the duplicated unique keys found.
+Throws an error when there are duplicated unique keys.
 
 **Delete**
 
